@@ -1,0 +1,12 @@
+question: "When more data than needed is collected, what is done with the surplus?"
+multiple: false
+options: 
+  - "The surplus is disposed of/deleted in a secure, definitive, and irretrievable manner"
+  - "The surplus is stored, as they may be useful in the future and for another purpose"
+scores:
+  - 0.0 
+  - 1.0
+privacy: true
+transparency: false
+accountability: true
+information: null

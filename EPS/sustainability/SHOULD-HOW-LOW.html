@@ -1,0 +1,77 @@
+<h1>Low</h1>
+<p>EPS uses an evaluation matrix to calculate any potential impacts connected with an application. The three impact categories in this matrix are <strong>Low</strong>, <strong>Intermediate</strong>, and <strong>High</strong>. From low to high, each category has a set of suggestions.</p>
+<p>EPS measures the level of impact of an application regarding sustainability through how likely they are to cause environmental harm. We quantify environmental harm in the EPS with two metrics: <strong>energy consumption</strong> (kWh) and <strong>estimated carbon emissions</strong> (KgCO2eq). KgCO2eq is a standardized measure used to express the global warming potential of various greenhouse gases. An application with a <strong>low level of impact</strong> is unlikely to cause harm, i.e., has an energy consumption and estimated carbon emissions lower than 0.1 kWh and 0.05 KgCO2eq during training.</p>
+<p>Here are some examples of applications classified as low impact according to the EPS:</p>
+<ul>
+<li>
+<p><strong>Shallow ML models:</strong> Linear Regression algorithms, Random Forest classifiers, and other small ML models.</p>
+</li>
+<li>
+<p><strong>Small Neural Networks:</strong> Neural networks that do not require extensive training or specialized hardware, e.g., a dense network used for digit classification.</p>
+</li>
+</ul>
+<p>The following recommendations are related to the principle of <strong>sustainability</strong> in applications with a <strong>Low</strong> level of impact.</p>
+<h2>Recommendations</h2>
+<p>An application with a <strong>low level of impact</strong> does not require any particular intervention in its development and use. However, we recommend two practices to ensure your system remains in this minimal state:</p>
+<ul>
+<li>
+<p><strong>Carbon Tracking:</strong> Carbon tracking allows organizations to quantify their environmental impact for accountability and monitoring.</p>
+</li>
+<li>
+<p><strong>Collaborative and open-source initiatives:</strong> Participating in collaborative and open-source initiatives helps the community minimize the amount of resources required to create and re-create the same types of technologies.</p>
+</li>
+</ul>
+<p>It should be a standard practice to monitor one's carbon footprint. At the same time, this monitoring should guarantee your application remains below the threshold of <strong>low level of impact</strong> (&lt;  0.1 kWh and &lt; 0.05 KgCO2eq). For example, suppose your system has to deal with millions of calls a minute. In that case, the related energy consumption values might exceed the proposed threshold, even if your application did not require many resources during development.</p>
+<p>At the same time, if you are developing an application in which the solution can be achieved by the use of an already open-source model, you should avoid the reinvention of systems that have already proven their capabilities for a wide range of downstream tasks.</p>
+<h2>How to increase sustainability?</h2>
+<h3>Carbon Tracking</h3>
+<p><strong>Carbon tracking</strong> is an essential practice in managing the environmental impacts of AI systems. Organizations can comprehensively understand their carbon footprint by calculating and monitoring quantities like energy consumption and estimated carbon emissions. This information is a foundation for driving sustainable practices, optimizing energy efficiency, reducing greenhouse gas emissions, and investing in offsets. But how can one measure their carbon footprint?</p>
+<p>Carbon footprint is an index that makes it possible to compare the total amount of greenhouse gases an activity adds to the atmosphere, i.e., how much carbon dioxide equivalents (CO2eq) have been produced. CO2eq is the product of two main factors (<a href="https://arxiv.org/abs/1911.08354" target="_blank">source</a>): <strong>C</strong> and <strong>E:</strong></p>
+<ul>
+<li>
+<p><strong>C</strong> = the carbon intensity of the electricity consumed (grams of CO₂ emitted per kilowatt-hour of electricity).</p>
+</li>
+<li>
+<p><strong>E</strong> = the energy consumed by the computational process (kilowatt-hour).</p>
+</li>
+</ul>
+<p>The carbon intensity is the weighted average of the emissions from the different energy sources tied to the energy grid being utilized. This measure changes depending on your location, while the world average emission by kWh is 475 gCO2.eq (<a href="https://www.iea.org/reports/global-energy-co2-status-report-2019/emissions" target="_blank">source</a>). Hence, if you know the carbon intensity of your energy grid and the amount of energy used, you can estimate your carbon emissions and footprint.</p>
+<p>Luckily, you do not have to calculate these values by hand since much of it is already hand-coded in tools designed to perform the type of tracking we are recommending. For example, <a href="https://github.com/mlco2/codecarbon" target="_blank">CodeCarbon</a> is a Python library for estimating and tracking carbon emissions related to computational processes. The following tutorial teaches how to use the main functionalities of this library [<a href="https://github.com/Nkluge-correa/teeny-tiny_castle/blob/master/ML%20Accountability/CO2%20Emission%20Report/emission_tracker.ipynb" target="_blank">👉notebook</a>]. To learn more about what CodeCarbon can offer (e.g., visualization panels for emission reports), read their <a href="https://mlco2.github.io/codecarbon/" target="_blank">documentation</a>, and see how carbon tracking can be implemented as a part of tools aimed at helping developers choose the most carbon-efficient algorithm with the <a href="https://tw-yoo.github.io/miev/#/" target="_blank">Model Inference Emission Visualizer</a>.</p>
+<p>Besides CodeCarbon, here are some other tools that you can use to estimate your carbon emissions:</p>
+<ul>
+<li>
+<p><a href="https://mlco2.github.io/impact/" target="_blank">Machine Learning Emissions Calculator</a> is a tool to estimate the carbon emissions based on your energy consumption and geo-location/cloud provider, training ML models produce.</p>
+</li>
+<li>
+<p><a href="https://github.com/sb-ai-lab/Eco2AI" target="_blank">Eco2AI</a> and <a href="https://github.com/lfwa/carbontracker?tab=readme-ov-file#carbontracker" target="_blank">Carbontracker</a> are two other Python libraries for emission tracking during the training of deep learning models.</p>
+</li>
+<li>
+<p><a href="https://github.com/datarootsio/mlflow-emissions-sdk" target="_blank">MLflow-emissions-sdk</a> is a log management tool that helps you integrate carbon tracking into your ML workflow (it uses CodeCarbon under the hood).</p>
+</li>
+</ul>
+<h3>Use of open-source initiatives</h3>
+<p>Open-source initiatives provide ways for sharing knowledge, research, and their byproducts, allowing developers to build upon the work of others and preventing organizations from repeatedly reinventing the same piece of software. By openly sharing code, models, datasets, and resources, these initiatives enable collective innovation and iteration, leading to a more sustainable AI ecosystem. If you would like to, for example, train a computer vision model for object detection, instead of training your CNN from scratch, you can download the pre-trained weights from something like Resnet and fine-tune it by a fraction of the resources required to train it.</p>
+<p>Many platforms make models and datasets available to developers, while major deep learning frameworks already come with models and datasets integrated into their ecosystem. Below is a non-exhaustive list of open-source resources that can help you develop AI solutions without reinventing the wheel:</p>
+<ul>
+<li>
+<p><strong>Torchvision</strong> contains definitions of several models and their pre-trained weights for different tasks, including image classification, pixel-wise semantic segmentation, object detection, instance segmentation, person keypoint detection, video classification, and optical flow (<a href="https://pytorch.org/vision/stable/models.html#models-and-pre-trained-weights" target="_blank">source</a>).</p>
+</li>
+<li>
+<p><strong>PyTorch Hub</strong> contains a great variety of models for several different applications (language, vision, audio, generative, etc.) (<a href="https://pytorch.org/hub/" target="_blank">source</a>).</p>
+</li>
+<li>
+<p><strong>TensorFlow</strong> also possesses a large list of models and datasets as part of its open-source platform for ML (<a href="https://www.tensorflow.org/resources/models-datasets" target="_blank">source</a>) (<a href="https://github.com/tensorflow/models/tree/master/official#tensorflow-official-models" target="_blank">source</a>) (<a href="https://www.tensorflow.org/datasets" target="_blank">source</a>).</p>
+</li>
+<li>
+<p><strong>Kaggle</strong> also has hundreds of trained, ready-to-deploy machine learning models, besides a great number of datasets hosted in their platform (<a href="https://www.kaggle.com/models" target="_blank">source</a>).</p>
+</li>
+<li>
+<p><strong>Hugging Face</strong> provides an excellent UI for selecting already-trained models for dozens of tasks (<a href="https://huggingface.co/tasks" target="_blank">source</a>).</p>
+</li>
+<li>
+<p><strong>Timm</strong> is a library tied to the Hugging Face ecosystem that contains several SOTA computer vision models and utilities (<a href="https://github.com/pprp/timm?tab=readme-ov-file#pytorch-image-models" target="_blank">source</a>).</p>
+</li>
+<li>
+<p>This <strong>repository</strong> lists several open-source LLMs, together with their respective licenses (<a href="https://github.com/eugeneyan/open-llms?tab=readme-ov-file#open-llms" target="_blank">source</a>).</p>
+</li>
+</ul>

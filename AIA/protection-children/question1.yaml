@@ -1,0 +1,12 @@
+question: "Mark the alternative that most closely matches your understanding of the application or service provided:"
+multiple: false
+options: 
+  - "We understand that children and adolescents are in a vulnerable position when using technology since this audience has not yet had life experience and are still developing their cognitive and emotional skills"
+  - "We understand that children and adolescents are in a position of vulnerability when using technology, but believes that the responsibility for protecting children and adolescents lies with their parents or guardians" 
+scores:
+  - 0.0
+  - 1.0
+privacy: false
+beneficence: true
+accountability: true
+information: null

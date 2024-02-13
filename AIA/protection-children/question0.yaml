@@ -1,0 +1,12 @@
+question: "Does the application or service require a parent or legal guardian to provide user consent?"
+multiple: false
+options: 
+  - "Yes"
+  - "No" 
+scores:
+  - 0.0
+  - 1.0
+privacy: false
+beneficence: true
+accountability: true
+information: null

@@ -1,0 +1,12 @@
+question: "Is the data collected, at any moment, processed in another country?"
+multiple: false
+options: 
+  - "Yes"
+  - "No"
+scores:
+  - 1.0 
+  - 0.0
+privacy: true
+transparency: false
+accountability: true
+information: "Data processing refers to any operation performed on personal data, such as collection, storage, transmission, and deletion."

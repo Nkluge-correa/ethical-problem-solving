@@ -1,0 +1,26 @@
+question: "Does the application automate decision-making processes?"
+multiple: false
+options: 
+  - "Yes, the application is responsible for decision-making processes related to legal proceedings"
+  - "Yes, the application is responsible for decision-making processes related to public policy"
+  - "Yes, the application is responsible for decision-making processes that grant or revoke services, goods, or rights to individuals"
+  - "Yes, the application is responsible for decision-making processes that grant or revoke information to individuals"
+  - "Yes, the application is responsible for decision-making processes that assign scores to individuals" 
+  - "Yes, the application is responsible for decision-making processes that influence health-related decisions"
+  - "Yes, and falls under several of the above alternatives"
+  - "Yes, but decision-making does not fit any of the above"
+  - "The application does not automate any kind of decision-making process"
+scores:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 0.5
+  - 0.0
+trustworthiness: true
+fairness: true
+accountability: true
+information: "Automated decision-making process is any process where a decision is made with the help of computer systems or programs, without human intervention." 

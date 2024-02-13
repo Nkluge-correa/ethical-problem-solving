@@ -1,0 +1,12 @@
+question: "Is personal data collected by the application shared with third parties?"
+multiple: false
+options: 
+  - "Yes"
+  - "No"
+scores:
+  - 1.0 
+  - 0.0
+privacy: true
+transparency: false
+accountability: true
+information: null

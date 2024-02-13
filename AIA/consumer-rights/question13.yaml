@@ -1,0 +1,12 @@
+question: "Does the organization employ tools to make AI-generated content distinguishable from human-generated content?"
+multiple: false
+options: 
+  - "Yes, the organization employs tools to make AI-generated content distinguishable from human-generated content (e.g., watermarks, user warnings, internal classification tools, etc.)"
+  - "No, the organization does not make AI-generated content distinguishable from human-generated content"
+scores:
+  - 0
+  - 1
+accountability: true
+transparency: false
+truthfulness: true
+information: null

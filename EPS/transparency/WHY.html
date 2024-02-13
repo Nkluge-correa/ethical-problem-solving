@@ -1,0 +1,49 @@
+<h1>What is Transparency? 🔎</h1>
+<p><em>5-minute read</em></p>
+<p>Artificial Intelligence (AI) is being increasingly used to automate decisions in everyday life, which can have both negative and positive effects. Understanding how AI makes its decisions and the effects an AI has is <em>Transparency</em>.</p>
+<p>According to <a href="https://nkluge-correa.github.io/worldwide_AI-ethics/" target="_blank">Worldwide AI Ethics</a>, transparency is defined as:</p>
+<blockquote>
+<p>"<em>The idea that the use and development of AI technologies should be transparent for all interested stakeholders. Transparency can be related to "the transparency of an organization" or "the transparency of an algorithm." This set of principles is also related to the idea that such information should be understandable to nonexperts and, when necessary, subject to auditing.</em>"</p>
+</blockquote>
+<p>Transparency also involves how the public understands the basic premise of AI and how they assess their relationship to a service, product, or company (<a href="https://www.sciencedirect.com/science/article/abs/pii/S0004370218305988?via%3Dihub" target="_blank">source</a>). This principle is crucial to AI application development since it helps ensure the system is accountable, fair, and trustworthy. When the inner workings of an AI system are transparent, it is easier to understand how the system arrived at a particular decision or recommendation. It can help to build confidence in the system and encourage people to use it. Transparent applications include the disclosure of the AI system that powers the application. In the case of a specific output, mechanistic interpretability techniques should be used to explain singular outputs (e.g., in a contested classification) when requested.</p>
+<p>There are several approaches to promoting transparency in AI application development:</p>
+<ul>
+<li>
+<p><strong>Explainable AI (XAI):</strong> This refers to developing AI systems whose decision-making processes are understandable to humans. XAI is considered an attempt to implement the social <a href="https://en.wikipedia.org/wiki/Right_to_explanation" target="_blank">right to explanation</a>, a relevant aspect of AI Ethics, even though (<em>sometimes</em>) <a href="https://www.gov.br/acessoainformacao/pt-br/perguntas-frequentes/aspectos-gerais" target="_blank">there is no legal right or regulatory requirement</a> for such.</p>
+</li>
+<li>
+<p><strong>Open source code:</strong> Making the source code for an AI system available to the public can help to increase transparency by allowing others to review and understand how the system works.</p>
+</li>
+<li>
+<p><strong>Testing and evaluation:</strong> Thoroughly testing and evaluating an AI system ensures its proper function. The conduction of audits, bias assessments, and other evaluation forms can help ensure that a system is currently working as expected.</p>
+</li>
+<li>
+<p><strong>Data provenance:</strong> Ensuring that the data used to train an AI system is transparent and traceable allows insight into how a system was developed and what information grounds its decisions.</p>
+</li>
+<li>
+<p><strong>Human oversight:</strong> Incorporating human oversight into an AI system's decision-making process promotes transparency by inserting an understandable element (a.k.a. a human) into the decision loop. It involves having human reviewers check the decisions made by the AI system or providing a way for users to appeal its decisions.</p>
+</li>
+</ul>
+<h2>Why Should You Care? 🤔</h2>
+<p>One of the biggest challenges is not building the right model but getting the stakeholders to believe that the model makes a <em>better</em> decision than a human. A better decision should not only be framed as higher accuracy scores during a test evaluation. "<em>Better</em>" decisions can also be framed as "<em>explainable</em>" because users often would like to understand the reasons behind a given outcome. In the end, informed users are better than non-informed ones.</p>
+<p>Artificial intelligence, particularly <em>deep neural networks</em>, is already pervasive in several applications, including biometrics, healthcare, and vehicles. Soon, these systems might come to mediate the way we communicate with our entire digital world. However,  AI creates new qualitative and quantitative risks and vulnerabilities despite its evident advantages. With its rising adoption comes the need for audit procedures that provide assurances of trustworthiness and enable the operationalization of impending AI standards and AI regulatory efforts.</p>
+<p>Some instances of technology developed in a <strong>transparent and audited manner</strong> are provided below (<strong>even in high-risk scenarios</strong>).</p>
+<h3>Electronic Ballot Boxes for E-voting</h3>
+<p>Transparent algorithmic designs for high-stakes applications include electronic ballot boxes. The Brazilian Supreme Electoral Court (TSE) funds and maintains electronic voting system research and development in Brazil. The code for these computers has not been made public (<em>they still are black boxes</em>). Still, it is available to specific stakeholders such as the Armed Forces, Political Parties, and the OAB (Order of Attorneys of Brazil).</p>
+<p>However, <em>if we don't understand how the software works, how can we audit it</em>? Numerous auditing procedures are utilized in Brazil for this type of system.</p>
+<p>In Brazil, for example, auditing agencies conduct a mock election before the actual elections and double-check the results to ensure that all e-voting devices operate as they should (<a href="https://en.airespucrs.org/post/auditability-in-black-box-scenarios-brazil-and-electronic-voting" target="_blank">source</a>).</p>
+<h3>AI-assisted Art generation</h3>
+<p>Until recently, cutting-edge image production was only feasible via APIs owned by giant corporations. However, with the creation of <em>Stable Diffusion</em>, all of this has changed.</p>
+<p><a href="https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0" target="_blank">Stable Diffusion</a> is a latent diffusion model for image generation from a text developed by <a href="https://stability.ai/" target="_blank">Stability AI</a> and <a href="https://laion.ai/" target="_blank">LAION</a>. Unlike models such as <a href="https://openai.com/dall-e-3" target="_blank">DALL-E 3</a>, Stable Diffusion has all of its <a href="https://github.com/CompVis/stable-diffusion" target="_blank">source code</a> as well as pre-trained weights are available.</p>
+<p>Transparent models allow developers to experiment with and improve their processes. The communal aspect of perpetual improvement is impossible when an API restricts developers. At the same time, allowing the open-source community to explore and build upon open-source models usually improves our understanding of their capabilities and limitations in a more transparent way.</p>
+<p>Stability AI also provides a model card outlining the potential biases and limitations of Stable Diffusion. Its license (Responsible AI License) allows users to take advantage of the model in a wide range of settings (including free use and redistribution) as long as they respect the specific use case restrictions outlined, which correspond to model applications the licensor deems ill-suited for the model or is likely to cause harm (<a href="https://en.wikipedia.org/wiki/Libel" target="_blank" title="Libel">libel</a>, <a href="https://en.wikipedia.org/wiki/Harassment" target="_blank" title="Harassment">harassment</a>, <a href="https://en.wikipedia.org/wiki/Doxxing" target="_blank" title="Doxxing">doxxing</a>, "exploiting minors", etc.), showing how responsible and open source deployment can be performed at scale.</p>
+<h2>Final Remarks</h2>
+<p>Transparent algorithms and AI systems enable us to explain, inspect, and replicate how they make decisions, generate content, and use data. Transparency also allows us to trace accountability and allocate responsibility, avoiding the requirement of blind faith into something nobody can understand.</p>
+<p>In AI-driven contexts, leaders participating in AI governance must understand how and where AI is used. However, this can only be achieved if the information is available in an understandable format. Hence, organizations must disclose accurate, complete, and timely information to stakeholders about their developmental practices to promote transparency in the field.</p>
+<h2>Extra reading</h2>
+<ul>
+<li>Molnar, C. <a href="https://christophm.github.io/interpretable-ml-book/" target="_blank">Interpretable machine learning</a>. <em>Lulu. com</em>, 2020.</li>
+<li>Xu, Feiyu, <em>et al</em>. <a href="https://doi.org/10.1007/978-3-030-32236-6_51" target="_blank">Explainable AI: A brief survey on history, research areas, approaches, and challenges</a>. Natural Language Processing and Chinese Computing: 8th CCF International Conference, NLPCC 2019, Dunhuang, China, October 9–14, 2019, Proceedings, Part II 8. <em>Springer International Publishing</em>, 2019.</li>
+<li>Prince, S. <a href="https://udlbook.github.io/udlbook/" target="_blank">Understanding Deep Learning</a>. <em>MIT press</em>, 2023.</li>
+<li>Nanda, N. <a href="https://dynalist.io/d/n2ZWtnoYHrU1s4vnFSAQ519J" target="_blank">A Comprehensive Mechanistic Interpretability Explainer &amp; Glossary</a>. <em>Dynalist</em>, 2024.</li>
+</ul>

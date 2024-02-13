@@ -1,0 +1,14 @@
+question: "If your application or service processes images, does it have methods to prevent downloading, sharing, screenshotting, or editing of user images?"
+multiple: false
+options: 
+  - "Yes, all images have protection that prevents downloading, sharing, screenshotting, or editing"
+  - "No" 
+  - "Does not apply"
+scores:
+  - 0.0
+  - 1.0
+  - 0.0
+privacy: true
+beneficence: false
+accountability: false
+information: null

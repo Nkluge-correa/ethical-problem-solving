@@ -1,0 +1,14 @@
+question: "Does the organization allow third-party advertising in its application or service?"
+multiple: false
+options: 
+  - "Yes, through the application or service itself"
+  - "No, but third parties can disseminate advertising through other channels (such as social networks, emails, messages, and our website)" 
+  - "No, third parties are not allowed to disseminate advertisements"
+scores:
+  - 1.0
+  - 0.5
+  - 0.0
+privacy: false
+beneficence: true
+accountability: true
+information: null

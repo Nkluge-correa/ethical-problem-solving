@@ -1,0 +1,16 @@
+question: "If the organization discontinues its services, what is the protocol for supporting users?"
+multiple: false
+options: 
+  - "The organization will maintain technical support for a reasonable period"
+  - "The organization will inform users about technical support, how to access it, and its limitations and conditions"
+  - "The organization will not provide technical support but will notify users in advance so they can migrate to another service"
+  - "The organization does not yet have a protocol in case its services are interrupted"
+scores:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1
+accountability: true
+transparency: false
+truthfulness: false
+information: null

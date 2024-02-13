@@ -1,0 +1,14 @@
+question: "Are users informed of the treatment given to their behavioral profile?"
+multiple: false
+options: 
+  - "Yes"
+  - "No"
+  - "Does not apply"
+scores:
+  - 0.0 
+  - 1.0
+  - 0.0
+privacy: true
+transparency: true
+accountability: false
+information: null

@@ -1,0 +1,20 @@
+question: "Has there been any prior research, or is there ongoing research focused on using the application to analyze the demographics and traits of its user base?"
+multiple: false
+options: 
+  - "No. The application does not involve people as part of its operation"
+  - "Yes, a study of the local population was carried out to assess the characteristics of potential users, which were taken into account to collect the data that will be used in the development of the application"
+  - "No prior study of the potential user population was carried out, as the data that powers our application is the same one used by several other consolidated organizations to develop their algorithms"
+  - "No prior study of the potential user population has been carried out, as the data that powers our application contains data from the users themselves"
+  - "No prior study has been made of the potential user population or of the data that will be used to develop our algorithm"
+  - "Does not apply"
+scores:
+  - 0.0
+  - -1.0
+  - 0.0
+  - 1.0
+  - 1.0
+  - 0.0
+trustworthiness: false
+fairness: true
+accountability: true
+information: null

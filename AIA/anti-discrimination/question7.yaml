@@ -1,0 +1,14 @@
+question: "Does the application changes its behavior based on interactions with users?"
+multiple: false
+options: 
+  - "Yes, new data or information from interactions with users are used as a learning signal"
+  - "Yes, but learning is not made online, since colected data or information is curated before being used for macking updates to the application"
+  - "No user interactions are used to change the behavior of the application"
+scores:
+  - 1.0
+  - 0.0
+  - 0.0
+trustworthiness: true
+fairness: true
+accountability: true
+information: "Online learning referes to a continuous process of updating the model based on new data or information." 

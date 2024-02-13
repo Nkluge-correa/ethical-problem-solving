@@ -1,0 +1,14 @@
+question: "Is the consumer or user protected against misleading and abusive advertising?"
+multiple: false
+options: 
+  - "Yes, the application has a policy against misleading and abusive advertising"
+  - "Yes, the application has a policy against misleading and abusive advertising and this policy is enforced by a specialized moderation team"
+  - "None of the above"
+scores:
+  - 0.0
+  - 0.0
+  - 1.0
+accountability: true
+transparency: true
+truthfulness: true
+information: null

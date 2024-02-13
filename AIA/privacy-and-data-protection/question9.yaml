@@ -1,0 +1,18 @@
+question: "Does the application possess Terms of Use and a Privacy Policy?"
+multiple: false
+options:
+  - "The application has both Terms of Use and a Privacy Policy"
+  - "The application only has Terms of Use"
+  - "The application only has a Privacy Policy"
+  - "The application has neither Terms of Use nor Privacy Policy"
+  - "Does not apply"
+scores:
+  - -1.0
+  - -0.50
+  - -0.50
+  - 1.0
+  - 0.0
+privacy: true
+transparency: true
+accountability: true
+information: "Terms of Use deliminate the rights and responsibilities of the user and the application. The Privacy Policy describes how the application processes the personal data of its users."

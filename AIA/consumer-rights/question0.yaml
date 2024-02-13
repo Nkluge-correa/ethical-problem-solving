@@ -1,0 +1,16 @@
+question: "Does the application provide its users with clear and precise terms of use?"
+multiple: false
+options: 
+  - "Yes, the organization in its application has made terms of use available in a clear, direct, objective, didactic, and precise way to its users"
+  - "Yes, the organization has made efforts to make the terms of use clear and precise for its users. However, some sections may be complex or present technical language"
+  - "Yes, but the terms of use are not highlighted in the application"
+  - "No, the organization has not made the terms of use available to its users"
+scores:
+  - -1.0
+  - 0.5
+  - 0.5
+  - 1.0
+accountability: true
+transparency: true
+truthfulness: false
+information: "The terms of use are the rules that govern the relationship between the organization and its users."

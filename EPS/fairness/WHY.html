@@ -1,0 +1,64 @@
+<h1>What is Fairness? 🔎</h1>
+<p><em>5-minute read.</em></p>
+<p>AI Fairness refers to the various attempts at correcting algorithmic bias in automated decision processes based on machine learning models. It aims to ensure that AI systems do not produce biased outcomes against particular individuals or groups based on race, gender, socioeconomic status, or other sensitive attributes. At the same time, AI fairness is also about creating proactive measures to prevent the production of AI-generated inadvertently harmful or malicious content.</p>
+<p>According to <a href="https://en.airespucrs.org/worldwide-ai-ethics" target="_blank">Worldwide AI Ethics</a>, fairness is:</p>
+<blockquote>
+<p>"<em>the idea of non-discrimination and bias mitigation (discriminatory algorithmic biases AI systems can be subject to). It defends the idea that, regardless of the different sensitive attributes that may characterize an individual, all should be treated fairly</em>."</p>
+</blockquote>
+<p>Achieving fairness in AI development requires a multi-faceted approach considering various aspects of the AI system's design, development, and deployment. Here are a few measures that organizations and developers can take to ensure fairness in AI applications:</p>
+<ul>
+<li>
+<p><strong>Data Representation:</strong> Fairness in AI entails ensuring that the training data used to develop the AI system is representative of the population it will serve. This process demands that the data be diverse and inclusive.</p>
+</li>
+<li>
+<p><strong>Algorithm Design:</strong> Algorithms can perpetuate and amplify existing biases in the data if they are not designed "<em>fairly</em>." Developers can use fairness constraints and bias correction algorithms to ensure that the AI system is unbiased by design.</p>
+</li>
+<li>
+<p><strong>Monitoring and Evaluation:</strong> Regular monitoring and evaluation of AI systems are essential to ensure they remain fair and unbiased over time. It involves tracking key metrics, such as false positive and false negative rates, and making adjustments to ensure a system remains fair while they are active.</p>
+</li>
+<li>
+<p><strong>Stakeholder Engagement:</strong> Engaging with key stakeholders, such as communities likely to be affected by the AI system, can help ensure equitable development. It includes incorporating stakeholder feedback and concerns into the development and deployment of the AI system.</p>
+</li>
+</ul>
+<p>In our methodology, the fairness of an AI system is measured by its use of sensitive attributes, proxies, and intended use:</p>
+<ul>
+<li>
+<p><strong>Sensitive attributes:</strong> They are features of an individual closely tied to their membership in a protected group, such as race, gender, religion, or sexual orientation. These attributes are considered sensitive because they are often the basis for discrimination.</p>
+</li>
+<li>
+<p><strong>Proxies:</strong> They are other attributes highly correlated with sensitive attributes and can be a substitute for them. For example, zip code or educational attainment may be utilized as a proxy for race in determinate contexts.</p>
+</li>
+<li>
+<p><strong>Intended Use:</strong> This is the purpose for which the system is designed.</p>
+</li>
+</ul>
+<p><strong>Note:</strong> Fundamentally, achieving fairness is a sociotechnical challenge. The task of developers is to evaluate their situation and employ the most appropriate mitigation measures possible.</p>
+<p>It is crucial to underline that ignoring sensitive attributes to achieve equitable outcomes (i.e., <a href="https://plato.stanford.edu/entries/original-position/" target="_blank">the original position</a> most commonly known as the veil of ignorance approach) has limitations, and in specific domains (generative AI) is almost impossible. Realizing AI fairness requires a deep understanding of social and cultural factors that may impact different groups, which is not always straightforward or dismissible.</p>
+<h2>Why Should You Care? 🤔</h2>
+<p>As the use of AI spreads to critical areas such as criminal justice, healthcare, and finance, the importance of ensuring AI systems are fair and unbiased increases. Hence, the haphazard use of AI in critical areas of life can result in unfair treatment against particular groups of people. The following cases underline the problems associated with AI fairness regarding the general public.</p>
+<h3>Correctional Offender Management Profiling for Alternative Sanctions (<strong>COMPAS</strong>)</h3>
+<p>Northpointe's tool, called COMPAS, is a case management and decision support tool used by US courts to assess the likelihood of a defendant becoming a recidivist. When defendants are arrested, they answer a COMPAS questionnaire. Their responses are processed into the COMPAS software, which generates scores such as risk of recidivism and violent recidivism.</p>
+<p>ProPublica analyzed more than 10,000 criminal defendants in Broward County, Florida, and compared the recidivism risk categories predicted by the COMPAS tool to the actual recidivism rates of defendants two years after they scored.</p>
+<p>ProPublica found that black individuals are almost twice as likely as whites to be labeled a higher risk but not re-offend. In contrast, white individuals are much more likely than blacks to be labeled as lower risk but go on to commit other crimes.</p>
+<p>You can find more information on the COMPAS case <a href="https://www.propublica.org/article/how-we-analyzed-the-compas-recidivism-algorithm" target="_blank">here</a> and <a href="https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing" target="_blank">here</a>.</p>
+<h3>Discrimination in the use of FRTs</h3>
+<p>Facial recognition techniques are a form of biometric technology that involves identifying and verifying an individual's identity by analyzing facial features. Facial recognition is commonly used in security systems, such as surveillance cameras and border control checkpoints, to verify individuals' identities. The accuracy of facial recognition techniques depends on various factors, including the quality of the images captured, the complexity of the algorithms used, and the size and diversity of the database used to train the model.</p>
+<p>While some facial recognition systems have remarkable classification accuracy, these results are not universal. A growing corpus of studies reveals disparities in error rates across demographic categories, with female, black, and 18- to 30-year-olds consistently showing the lowest accuracy.</p>
+<p>Three gender classification algorithms, including those produced by IBM and Microsoft, were evaluated in the seminal research "Gender Shades." Darker-skinned women, darker-skinned men, lighter-skinned women, and lighter-skinned men were divided into four groups. All three algorithms performed the worst in the subgroup composed of darker-skinned women, with error rates up to 34% higher than in lighter-skinned men.</p>
+<p>The US National Institute of Standards and Technology (NIST) independently corroborated these findings, indicating that facial recognition systems in 189 algorithms are the least reliable for black women.</p>
+<p>You can find more information on the subject of FRTs <a href="https://nvlpubs.nist.gov/nistpubs/ir/2019/NIST.IR.8280.pdf" target="_blank">here</a> and <a href="http://proceedings.mlr.press/v81/buolamwini18a/buolamwini18a.pdf" target="_blank">here</a>. You could also read the <a href="https://www.airespucrs.org/nota-tecnica-frt" target="_blank">AIRES-RAIES Technical Report</a> on the risks associated with FRTs.</p>
+<h3>Discrimination in HR practices</h3>
+<p>Due to its efficiency, the use of ML models has become increasingly popular in human resources (HR) as an approach to streamline the hiring process. However, there are concerns about the fairness and accuracy of such systems.</p>
+<p>Algorithms can perpetuate biases that already exist in the hiring process. For example, if the model is trained on a biased dataset, it may generate biased outputs. It can lead to discrimination against certain groups of people, such as women or non-white people, who may be overlooked by the algorithm even if they are qualified for the job, helping to propagate historical trends of discrimination embedded in their training data.</p>
+<p>Targeted ads for jobs are also a field where automated decision-making plays a significant part. According to recent studies (<a href="https://pubsonline.informs.org/doi/10.1287/mnsc.2018.3093" target="_blank">source</a>), online job adverts in the scientific, technology, engineering, and math sectors were more likely to be shown to males than females in an empirical-quantitative field test among 191 nations.</p>
+<p>You can find more information on the problems related to automated decision-making in HR <a href="https://link.springer.com/article/10.1007/s40685-020-00134-w" target="_blank">here</a> and <a href="https://pubsonline.informs.org/doi/10.1287/mnsc.2018.3093" target="_blank">here</a>.</p>
+<h2>Final Remarks</h2>
+<p>Ensuring fairness in development is essential for building public trust and acceptance of AI systems. The benefits of AI should be widely distributed and not concentrated on particular groups. At the same time, the content generated by such systems should represent our multifaceted society fairly and not help perpetuate the biases we constantly try to overcome.</p>
+<h2>Extra Reading</h2>
+<ul>
+<li>Molnar, C. <a href="https://arxiv.org/abs/1609.07236" target="_blank">On the (im)possibility of fairness</a>. <em>ArXiv</em>, 2016.</li>
+<li>Kateifides, A. <em>et al</em>. <a href="https://www.dataguidance.com/sites/default/files/gdpr_v_lgpd_revised_edition.pdf" target="_blank">Machine Bias - ProPublica Case Study</a>, 2018.</li>
+<li>Rubin, J. and Verma, S. <a href="https://fairware.cs.umass.edu/papers/Verma.pdf" target="_blank">Fairness Definitions Explained</a>. <em>IEEE</em>, 2018.</li>
+<li>The White House <a href="https://www.whitehouse.gov/ostp/ai-bill-of-rights/#discrimination" target="_blank">Blueprint for AI Bill of Rights</a>. <em>Online</em>, 2022.</li>
+<li>O'Neil, C. <a href="https://drive.google.com/uc?export=download&amp;id=12vYWr1vy14C4xJ3U54Lj7EItiwVVjrTn" target="_blank">Weapons of Math Destruction</a>. <em>Crown Publishers</em>, 2016.</li>
+</ul>

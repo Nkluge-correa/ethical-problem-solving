@@ -1,0 +1,112 @@
+<h1>Intermediate</h1>
+<p>EPS uses an evaluation matrix to calculate impacts associated with an application. The three categories in this matrix are <strong>Low</strong>, <strong>Intermediate</strong>, and <strong>High</strong>. From low to high, each category has a set of suggestions.</p>
+<p>EPS measures the level of impact of an application regarding reliability through an inverse correlation with the <strong>fault tolerance</strong> of an application. At the same time, this fault tolerance evaluation considers the context of an application and its scope of use. An application with an <strong>intermediate level of impact</strong> has some leniency in case of failure.</p>
+<p>The following intended uses are representative of the <strong>Intermediate</strong> level of impact:</p>
+<ul>
+<li>
+<p><strong>Navigation:</strong> AI systems used for navigation and orientation.</p>
+</li>
+<li>
+<p><strong>Climate modeling:</strong> AI algorithms used to model climate change and predict its impact on ecosystems.</p>
+</li>
+<li>
+<p><strong>Predictive policing:</strong> AI algorithms used to predict crime and allocate police resources.</p>
+</li>
+<li>
+<p><strong>Legislative process:</strong> AI algorithms utilized to assist in bill drafting and legal research, develop predictive models, engage with constituents, and analyze voting patterns.</p>
+</li>
+<li>
+<p><strong>Text generation:</strong> AI algorithms used in text generation, like chatbots or coding assistants.</p>
+</li>
+</ul>
+<p>The following recommendations are for an application evaluated as having an <strong>Intermediate</strong> impact level regarding the principle of <strong>reliability</strong>.</p>
+<h2>Recommendations</h2>
+<p>An application with an <strong>Intermediate level of impact</strong> should implement the following measures:</p>
+<ul>
+<li>
+<p><strong>Robust training:</strong> AI models should perform well on a wide range of inputs and should be able to generalize to unseen samples outside of their training and validation distributions.</p>
+</li>
+<li>
+<p><strong>Rigorous testing:</strong> The system should be evaluated on unseen data or standard benchmarks from the field</p>
+</li>
+<li>
+<p><strong>Continuous monitoring:</strong> It ensures that AI systems produce reliable results over time by monitoring, tracking, and handling errors.</p>
+</li>
+<li>
+<p><strong>Adversarial machine learning:</strong> When used the right way, adversarial ML can help AI applications defend against adversarial attacks.</p>
+</li>
+</ul>
+<h2>How to increase reliability?</h2>
+<h3>Robust Training</h3>
+<p>To achieve a low error rate, developers must invest in robust training methods, especially when dealing with noisy or incomplete data. The goal is to ensure that AI models perform well on a wide range of inputs, which can prevent unforeseeable mishaps regarding contingent inputs. Here are some techniques and tools for robust training in AI development:</p>
+<ul>
+<li>
+<p><strong>Data Quality Checks</strong> are a set of processes and techniques used to assess the reliability of a dataset. In it, we seek to clean and filter our datasets concerning some quality criteria (e.g., the removal of outliers, toxic text, NSFW images, etc.). Here are some tools you can use in this process:</p>
+<ul>
+<li>Scikit-learn offers a quick way to remove outliers from a dataset with their <a href="https://scikit-learn.org/stable/modules/outlier_detection.html" target="_blank">novelty and outlier detection utilities</a>.</li>
+<li>One of the most commonly used filtering approaches for large text datasets is the methods used in the creation of the MassiveText dataset, documented in the <a href="https://paperswithcode.com/paper/scaling-language-models-methods-analysis-1" target="_blank">Gopher paper</a>.</li>
+<li>The <a href="https://github.com/allenai/dolma/tree/main/docs#dolma-toolkit-documentation" target="_blank">Dolma Toolkit</a> enables dataset curation for pretraining AI models, with features like deduplication and built-in taggers, including language detection, toxicity detection, perplexity scoring, and common filtering recipes.</li>
+<li><a href="https://langcheck.readthedocs.io/en/latest/metrics.html" target="_blank">Langcheck</a> is a Python library that offers several metrics to evaluate the quality (e.g., factual consistency and toxicity) of text samples. Also, one can use already trained models, like <a href="https://huggingface.co/unitary/toxic-bert" target="_blank">Toxic-Bert</a> and <a href="https://huggingface.co/nicholasKluge/ToxicityModel" target="_blank">ToxicityModel</a> for this exact purpose.</li>
+<li>Libraries like <a href="https://github.com/GantMan/nsfw_model" target="_blank">NSFW Detection</a>, and ML models like <a href="https://github.com/lovoo/NSFWDetector" target="_blank">NSFWDetector</a>, <a href="https://github.com/yangbisheng2009/nsfw-resnet" target="_blank">NSFW-Resnet</a>, and <a href="https://github.com/woctezuma/stable-diffusion-safety-checker" target="_blank">SD Safety Checker</a> can be used to filter unwanted images from CV datasets.</li>
+</ul>
+</li>
+<li>
+<p><strong>Training Improvements</strong> are techniques that allow ML models to perform better during training. Given the significant amount of heuristic knowledge used in designing successful ML experiments, following the hypersettings stipulated by similar projects or celebrated studies is a good practice. However, if you cannot access those, hyperparameter searching can be a valuable ally in optimizing any training run.</p>
+<ul>
+<li>In AI development, <strong>Hyperparameter tuning</strong> is the problem of choosing a set of optimal hyperparameters for a learning algorithm. Algorithms that can search and find optimal solutions in this space can help you improve the performance of your models. Utilities like the Keras Tuner [<a href="https://github.com/Nkluge-correa/teeny-tiny_castle/blob/master/ML%20Adversarial/adversarial_training_cv.ipynb" target="_blank">👉notebook</a>], or <a href="https://pytorch.org/tutorials/beginner/hyperparameter_tuning_tutorial.html" target="_blank">Ray Tune</a>, can help you in this process.</li>
+</ul>
+</li>
+</ul>
+<h3>Rigorous Testing</h3>
+<p><strong>Rigorous testing</strong> regarding <strong>reliability</strong> involves evaluating the system's ability to perform its intended functions accurately, efficiently, and consistently over a range of scenarios with unseen data. The standard ML workflow, where we separate training samples for further testing, may not be enough of an evaluation. Because of this, it is a common and highly recommended practice to evaluate your model's performance on standard benchmarks.</p>
+<blockquote>
+<p><strong>Note: It is also common for private organizations to have their own set of evaluation benchmarks.</strong></p>
+</blockquote>
+<p>Here are some tools that can be used to benchmark different types of ML systems:</p>
+<ul>
+<li><a href="https://github.com/pralab/secml" target="_blank">SecML</a> is an open-source Python library for the security evaluation of Machine Learning algorithms that can be used to evaluate many ML models. We offer a basic tutorial on its use on the following link [<a href="https://github.com/Nkluge-correa/teeny-tiny_castle/blob/master/ML%20Adversarial/evasion_attacks.ipynb" target="_blank">👉notebook</a>].</li>
+<li>The <a href="https://github.com/EleutherAI/lm-evaluation-harness" target="_blank">Language Model Evaluation Harness</a> is a framework for few-shot evaluation of language models with hundreds of benchmarks ready for evaluation, being the backbone for famous <a href="https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard" target="_blank">LLM leaderboards</a>. Other types of evaluation harnesses are also available <a href="https://decodingtrust.github.io/" target="_blank">here</a> (with a focus on Trustworthiness) and <a href="https://github.com/embeddings-benchmark/" target="_blank">here</a> (with a focus on the evaluation of text embeddings).</li>
+<li><a href="https://facet.metademolab.com/" target="_blank">FACET</a> is a benchmark evaluating the fairness of vision models across classification, detection, instance segmentation, and visual grounding tasks that involve people.</li>
+<li>While benchmarks like <a href="https://github.com/cocodataset/cocoapi" target="_blank">COCO</a> can help you evaluate the object detection skills of computer vision models, benchmarks like <a href="https://q-future.github.io/Q-Bench/" target="_blank">Q-Bench</a> and <a href="https://github.com/hrsbench/HRS_Bench" target="_blank">HRS-Bench</a> can help you assess multi-modal models.</li>
+</ul>
+<h3>Continuous Monitoring</h3>
+<p><strong>Continuously monitoring</strong> a machine learning system is essential for maintaining the system's performance, reliability, and compliance.
+Ml models deployed and not monitored may present unsatisfactory behavior if not appropriately maintained, making the monitoring part of an MLOps cycle an integral part of AI development.</p>
+<p>You can learn more on the matter with the following guides:</p>
+<ul>
+<li>
+<p><a href="https://neptune.ai/blog/how-to-monitor-your-models-in-production-guide" target="_blank">A Comprehensive Guide on How to Monitor Your Models in Production</a>, by Neptune.ai.</p>
+</li>
+<li>
+<p><a href="https://developer.nvidia.com/blog/a-guide-to-monitoring-machine-learning-models-in-production/" target="_blank">A Guide to Monitoring Machine Learning Models in Production</a>, by Kurtis Pykes.</p>
+</li>
+<li>
+<p>For developers using applications based on OpenAI's services, we recommend their <a href="https://platform.openai.com/docs/guides/production-best-practices" target="_blank">production best practices</a> guide and <a href="https://platform.openai.com/docs/guides/safety-best-practices" target="_blank">safety best practices</a> guidebook.</p>
+</li>
+</ul>
+<blockquote>
+<p><strong>Note: It is essential to critically assess when ML models should be taken out of production (sunset).</strong></p>
+</blockquote>
+<h3>Adversarial Machine Learning</h3>
+<p><strong>Adversarial machine learning (AML)</strong> is a subfield of machine learning that focuses on developing algorithms and techniques that can withstand and respond to adversarial attacks. <strong>Adversarial attacks</strong> are a type of threat where an attacker deliberately manipulates the
+inputs of ML models, intending to cause them to produce incorrect outputs.</p>
+<p>Security engineers can use <strong>AML</strong> to improve the robustness of ML models by identifying vulnerabilities and developing countermeasures to mitigate the impact of adversarial attacks. A range of techniques has been developed for <strong>AML</strong>, including <strong>adversarial training</strong> (<em>training models on adversarial examples</em>) and <strong>defensive distillation</strong> (<em>creating a distilled version of a model resistant to adversarial attacks</em>).</p>
+<p>In <strong>adversarial training</strong>, we generate adversarial examples and use them as samples for training (or fine-tuning) the original model, making it more robust. The following tutorial focuses on how to create an adversarial dataset to train and test the reliability of a <strong>CNN</strong> model utilizing the <a href="https://arxiv.org/abs/1412.6572" target="_blank"><strong>Fast Gradient Sign Method</strong></a>[<a href="https://github.com/Nkluge-correa/teeny-tiny_castle/blob/master/ML%20Adversarial/adversarial_training_cv.ipynb" target="_blank">👉notebook</a>]. Meanwhile, this tutorial focuses on how to create an adversarial dataset to train and test the robustness of <strong>NLP</strong> models utilizing the <a href="https://github.com/QData/TextAttack" target="_blank"><strong>TextAttack</strong></a>[<a href="https://github.com/Nkluge-correa/teeny-tiny_castle/blob/master/ML%20Adversarial/adversarial_training_nlp.ipynb" target="_blank">👉notebook</a>]. Also, for applications involving NLP, the article  "<em><a href="https://arxiv.org/abs/2202.03286" target="_blank">Red Teaming Language Models with Language Models</a></em>" provides excellent insights into the process of adversarially training language models.</p>
+<p>Another technique from AML is <strong>Defensive distillation</strong>, which involves training a model on the outputs of another model, which has been trained on perturbed data. This kind of <a href="https://arxiv.org/abs/1503.02531" target="_blank">expert distillation</a> is a commonly used technique in ML, using the knowledge stored in one model (<em>expert</em>) to help train a second one (<em>apprentice</em>).</p>
+<p>The process of <strong>defensive distillation</strong> involves the following steps:</p>
+<ol>
+<li>
+<p><strong>Train an apprentice:</strong> The apprentice model is trained on the original uncorrupted training data.</p>
+</li>
+<li>
+<p><strong>Perturb the training data:</strong> We generate adversarial examples by perturbing the original training data with small amounts of adversarial distortion.</p>
+</li>
+<li>
+<p><strong>Train an adversarial expert:</strong> The expert model is trained on the adversarial examples generated in step 2.</p>
+</li>
+<li>
+<p><strong>Use the expert model to retrain the apprentice:</strong> The expert model can be used for inference in an assisted training regime, where its outputs are used to help the apprentice model become more resilient against adversaries.</p>
+</li>
+</ol>
+<p>The following tutorials focus on how to create adversarial examples against <strong>CNNs</strong>[<a href="https://github.com/Nkluge-correa/teeny-tiny_castle/blob/master/ML%20Adversarial/evasion_attacks_FGSM.ipynb" target="_blank">👉notebook</a>] and <strong>language models</strong> [<a href="https://github.com/Nkluge-correa/teeny-tiny_castle/blob/master/ML%20Adversarial/adversarial_text_attack.ipynb" target="_blank">👉notebook</a>_].</p>
+<p><strong>Note: It is worth noting that while adversarial training improves the model's robustness against adversaries, such regimes usually deteriorate the model's performance due to model collapse. Preventing model collapse is a nontrivial challenge during model fine-tuning and extended training.</strong></p>

@@ -1,0 +1,16 @@
+question: "Has an analysis of the application's performance been carried out to infer its variance regarding sensitive attributes?"
+multiple: false
+options: 
+  - "No, the effects of sensitive attributes on the performance of the application have not been analyzed"
+  - "Yes, the effects of sensitive attributes on the performance of the application have been analyzed"
+  - "Given that the application does not use sensitive attributes, the effects of these attributes on the performance of the application have not been analyzed"
+  - "The effects of sensitive attributes and their possible proxies have been analyzed to determine their effects on the performance of the application"
+scores:
+  - 1.0
+  - 0.0
+  - 1.0
+  - 0.0
+trustworthiness: true
+fairness: true
+accountability: true
+information: "Here, variance refers to the degree of change in the application's performance when the input data changes." 

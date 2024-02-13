@@ -1,0 +1,16 @@
+question: "Do users have the possibility of contesting or appealing the result of a decision made by the application?"
+multiple: false
+options: 
+  - "Yes, users can contest or appeal the result of a decision made by the application"
+  - "Yes, users can contest or appeal the result of a decision made by the application and request a human-conducted review"
+  - "Currently, users cannot contest or appeal the result of a decision made by the application"
+  - "Does not apply"
+scores:
+  - 0.0
+  - 0.0
+  - 1.0
+  - 0.0
+trustworthiness: false
+fairness: false
+accountability: true
+information: "Here, a human review refers to the possibility of a human reviewing the result of a decision made by an algorithm." 

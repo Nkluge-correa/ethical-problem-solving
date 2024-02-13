@@ -1,0 +1,14 @@
+question: "If you answered YES to the previous question, can the anonymization process be reversed?"
+multiple: false
+options: 
+  - "Yes, it can be reversed by technical means and/or by combining the anonymized data with other data"
+  - "There is no way to revert the anonymization process"
+  - "Does not apply"
+scores:
+  - 1.0 
+  - 0.0
+  - 0.0
+privacy: true
+transparency: false
+accountability: true
+information: null

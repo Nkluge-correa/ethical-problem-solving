@@ -1,0 +1,14 @@
+question: "Does the terms of use limit the liability of the organization?"
+multiple: false
+options: 
+  - "Yes, the terms of use limit the liability of the organization, but the user is informed about it in a clear and objective way"
+  - "Yes, the terms of use limit the liability of the organization"
+  - "No, the terms of use do not limit the liability of the organization"
+scores:
+  - 0.0
+  - 1.0
+  - 0.0
+accountability: true
+transparency: true
+truthfulness: false
+information: null

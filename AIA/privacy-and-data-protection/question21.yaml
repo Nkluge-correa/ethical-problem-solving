@@ -1,0 +1,12 @@
+question: "Is there an established procedure for incident management for data leaks?"
+multiple: false
+options: 
+  - "Yes"
+  - "No"
+scores:
+  - 0.0 
+  - 1.0
+privacy: true
+transparency: false
+accountability: true
+information: "Data leaks are any unauthorized access to user or company data."

@@ -1,0 +1,16 @@
+question: "Does the organization provide information or conduct campaigns to promote awareness about common security risks users may experience?"
+multiple: true
+options: 
+  - "The organization sends messages and direct notifications to users of the application warning them of possible security risks and provides guidance on how to protect themselves"
+  - "The organization has created a support page within the application itself, where users can find detailed information about security risks and preventive measures, as well as frequently asked questions (FAQ) about the most common doubts and concerns"
+  - "The organization partners with cybersecurity experts or security companies to provide additional resources to users"
+  - "None of the above"
+scores:
+  - -0.25
+  - -0.25
+  - -0.25
+  - 1.0
+accountability: true
+transparency: true
+truthfulness: false
+information: "Security risks include, but are not limited to, the following: phishing, malware, spyware, ransomware, and identity theft."

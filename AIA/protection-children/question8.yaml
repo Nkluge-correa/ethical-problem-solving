@@ -1,0 +1,12 @@
+question: "Does the application or service processes images of minors, such as photos and videos?"
+multiple: false
+options: 
+  - "Yes"
+  - "No" 
+scores:
+  - 1.0
+  - 0.0
+privacy: true
+beneficence: false
+accountability: false
+information: null

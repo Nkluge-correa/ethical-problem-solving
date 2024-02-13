@@ -1,0 +1,18 @@
+question: "Does the organization have strategies to combat the spread of false information in its products and services?"
+multiple: true
+options: 
+  - "Yes, through automated fact-checking based on trusted sources of information"
+  - "Yes, moderators are used to assess the veracity of shared content"
+  - "Yes, users can flag false content for moderation"
+  - "No, the organization is still developing a content verification method"
+  - "No, organization does not have a verification method"
+scores:
+  - -0.33
+  - -0.33
+  - -0.33
+  - 1.0
+  - 1.0
+accountability: true
+transparency: false
+truthfulness: true
+information: null

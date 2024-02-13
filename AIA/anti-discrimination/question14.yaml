@@ -1,0 +1,14 @@
+question: "Does the organization report illegal activities performed by users of the application/service to the competent authorities?"
+multiple: false
+options: 
+  - "Yes, the organization reports illegal activities performed by users of the application/service to the competent authorities."
+  - "No, the organization does not report illegal activities performed by users of the application/service to the competent authorities, but we have a policy that requires us to ban users that perform illegal activities."
+  - "No, the organization does not report illegal activities performed by users of the application/service to the competent authorities, and we do not have a policy that requires us to ban users that perform illegal activities."
+scores:
+  - 0.0
+  - 1.0
+  - 1.0
+trustworthiness: true
+fairness: false
+accountability: true
+information: null

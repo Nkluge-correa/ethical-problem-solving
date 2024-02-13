@@ -1,0 +1,16 @@
+question: "What strategies has the organization implemented to prevent out-of-scope usage of its application or service?"
+multiple: true
+options: 
+  - "The organization monitors for out-of-scope usage, blocking or throttling requests that exceed the scope of its system"
+  - "The technical architecture of the system prevents out-of-scope usage"
+  - "The organization applies red teaming to its system to identify out-of-scope usage"
+  - "None of the above"
+scores:
+  - -0.25
+  - -0.25
+  - -0.25
+  - 1.0
+trustworthiness: true
+fairness: false
+accountability: true
+information: "Out-of-scope usage refers to using a system for purposes other than those for which it was designed."

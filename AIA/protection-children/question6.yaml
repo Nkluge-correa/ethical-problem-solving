@@ -1,0 +1,12 @@
+question: "Does the application or service expose, simulate, use, or allow any form of nudity or sexual content?"
+multiple: false
+options: 
+  - "Yes"
+  - "No" 
+scores:
+  - 0.0
+  - 1.0
+privacy: false
+beneficence: true
+accountability: false
+information: null

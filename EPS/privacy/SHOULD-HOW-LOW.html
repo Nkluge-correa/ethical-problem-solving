@@ -1,0 +1,88 @@
+<h1>Low</h1>
+<p>EPS uses an evaluation matrix to calculate impacts associated with an application. The three categories in this matrix are <strong>Low</strong>, <strong>Intermediate</strong>, and <strong>High</strong>. From low to high, each category has a set of suggestions.</p>
+<p>EPS measures the privacy level of an application by how much personal and sensitive data is required. An application with a <strong>low level of impact</strong> does not intentionally use (collect or store) sensitive or personal data (<em>metadata could still be collected</em>).</p>
+<p>The following intended uses are representative of the <strong>Low</strong> level of impact:</p>
+<ul>
+<li>
+<p><strong>Weather Forecast:</strong> AI-powered models used to predict the weather.</p>
+</li>
+<li>
+<p><strong>Navigation:</strong> AI systems used for navigation and orientation.</p>
+</li>
+<li>
+<p><strong>Industrial Automation:</strong> AI systems used to automate industrial processes, like quality control.</p>
+</li>
+<li>
+<p><strong>Spam filters:</strong> Machine learning algorithms used to filter out spam emails from your inbox.</p>
+</li>
+</ul>
+<p>The following recommendations are for an application evaluated as having a <strong>Low</strong> impact level regarding the principle of <strong>privacy</strong>.</p>
+<h2>Recommendations</h2>
+<p>An application with a <strong>low level of impact</strong> should implement the following measures:</p>
+<ul>
+<li>
+<p><strong>Encryption techniques:</strong> <strong>Symmetric</strong> or <strong>Asymmetric</strong> encryption techniques, secure communication through safe protocols (<strong>HTTPS</strong> and <strong>TLS</strong>), and regularly updating security software (<strong>firewalls</strong> and <strong>antivirus</strong>) can help protect systems against unauthorized access.</p>
+</li>
+<li>
+<p><strong>Privacy by Design:</strong> Data minimization techniques, such as <strong>data augmentation</strong> and sampling, can help minimize the amount of data collected.</p>
+</li>
+<li>
+<p><strong>Data Governance:</strong> Governance platforms and <strong>data mapping tools</strong> can help developers and responsible stakeholders track and monitor data collection and use practices.</p>
+</li>
+<li>
+<p><strong>Privacy Policies:</strong> Privacy policies should be used to clearly explain how data will be - <em>or not</em> - collected, used, and shared. In situations where personal data will be collected, <strong>consent forms</strong> should be used to obtain permission from individuals.</p>
+</li>
+</ul>
+<h2>How to increase Privacy?</h2>
+<h3><strong>Encryption</strong></h3>
+<p>There are many encryption techniques used to safeguard data. The two great families of encryption algorithms are known as <strong>symmetric</strong> and <strong>asymmetric</strong>.</p>
+<p>Symmetric encryption can be used for safely storing data, securely transmitting data, and encrypting session data for secure communication in real-time applications. Some of the most standard symmetric encryption algorithms are AES (<strong>Advanced Encryption Standard</strong>), DES (<strong>Data Encryption Standard</strong>), and 3DES (<strong>Triple Data Encryption Standard</strong>). Current transfer protocols (like <strong>HTTPS</strong>, empowered by <strong>TLS</strong>) use these types of encryption to ensure safe networking.</p>
+<p>Asymmetric encryption can be used mainly for verification purposes, like certifying the authenticity and integrity of data and securing network traffic. Some of the most standard asymmetric encryption algorithms are RSA (<strong>Rivest-Shamir-Adleman</strong>), ECC (<strong>Elliptic Curve Cryptography</strong>), and ECDH (<strong>Elliptic-curve Diffie–Hellman</strong>).</p>
+<p>Developers who need to gain expertise in cyber security should avoid building their encryption methods and rely on the trusted services of platforms that provide secure back-end infrastructure. <strong>Choosing a reliable PaaS for data protection is beyond the scope of EPS.</strong></p>
+<p>As external sources of knowledge, forums like <a href="https://security.stackexchange.com/" target="_blank">security.stackexchange</a> can help developers with doubts about security issues (<em>the help of professionals/experts should always be welcomed and prioritized over AI-assisted input</em>).</p>
+<h3>Privacy by Design (<strong>Data minimization</strong>)</h3>
+<p>Data minimization is a process that entails solely collecting, storing, and processing the data needed for a particular purpose. Data minimization intends to lessen the danger of data breaches while protecting people's privacy.</p>
+<p>There are many strategies developers can use to minimize data storage and collection. For example:</p>
+<ul>
+<li>
+<p>Developers should restrict data collection processes to only what is necessary and sufficient. Meanwhile, data that has no use for the intended purposes of the application should be deleted or not collected in the first place.</p>
+</li>
+<li>
+<p>After all data types considered essential to the application are defined, the collection should be dutifully informed (and consented) to the data subjects.</p>
+</li>
+<li>
+<p>Data sampling can give analysts insight into the whole distribution. For example, a surveyor may collect data from a sample of 1000 people to represent the opinion of a city's population.</p>
+</li>
+<li>
+<p>Another way to minimize the data needed is to use data augmentation techniques to mimic true data. For example, Fake data can be used to test in production software. Libraries like <a href="https://github.com/faker-js/faker" target="_blank">Faker</a> can help you with this task. One can even find <a href="https://www.tonic.ai/" target="_blank">companies</a> that provide data augmentation and mimicking services.</p>
+</li>
+<li>
+<p>As an organizational policy, data that has lived past its usefulness should be disposed of. Also, data hoarding should be discouraged.</p>
+</li>
+</ul>
+<p>Policies like this can help organizations minimize their data storage costs.</p>
+<h3>Data Governance (<strong>Data Mapping</strong>)</h3>
+<p>Insufficient insight into massive data pools can lead to data hoarding and poorly managed data storage. Administrators may need help when databases are too big. Data governance platforms or mapping tools can help administrators track and monitor data collection and efficiently use practices.</p>
+<p>Data governance platforms are software tools that help organizations manage and govern their data. They allow organizations to establish policies and procedures for data management, including data collection, storage, and use. They also provide mechanisms to monitor compliance with these policies, such as data lineage and quality monitoring. Some examples of data governance platforms include:</p>
+<ul>
+<li><a href="https://www.amundsen.io/" target="_blank">Amundsen</a>.</li>
+<li><a href="https://datahub.io/" target="_blank">DataHub</a></li>
+<li><a href="https://atlas.apache.org/#/" target="_blank">Apache Atlas</a>.</li>
+</ul>
+<p>Data mapping tools visually represent the relationships between different data elements and their use across an organization. They map the data flow, identify data owners and stewards, and help create an understanding of the impact of data governance policies on data usage. Some examples of data mapping tools include:</p>
+<ul>
+<li><a href="https://carto.com/" target="_blank">Carto</a>.</li>
+<li><a href="https://www.talend.com/products/talend-open-studio/" target="_blank">Talend Open Studio</a>.</li>
+<li><a href="https://usc-isi-i2.github.io/karma/" target="_blank">Karma</a>.</li>
+</ul>
+<p>These tools track and monitor data collection and use practices and help organizations to ensure compliance with local regulations. Organizations can also build their data mapping tools. Languages like Python have a long list of data visualization libraries that can assist in the creation of informational dashboards, such as:</p>
+<ul>
+<li><a href="https://dash.plotly.com/" target="_blank">Dash</a>.</li>
+<li><a href="https://plotly.com/python/" target="_blank">Plotly</a>.</li>
+<li><a href="https://seaborn.pydata.org/" target="_blank">Seaborn</a>.</li>
+<li><a href="https://matplotlib.org/" target="_blank">Matplotlib</a>.</li>
+<li><a href="https://pandas.pydata.org/" target="_blank">Pandas</a>.</li>
+</ul>
+<h3>Privacy Policies</h3>
+<p>Privacy policies are a way to communicate to users how their data will be collected and used. Best practice privacy policies are available to all users and clearly specify the information being monitored (e.g., name, address, etc.). You can use an online privacy policy generator to generate a privacy policy <a href="https://www.privacypolicies.com/privacy-policy-generator/" target="_blank">here</a>.</p>
+<p>In the case that data is collected, consent forms should be used. For more information, follow the recommendations of your local <a href="https://www.gov.br/cidadania/pt-br/acesso-a-informacao/lgpd" target="_blank">GDPR</a>.</p>

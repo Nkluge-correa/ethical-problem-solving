@@ -1,0 +1,14 @@
+question: "Does the application or service use nudging techniques to influence the behavior of its users?"
+multiple: false
+options: 
+  - "Yes, to limit the range of possible user decisions" 
+  - "Yes, to influence the user's possible decisions" 
+  - "No, the decision environment has been designed so as not to interfere with user autonomy"
+scores:
+  - 1.0
+  - 1.0
+  - 0.0
+privacy: false
+beneficence: true
+accountability: false
+information: "Nudging techniques refer to behavioral influence strategies designed to direct or nudge individuals' choices towards specific decisions."

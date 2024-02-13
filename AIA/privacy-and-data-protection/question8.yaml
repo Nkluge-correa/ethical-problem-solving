@@ -1,0 +1,16 @@
+question: "If you use personal or sensitive data in your application to carry out public health studies, which measures have been adopted to protect this data?"
+multiple: false
+options: 
+  - "Our research adheres to strict regulations and ethical standards, ensuring data is processed within our organization, stored securely, and used for studies, with results disseminated without revealing personal information, and confidentiality agreements signed."
+  - "No measures have been adopted"
+  - "Personal or sensitive are not collected to carry out our studies"
+  - "Does not apply"
+scores:
+  - -1.0
+  - 1.0 
+  - 0.0
+  - 0.0
+privacy: true
+transparency: true
+accountability: true
+information: "Sensitive data, or attributes, are those that can be used to discriminate against an individual based on features like race, age, gender, etc."

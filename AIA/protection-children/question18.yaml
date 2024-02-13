@@ -1,0 +1,14 @@
+question: "What is the organization's protocol in the event of violations of users' rights?"
+multiple: false
+options: 
+  - "The organization already has an internal protocol to deal with such issues"
+  - "The organization already has a protocol and a direct line of contact with the bodies responsible for the rights of children and adolescents"
+  - "The organization leaves it up to users and their legal guardians to notify the competent authority in the event of violations of users' rights"
+scores:
+  - 0.50  
+  - 0.0
+  - 1.0
+privacy: false
+beneficence: true
+accountability: true
+information: null

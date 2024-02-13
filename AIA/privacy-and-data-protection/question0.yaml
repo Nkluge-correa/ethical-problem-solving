@@ -1,0 +1,14 @@
+question: "Does the application utilize or create a behavioral profile of the user?"
+multiple: false
+options: 
+  - "Yes"
+  - "No"
+  - "Does not apply"
+scores:
+  - 1.0
+  - 0.0
+  - 0.0
+privacy: true
+transparency: false
+accountability: false
+information: "A behavioral profile is a collection of data that describes an individual's actions, preferences, and habits."

@@ -1,0 +1,14 @@
+question: "Was the application developed by your own organization?"
+multiple: false
+options: 
+  - "The application was fully developed by the organization"
+  - "The application is based on a third-party technology, but customized to meet the desired purposes"
+  - "The application is based on off-the-shelf third-party technology"
+scores:
+  - 0.0 
+  - 0.50
+  - 1.0
+privacy: true
+transparency: true
+accountability: true
+information: null

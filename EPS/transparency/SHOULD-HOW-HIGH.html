@@ -1,0 +1,91 @@
+<h1>High</h1>
+<p>EPS uses an evaluation matrix to calculate impacts associated with an application. The three categories in this matrix are <strong>Low</strong>, <strong>Intermediate</strong>, and <strong>High</strong>. From low to high, each category has a set of suggestions to guide future implementations.</p>
+<p>EPS measures the impact level of an application regarding transparency through a correlation between the algorithmic complexity and how critical the system decision is considering the scope of use.</p>
+<p>The following intended uses are representative of the High-impact level:</p>
+<ul>
+<li>
+<p><strong>Public administration:</strong> AI algorithms used to improve decision-making, increase efficiency, enhance public services, and improve communication with citizens.</p>
+</li>
+<li>
+<p><strong>Predictive policing:</strong> AI algorithms used to aid in crime prevention and allocate police resources.</p>
+</li>
+<li>
+<p><strong>Facial recognition:</strong> AI algorithms utilized to recognize and track individuals via face images.</p>
+</li>
+<li>
+<p><strong>Healthcare diagnosis:</strong> AI algorithms used to assist in medical diagnosis.</p>
+</li>
+</ul>
+<p>The following recommendations are for an application evaluated to a <strong>High</strong> impact level regarding the principle of <strong>transparency</strong>.</p>
+<h2>Recommendations</h2>
+<p>An application with a <strong>High level  of impact</strong> should implement the following measures:</p>
+<ul>
+<li>
+<p>Details about the model and dataset must be provided in a <strong>model card</strong>. <a href="https://arxiv.org/abs/1810.03993" target="_blank">Model cards</a> offer an easy way to ensure <em>transparency</em> and <em>accountability</em>. In a <strong>High-impact</strong> application, the following information should be disclosed:</p>
+<ul>
+<li>General information about the responsible developers (e.g., development team leader).</li>
+<li>General information about the nature of the model (e.g., what type of model?).</li>
+<li>A performance report.</li>
+<li>The origins of the data used in data collection, pre-processing, and possible sources of bias that may influence future statistical models.</li>
+<li>Adequate operational domain and out-of-scope applications.</li>
+<li>Model's performance against fairness metrics and a Fairness Statement;</li>
+</ul>
+</li>
+<li>
+<p>In <strong>High</strong> impact applications, models should be made available for auditing. In situations where intellectual property must be preserved, confidentiality agreements or NDAs can be used to avoid breaches in intellectual property. However, this should not preclude the publication of conclusions drawn from the access and analysis of the model. Auditors can be formed by, but not exclusively, stakeholders such as:</p>
+<ul>
+<li>Third-party auditors;</li>
+<li>Competent authorities;</li>
+<li>Trusted intermediaries (e.g., regulators, researchers, and courts).</li>
+</ul>
+</li>
+</ul>
+<p>White-box models should always be preferred in terms of transparency. Black-box models should be avoided in <strong>High-Impact</strong> applications since the interpretability of opaque models (<em>like deep neural networks</em>) is still challenging. Simultaneously, shallow models (<em>to the greatest extent possible</em>) should be prioritized when using Machine Learning since they are easier to interpret.</p>
+<h2>How to increase transparency?</h2>
+<h3>Model Cards for Model Reporting</h3>
+<p><a href="https://arxiv.org/abs/1810.03993" target="_blank"><strong>Model cards</strong></a> are short documents accompanying machine learning models. Such cards provide details and performance characteristics of a model in question, helping to visualize transparency and accountability behaviors in developing autonomous systems.</p>
+<p>Platforms like Hugging Face incentivize the display of model cards and dataset cards for all objects hosted in the Hub. <a href="https://huggingface.co/docs/hub/model-cards" target="_blank">Here</a> and <a href="https://huggingface.co/docs/hub/datasets-cards" target="_blank">here</a>, you can find examples of how to develop your own model and dataset cards. We also provide a tutorial on generating this kind of report [<a href="(https://github.com/Nkluge-correa/teeny-tiny_castle/blob/master/ML%20Accountability/Model%20Cards/model_card_generator.ipynb)" target="_blank">👉 notebook</a>].</p>
+<h3>Computer Vision Applications</h3>
+<p>One of the main ideas behind XAI is that "<em>complex systems (like neural networks) need to be interpretable to humans.</em>" In response to the concerns raised against model opacity, the field of interpretability (specifically in CV applications) has formed two standard approaches: <strong>feature visualization</strong> and <strong>saliency mapping</strong>.</p>
+<p>Platforms like Hugging Face incentivize the display of model cards and dataset cards for all objects hosted in the Hub. <a href="https://huggingface.co/docs/hub/model-cards" target="_blank">Here</a> and <a href="https://huggingface.co/docs/hub/datasets-cards" target="_blank">here</a>, you can find examples of how to develop your own model and dataset cards, while <a href="https://huggingface.co/spaces/huggingface/Model_Cards_Writing_Tool" target="_blank">here</a> you can find and application to help you fill this document. We also provide a tutorial on generating this kind of report [<a href="(https://github.com/Nkluge-correa/teeny-tiny_castle/blob/master/ML%20Accountability/Model%20Cards/model_card_generator.ipynb)" target="_blank">👉 notebook</a>].</p>
+<ul>
+<li><strong>Note:</strong> We also recommend the study of the "<em><a href="https://distill.pub/2020/circuits/" target="_blank">Circuits</a></em>" series, which thoroughly explains how features and activation maps can be interpreted. Also, for a comprehensive explanation of the limitations and difficulties related to saliency mapping techniques, we recommend "<em><a href="https://arxiv.org/abs/2002.00772" target="_blank">Evaluating Saliency Map Explanations for Convolutional Neural Networks: A User Study</a></em>".</li>
+</ul>
+<p>The idea of building saliency maps is based on a technique called <strong>Integrated Gradients</strong>. Proposed in "<em><a href="https://arxiv.org/abs/1703.01365" target="_blank">Axiomatic Attribution for Deep Networks</a></em>", this methodology uses the gradient of a model to determine what <em>influences</em> the individual inputs (<em>like words in a sentence or pixels in an image</em>) have on the output of a model. This methodology can be used in multi-modal models that combine CV with, for example, NLP. This tutorial shows how to interpret diffusion models in this fashion [<a href="https://github.com/Nkluge-correa/teeny-tiny_castle/blob/master/ML%20Explainability/CV%20Interpreter/diffusion_interpreter.ipynb" target="_blank">👉notebook</a>]. Meanwhile, the subsequent tutorial explains the <strong>LIME</strong> methodology (<em>Local Interpretable Model-agnostic Explanations</em>), which also employs gradient integration techniques in the explanation of CV models [<a href="https://github.com/Nkluge-correa/teeny-tiny_castle/blob/master/ML%20Explainability/CV%20Interpreter/CNN_attribution_maps_with_LIME.ipynb" target="_blank">👉notebook</a>].</p>
+<p>Also, the following libraries can help you further push the interpretability of CV models:</p>
+<ul>
+<li><a href="https://captum.ai/" target="_blank">Captum</a>.</li>
+<li><a href="https://github.com/JoaoLages/diffusers-interpret" target="_blank">Diffusers-Interpret</a>.</li>
+<li><a href="https://github.com/SeldonIO/alibi" target="_blank">Alibi</a>.</li>
+<li><a href="https://github.com/marcotcr/lime" target="_blank">Lime</a>.</li>
+</ul>
+<h3>Natural Language Processing Applications</h3>
+<p>Local Interpretable Model-agnostic Explanations can also be employed in NLP models, producing a saliency mapping on tokens instead of pixels. The following tutorials present demonstrations of how to apply gradient integration techniques to different types of models used in language processing [<a href="https://github.com/Nkluge-correa/teeny-tiny_castle/blob/master/ML%20Explainability/NLP%20Interpreter/lime_for_NLP.ipynb" target="_blank">👉notebook</a>] [<a href="https://github.com/Nkluge-correa/teeny-tiny_castle/blob/master/ML%20Explainability/NLP%20Interpreter/integrated_gradients_in%20_keras_nlp.ipynb" target="_blank">👉notebook</a>] [<a href="https://github.com/Nkluge-correa/teeny-tiny_castle/blob/master/ML%20Explainability/NLP%20Interpreter/gradient_explanations_BERT.ipynb" target="_blank">👉notebook</a>].</p>
+<p>Another way to explore language and ML models, in general, is by investigating the data they were trained on. Suppose we have text datasets of manageable size. In that case, one can also use <strong>text mining</strong> techniques to examine the distribution of patterns (e.g., sentiment, word recurrence, toxicity, etc.) in a text corpus. In this tutorial, we demonstrate how to use introductory text mining techniques [<a href="https://github.com/Nkluge-correa/teeny-tiny_castle/blob/master/ML%20Explainability/NLP%20Interpreter/text_mining.ipynb" target="_blank">👉notebook</a>].</p>
+<p>Finally, another way to interpret language models, at least those representing language as dense vectors, is by analyzing word/token embeddings. Embeddings are dense vector representations of words (or sub-words) that capture semantic and syntactic information about the tokens they represent. In the following tutorials, you can learn how to create and interpret a word2vector model and the embedding layer of a pre-trained language model [<a href="https://github.com/Nkluge-correa/teeny-tiny_castle/blob/master/ML%20Explainability/NLP%20Interpreter/word2vec.ipynb" target="_blank">👉notebook</a>] [<a href="https://github.com/Nkluge-correa/teeny-tiny_castle/blob/master/ML%20Explainability/NLP%20Interpreter/investigating_word_embeddings.ipynb" target="_blank">👉notebook</a>].</p>
+<p>Also, the following libraries can help you further push the interpretability of NLP models:</p>
+<ul>
+<li><a href="https://github.com/interpretml/interpret-text" target="_blank">Interpret-Text</a>.</li>
+<li><a href="https://captum.ai/" target="_blank">Captum</a>.</li>
+<li><a href="https://github.com/SeldonIO/alibi" target="_blank">Alibi</a>.</li>
+<li><a href="https://github.com/marcotcr/lime" target="_blank">Lime</a>.</li>
+</ul>
+<h3>Classification/Forecasting Applications</h3>
+<p>Many commercial ML applications train classification or regression models with <strong>tabular data</strong>. The following notebook elaborates on how to interpret the classifications provided by the outputs of these types of models using techniques such as statistical database analysis, <strong>Breakdown plots</strong>, <strong>Interactive Breakdown plots</strong>, <strong>Shapley Additive Explanations</strong>, and <strong>LIME</strong> [<a href="https://github.com/Nkluge-correa/teeny-tiny_castle/blob/master/ML%20Explainability/Tabular%20Interpreter/interpreter_for_tabular.ipynb" target="_blank">👉notebook</a>].</p>
+<p>Occasionally, statistical analysis may fail to provide a compelling justification for a particular classification. <strong>What-if</strong> tools can give us a more precise (and causally related) insight into these circumstances. In the next tutorial, we offer a demonstration of how to investigate how inputs and parameters affect the model's outputs using <strong>what-if</strong> tools [<a href="https://github.com/Nkluge-correa/teeny-tiny_castle/blob/master/ML%20Explainability/Tabular%20Interpreter/fairness_xai_COMPAS.ipynb" target="_blank">👉notebook</a>].</p>
+<p>Also, the following libraries can help you further push the interpretability of ML models in general:</p>
+<ul>
+<li><a href="https://github.com/PAIR-code/what-if-tool" target="_blank">What-If-Tool</a>.</li>
+<li><a href="https://github.com/interpretml/interpret" target="_blank">InterpretML</a>.</li>
+<li><a href="https://github.com/ModelOriented/DALEX" target="_blank">DALEX</a>.</li>
+<li><a href="https://github.com/SeldonIO/alibi" target="_blank">Alibi</a>.</li>
+<li><a href="https://github.com/marcotcr/lime" target="_blank">Lime</a>.</li>
+</ul>
+<h3>Data Transparency for Foundational Models</h3>
+<p>High-impact applications should extend transparency beyond the system to the dataset itself, as in the case of high-impact applications built on top of foundation models. A <strong>foundation model</strong> is a large model trained at scale on a large corpus of unlabeled data (typically by self-supervised learning), resulting in a model that can adapt to a wide range of downstream tasks.</p>
+<p>However, auditing massive datasets has been a challenge that accompanied these foundational models since their inception. Searching for strings or image data on datasets containing billions of samples can be time-consuming if we do not use the proper tools. <a href="https://dataportraits.org/" target="_blank"><strong>Data portraits</strong></a> is a proposal that allows developers to shrink datasets to "<em>3%</em>" of their current size, allowing for fast auditing and efficient transparency. For more instructions on how to use this tool, explore Data Portraits <a href="https://github.com/ruyimarone/data-portraits" target="_blank">GitHub repository</a>.</p>
+<p>In cases where the creation of data portraits is not possible, documenting datasets in a structured way is a recommended measure. <strong>Data Cards</strong> are structured summaries of essential facts about various aspects of ML datasets stakeholders need across a project's lifecycle for responsible AI development. To aid you in the development of a data card, we recommend "<a href="https://sites.research.google/datacardsplaybook/" target="_blank">The Data Cards Playbook</a>," which can help dataset producers and publishers adopt a people-centered approach to transparency in dataset documentation. Below, we have other tools you can use to aid in this process:</p>
+<ul>
+<li><a href="https://github.com/mlcommons/croissant/" target="_blank">Croissant</a>.</li>
+<li><a href="https://github.com/huggingface/datasets/blob/main/templates/README_guide.md" target="_blank">Dataset Card Creation Guide</a>.</li>
+</ul>

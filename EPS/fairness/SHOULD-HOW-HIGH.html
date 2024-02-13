@@ -1,0 +1,141 @@
+<h1>High</h1>
+<p>EPS uses an evaluation matrix to calculate impacts associated with an application. The three categories in this matrix are <strong>Low</strong>, <strong>Intermediate</strong>, and <strong>High</strong>. From low to high, each category has a set of suggestions.</p>
+<p>EPS measures the level of impact of an application regarding fairness through how sensitive attributes or proxies are related to the workings of a given AI system and application.</p>
+<p>The following intended uses are representative of the <strong>High</strong> level of impact:</p>
+<ul>
+<li>
+<p><strong>Predictive policing:</strong> AI algorithms used to predict crime and allocate police resources.</p>
+</li>
+<li>
+<p><strong>Social credit systems:</strong> AI-powered social credit systems used to rate citizens based on their behavior and activities.</p>
+</li>
+<li>
+<p><strong>Facial recognition:</strong> AI algorithms utilized to recognize and track individuals.</p>
+</li>
+<li>
+<p><strong>Public administration:</strong> AI algorithms used to improve decision-making, increase efficiency, enhance public services, and improve communication with citizens.</p>
+</li>
+<li>
+<p><strong>National Security:</strong> AI algorithms utilized to detect and prevent threats and enhance intelligence gathering and analysis.</p>
+</li>
+</ul>
+<p>The following recommendations are for an application evaluated as having a <strong>High</strong> impact level regarding the principle of <strong>fairness</strong>.</p>
+<h2>Recommendations</h2>
+<p>An application with a <strong>high level of impact</strong> should implement the following measures:</p>
+<ul>
+<li>
+<p><strong>Model card:</strong> Details about the model and dataset must be provided in a <a href="https://arxiv.org/abs/1810.03993" target="_blank">model card</a>. It is an easy way to disclose possible or potential biases. For applications with a <strong>high</strong> level of impact, the <strong>model card</strong> should be accompanied by a justification for utilizing sensitive attributes, or proxies, in the application.</p>
+</li>
+<li>
+<p><strong>Fairness Statement:</strong> This assertion outlines the organization's approach to the issue of fairness in the performance of the system/application. For applications with a <strong>high</strong> level of impact, the <strong>fairness statement</strong> should also be accompanied by a fairness evaluation (e.g., <strong>fairness metric scores</strong>).</p>
+</li>
+<li>
+<p><strong>Counterfactual Fairness:</strong> This tool seeks to determine whether a decision made by a model would have been the same or different if specific attributes were different, i.e., a "what if" scenario. It is an assessment for causal evaluations beyond statistical metric evaluations.</p>
+</li>
+<li>
+<p><strong>Monitoring and Explaining:</strong> While metrics such as a <strong>Disparate Impact Score</strong> are a simple way to make biases evident, they might be too simplistic for applications with a <strong>high</strong> level of impact. Tracking the model's performance in production and measuring the impact of sensitive attributes in predicting a model is necessary to prevent unfair outcomes.</p>
+</li>
+</ul>
+<h2>How to increase fairness?</h2>
+<h3>Model Cards for Model Reporting</h3>
+<p><a href="https://arxiv.org/abs/1810.03993" target="_blank"><strong>Model cards</strong></a> are short documents accompanying machine learning models. Such cards provide details and performance characteristics of a model in question and can help publicize potential biases of a dataset or model.</p>
+<p>Platforms like Hugging Face incentivize the display of model cards and dataset cards for all objects hosted in the Hub. <a href="https://huggingface.co/docs/hub/model-cards" target="_blank">Here</a> and <a href="https://huggingface.co/docs/hub/datasets-cards" target="_blank">here</a>, you can find examples of how to develop your own model and dataset cards. We also provide a tutorial on generating this kind of report [<a href="(https://github.com/Nkluge-correa/teeny-tiny_castle/blob/master/ML%20Accountability/Model%20Cards/model_card_generator.ipynb)" target="_blank">👉 notebook</a>].</p>
+<h3>Fairness Statement (<strong>fairness metrics</strong>, <strong>bias mitigation techniques</strong>)</h3>
+<p>A <strong>fairness statement</strong> typically includes information about the data used to train the model, the <strong>fairness metrics</strong> used to evaluate the model's performance, the <strong>bias mitigation techniques</strong> used to address any identified biases, and the steps taken to ensure alignment with ethical and legal standards. At the same time, a fairness statement can contain a warning regarding bias issues users might experience.</p>
+<h4><strong>Fairness Metrics</strong></h4>
+<p>To provide quantitative measures for the fairness evaluation of a machine learning model, a <strong>confusion matrix</strong> is quite helpful for navigating several quantitative <strong>fairness metrics</strong>. A <strong>Confusion Matrix</strong> is a table used to evaluate the performance of a classification model by comparing the actual and predicted values of a set of test data. On this matrix, you will find ratios for:</p>
+<ul>
+<li>
+<p><strong>True Positives (TP):</strong> True Positive is a case where the model predicted a positive value, and the actual value was also positive.</p>
+</li>
+<li>
+<p><strong>False Positives (FP):</strong> False Positive is a case where the model predicted a positive value, but the actual value was negative.</p>
+</li>
+<li>
+<p><strong>True Negatives (TN):</strong> True Negative is a case where the model predicted a negative value, and the actual value was also negative.</p>
+</li>
+<li>
+<p><strong>False Negatives (FN):</strong> False Negative is a case where the model predicted a negative value, but the actual value was positive.</p>
+</li>
+</ul>
+<p>These ratios should be similar when comparing groups possessing different sensitive attributes. For example, a significant difference in FP for a sensitive attribute like gender indicates that the system tends to assign (wrongly) the positive class for people with a specific gender type. A naive approach to solving such an issue would involve hiding all known sensitive attributes from the model. Nevertheless, such a solution ignores that proxies can infer sensitive attributes. For example, in a racially segregated city, <strong>address</strong> is a proxy for <strong>race</strong>.</p>
+<p>If we suspect a feature is a proxy for a sensitive attribute, <strong>fairness metrics</strong> can help us further inspect their relationship with the model's output. Fairness metrics are a set of measures that enable you to detect the presence of bias in your model. These metrics can be used to identify disparities in the decision-making process of an algorithm. However, quantitative fairness metrics may be ill-suited for certain types of systems (e.g., generative models). Even though one can explore statistical distributions of generated content (like we do in this tutorial <a href="https://github.com/Nkluge-correa/teeny-tiny_castle/blob/master/ML%20Fairness/nlp_fairness_distilgpt2.ipynb" target="_blank">[👉notebook]</a>), the exploration of biases in generative models usually follows a more qualitative and exploratory approach, where analysts try to uncover hidden (and sometimes not so hidden) tendencies and functionalities of such systems.</p>
+<p>In regards to fairness metrics, here are some of the most used methods in the field:</p>
+<ul>
+<li>
+<p><strong>Statistical Parity Ratio (SPR):</strong> SPR compares the proportion of members of a given group that were classified for the positive class (i.e., correctly or not, a.k.a., TP + FP) to another group (privileged | unprivileged).</p>
+</li>
+<li>
+<p><strong>Equal Opportunity Ratio (EOR):</strong> EOR compares the true positive rate (i.e., TPR, a.k.a., <em>Sensitivity/Recall</em>) of different groups (privileged | unprivileged).</p>
+</li>
+<li>
+<p><strong>Predictive Parity Ratio (PPR):</strong> PPR compares the positive predictive value (i.e., PPV, a.k.a., <em>Precision</em>) of different groups (privileged | unprivileged).</p>
+</li>
+<li>
+<p><strong>Predictive Equality Ratio (PER):</strong> PER compares the false positive rate (FPR, a.k.a., <em>fall-out/false alarm ratio</em>) of different groups (privileged | unprivileged).</p>
+</li>
+<li>
+<p><strong>Accuracy Equality Ratio (AER):</strong> Accuracy Equality Ratio compares the proportion of group members that were correctly classified (i.e., <em>accuracy</em>) to another group (privileged | unprivileged).</p>
+</li>
+<li>
+<p><strong>Equalized Odds (EO):</strong> EO is the most restrictive quantitative metric of ML Fairness. This criterion is only satisfied if both groups (privileged | unprivileged) have equal TPR and FPR.</p>
+</li>
+</ul>
+<p>Considering applications of a <strong>high level of impact</strong>, we recommend the metric of <strong>equalized odds</strong>, which should clarify the fairness issues. <strong>Equalized Odds</strong> are recognized as the most restrictive of all statistical metrics. High-impact applications should approximate an equitable balance between <strong>true positive</strong> and <strong>false positive</strong> rates. Nevertheless, considering that sensitive attributes play a significant part in the decision-making process, the choice of <strong>fairness</strong> metric should come with a clear justification.</p>
+<ul>
+<li><strong>Note:</strong> It has been shown that it is <a href="https://arxiv.org/abs/2007.06024" target="_blank">impossible to satisfy all fairness metrics simultaneously.</a> (<a href="%5Btext%5D(https://arxiv.org/abs/1609.05807)" target="_blank">source</a>). Thus, the choice of which metric to use must be made according to the context of an application (i.e., benefit awarding, medical diagnosis, etc.).</li>
+</ul>
+<p>A possible criticism against Fairness measures based only on statistical variations between groups and subgroups is that "<em>correlation is not causation.</em>"</p>
+<p>Another class of fairness metrics (and interpretability tools) exists to address this issue. In ML Fairness, these methods are called <a href="https://www.frontiersin.org/articles/10.3389/fdata.2022.892837/full" target="_blank">Causality-Based Fairness</a>, and in ML Interpretability (XAI), we call these <a href="https://ema.drwhy.ai/ceterisParibus.html#ref-ICEbox" target="_blank">What-if models</a> or Individual Conditional Expectations.</p>
+<p>One of these conditional approaches is called <em>Ceteris paribus</em> (CP) profiles, meaning "<em>all else unchanged</em>." Think of it this way: "<em>If everything else was the same, minus this change, then what?</em>"</p>
+<p>Ceteris paribus methods focus on evaluating the effect of a selected explanatory variable in terms of changes in a model's prediction induced by changes in the variable's values, i.e., <em>what would be the model prediction if this single variable is different?</em> The main goal of this methodology is to understand how changes in the values of the variable affect the model's predictions.</p>
+<p>This methodology appeals to the field of XAI as it can explain a single classification by not relying on statistical evaluations of an entire population but rather on the causal influence that certain features have on the classification of a model.</p>
+<p>A CP profile is nothing more than a profile of how the classification of a model varies concerning a change in a single exploratory variable. And this can be used directly to measure something called <a href="https://arxiv.org/abs/1703.06856" target="_blank">Counterfactual Fairness</a>.</p>
+<p>Counterfactual Fairness has an intuitive and straightforward definition of fairness. An algorithm is said to be counterfactually fair if, <em>and only if</em>, the probability that the individual <strong>X</strong>, member of a group <strong>a</strong>, would be unchanged, even if we lived in a world where individual <strong>X</strong> was of the group <strong>b</strong>.</p>
+<p>In summary, these methods involve modeling the relationships between the sensitive attribute, the decision-making process, and the outcome by simulating counterfactual scenarios and evaluating counterfactual outcomes in these scenarios. We recommend using such techniques in applications with a <strong>high level of impact</strong>. The following tutorials are focused on how to apply <strong>Counterfactual Fairness</strong> [<a href="https://github.com/Nkluge-correa/teeny-tiny_castle/blob/master/ML%20Fairness/ceteris_paribus_profiles.ipynb" target="_blank">👉notebook</a>] and [<a href="https://github.com/Nkluge-correa/teeny-tiny_castle/blob/master/ML%20Explainability/Tabular%20Interpreter/fairness_xai_COMPAS.ipynb" target="_blank">👉notebook</a>].</p>
+<h4><strong>Bias Mitigation</strong></h4>
+<p><strong>Bias mitigation techniques</strong> are used to reduce or eliminate the impact of bias in machine learning models. These techniques ensure that the model's predictions are equitable for individuals, regardless of their demographic characteristics. For an application of an <strong>intermediate level of impact,</strong> these should be useful:</p>
+<ul>
+<li>
+<p><strong>Data Preprocessing:</strong> It involves cleaning and preparing the data to remove possible sources of bias in the dataset. It includes eliminating features, samples, and balancing the data to ensure it represents all demographic groups fairly.</p>
+</li>
+<li>
+<p><strong>Model Retraining:</strong> Retraining the model on a more diverse dataset or with more varied features can help reduce bias. It is already possible to find datasets where diversity is protected. For example, the <a href="https://github.com/joojs/fairface" target="_blank"><strong>FairFace</strong></a> dataset has a balanced race, gender, and age distribution of images of human faces. At the same time, such datasets can be used to evaluate models.</p>
+</li>
+<li>
+<p><strong>Regularization &amp; Reweighting:</strong> These are techniques used to penalize the model for making decisions that disproportionately affect certain demographic groups and for altering the feature values in a dataset, distancing the model from the true distribution. Optimizing for fairness instead of accuracy can help create models that produce equitable outputs.</p>
+</li>
+<li>
+<p><strong>Human oversight:</strong> This involves incorporating human supervision into the pipeline of an ML system, such as using a <a href="https://en.wikipedia.org/wiki/Human-in-the-loop" target="_blank"><strong>human-in-the-loop</strong></a> system or having a human moderator to ensure that the algorithm's output is fair and unbiased.</p>
+</li>
+</ul>
+<p>The following libraries can help you further push for bias-reduction in your models:</p>
+<ul>
+<li><a href="https://dalex.drwhy.ai/python/api/fairness/index.html" target="_blank">Dalex</a>.</li>
+<li><a href="https://www.ibm.com/opensource/open/projects/ai-fairness-360/" target="_blank">AI Fairness 360</a>.</li>
+<li><a href="https://fairlearn.org/v0.8/auto_examples/index.html" target="_blank">Fairlearn</a>.</li>
+<li><a href="https://github.com/topics/fairness-ml" target="_blank">Others</a>.</li>
+</ul>
+<p>Also, the following tutorials focus on the application of fairness metrics in different contexts and more [<a href="https://github.com/Nkluge-correa/teeny-tiny_castle/blob/master/ML%20Fairness/fair_metrics_Credit_card_approval.ipynb" target="_blank">👉notebook</a>,
+<a href="https://github.com/Nkluge-correa/teeny-tiny_castle/blob/master/ML%20Fairness/fair_metrics_celeba.ipynb" target="_blank">👉notebook</a>,
+<a href="https://github.com/Nkluge-correa/teeny-tiny_castle/blob/master/ML%20Fairness/nlp_fairness_distilgpt2.ipynb" target="_blank">👉notebook</a>].</p>
+<h3>Monitoring and Explaining</h3>
+<p>In real-world scenarios, ML models have to deal with dynamic environments. Datasets can only be a snapshot of reality, forcing us to constantly adapt and refine the supervision signal we feed to our models. Monitoring is vital for tracking the model's performance during production. Issues like model biases can be resolved by regularly monitoring how the model performs over time.</p>
+<p>Those responsible for developing or overseeing automated systems should conduct proactive equity assessments during the model's design phase, during development, testing, and beyond. Model sunset should be considered an option when a model is irreparably dysfunctional.</p>
+<p>These are a few steps to elevate the monitoring of a model:</p>
+<ul>
+<li>
+<p><strong>Real-world testing:</strong> Evaluating the algorithm's performance in real-world scenarios aims to ensure fair outcomes and not adversely affect any particular demographic group.</p>
+</li>
+<li>
+<p><strong>User Feedback:</strong> User feedback on the algorithm's outcomes contributes to identifying any biases or disparities that may not be captured by other metrics or evaluation techniques.</p>
+</li>
+<li>
+<p><strong>Continuous Monitoring:</strong> Continuously monitor the algorithm's outcomes and re-evaluate it as new data and situations arise.</p>
+</li>
+<li>
+<p><strong>Updates:</strong> Regularly update the algorithm and its evaluation methods as needed to ensure that it remains fair and equitable.</p>
+</li>
+</ul>
+<p>Explaining an ML model's operation can also illustrate how sensitive attributes influence this algorithmic process. In some industries, such as finance or healthcare, there may even be legal or regulatory requirements for explaining the impact of sensitive attributes in AI models.</p>
+<p>Compliance with these regulations is essential for avoiding legal and reputational risks. Here, <strong>Fairness</strong> and <strong>Transparency</strong> intersect. The following tutorials are focused on <strong>Explainable</strong> and <strong>Interpretable</strong> AI [<a href="https://github.com/Nkluge-correa/teeny-tiny_castle/blob/master/ML%20Explainability/Tabular%20Interpreter/fairness_xai_COMPAS.ipynb" target="_blank">👉notebook</a>, <a href="https://github.com/Nkluge-correa/teeny-tiny_castle/blob/master/ML%20Explainability/Tabular%20Interpreter/interpreter_for_tabular.ipynb" target="_blank">👉notebook</a>]. Also, we recommend the "<em><a href="https://ema.drwhy.ai/" target="_blank">Explanatory Model Analysis</a></em>" guidebook to address the intersection of <strong>Fairness</strong> and <strong>Transparency</strong>."</p>

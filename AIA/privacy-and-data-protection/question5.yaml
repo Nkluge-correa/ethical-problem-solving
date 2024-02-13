@@ -1,0 +1,14 @@
+question: "Is personal data (sensitive or not) anonymized or pseudonymized?"
+multiple: false
+options: 
+  - "Yes"
+  - "Personal data is not anonymized during processing"
+  - "Does not apply"
+scores:
+  - 0.0 
+  - 1.0
+  - 0.0
+privacy: true
+transparency: false
+accountability: true
+information: "Anonymization is the process of removing personally identifiable information from datasets. Pseudonymization is the process of replacing personally identifiable material with artificial identifiers (pseudonyms), so that identification of the individual is not possible without additional information that is held separately."

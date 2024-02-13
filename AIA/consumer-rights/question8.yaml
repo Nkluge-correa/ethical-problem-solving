@@ -1,0 +1,18 @@
+question: "How does the organization ensure continuity and stability of communication services with its users?"
+multiple: true
+options: 
+  - "The organization has multiple communication channels with its users (e.g., telephone, e-mail, direct messaging, and others)"
+  - "The organization regularly maintains and updates systems and equipment to prevent disruptions and ensure proper functioning"
+  - "The organization has developed a disaster recovery plan that describes the actions to be taken in the event of a catastrophic disruption of communications"
+  - "The organization does not provide a means to contact its users"
+  - "The organization does not provide a service that requires immediate contact with its users"
+scores:
+  - -0.33
+  - -0.33
+  - -0.33
+  - 1
+  - 1
+accountability: true
+transparency: false
+truthfulness: false
+information: null

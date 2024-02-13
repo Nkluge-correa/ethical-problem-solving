@@ -1,0 +1,67 @@
+<h1>Low</h1>
+<p>EPS uses an evaluation matrix to calculate impacts associated with an application. The three categories in this matrix are <strong>Low</strong>, <strong>Intermediate</strong>, and <strong>High</strong>. From low to high, each category has a set of suggestions.</p>
+<p>EPS measures the level of impact of an application regarding fairness through how sensitive attributes or proxies are related to the workings of a given AI system and application.</p>
+<p>The following intended uses are representative of the <strong>Low</strong> level of impact:</p>
+<ul>
+<li>
+<p><strong>Spam filters:</strong> Machine learning algorithms used to filter out spam emails from your inbox.</p>
+</li>
+<li>
+<p><strong>Recommendation engines:</strong> AI-powered recommendation engines suggest products or services based on a user's past behavior and preferences.</p>
+</li>
+<li>
+<p><strong>Weather Forecast:</strong> AI-powered models used to predict the weather.</p>
+</li>
+<li>
+<p><strong>Navigation:</strong> AI systems used for navigation and orientation.</p>
+</li>
+<li>
+<p><strong>Entertainment:</strong> AI-powered systems used for games and other recreational activities.</p>
+</li>
+</ul>
+<p>The following recommendations are for an application evaluated as having a <strong>Low</strong> impact level regarding the principle of <strong>fairness</strong>.</p>
+<h2>Recommendations</h2>
+<p>An application with a <strong>low level of impact</strong> should implement the following measures:</p>
+<ul>
+<li>
+<p><strong>Model card:</strong> Details about the model and dataset must be provided in a <a href="https://arxiv.org/abs/1810.03993" target="_blank">model card</a>. It is an easy way to disclose possible or potential biases.</p>
+</li>
+<li>
+<p><strong>Fairness Statement:</strong> This assertion outlines the organization's approach to the issue of fairness in the performance of the system/application.</p>
+</li>
+<li>
+<p><strong>Disparate Impact Score:</strong> It is a metric used to measure the degree to which an outcome may disparate impact different groups. A <strong>DIS</strong> aims to help identify and quantify potential sources of bias and facilitate the development of strategies to mitigate those biases.</p>
+</li>
+</ul>
+<h2>How to increase fairness?</h2>
+<h3>Model Cards for Model Reporting</h3>
+<p><a href="https://arxiv.org/abs/1810.03993" target="_blank"><strong>Model cards</strong></a> are short documents accompanying machine learning models. Such cards provide details and performance characteristics of a model in question and can help publicize potential biases of a dataset or model.</p>
+<p>Platforms like Hugging Face incentivize the display of model cards and dataset cards for all objects hosted in the Hub. <a href="https://huggingface.co/docs/hub/model-cards" target="_blank">Here</a> and <a href="https://huggingface.co/docs/hub/datasets-cards" target="_blank">here</a>, you can find examples of how to develop your own model and dataset cards. We also provide a tutorial on generating this kind of report [<a href="(https://github.com/Nkluge-correa/teeny-tiny_castle/blob/master/ML%20Accountability/Model%20Cards/model_card_generator.ipynb)" target="_blank">👉 notebook</a>].</p>
+<h3>Fairness Statement (<strong>fairness metrics</strong>, <strong>bias mitigation techniques</strong>)</h3>
+<p>A <strong>fairness statement</strong> typically includes information about the data used to train the model, the <strong>fairness metrics</strong> used to evaluate the model's performance, the <strong>bias mitigation techniques</strong> used to address any identified biases, and the steps taken to ensure alignment with ethical and legal standards. At the same time, a fairness statement can contain a warning regarding bias issues users might experience.</p>
+<h4><strong>Fairness Metrics</strong></h4>
+<p>To provide quantitative measures for the fairness evaluation of a machine learning model, a <strong>confusion matrix</strong> is quite helpful for navigating several quantitative <strong>fairness metrics</strong>. A <strong>Confusion Matrix</strong> is a table used to evaluate the performance of a classification model by comparing the actual and predicted values of a set of test data. On this matrix, you will find ratios for:</p>
+<ul>
+<li>
+<p><strong>True Positives (TP):</strong> True Positive is a case where the model predicted a positive value, and the actual value was also positive.</p>
+</li>
+<li>
+<p><strong>False Positives (FP):</strong> False Positive is a case where the model predicted a positive value, but the actual value was negative.</p>
+</li>
+<li>
+<p><strong>True Negatives (TN):</strong> True Negative is a case where the model predicted a negative value, and the actual value was also negative.</p>
+</li>
+<li>
+<p><strong>False Negatives (FN):</strong> False Negative is a case where the model predicted a negative value, but the actual value was positive.</p>
+</li>
+</ul>
+<p>These ratios should be similar when comparing groups possessing different sensitive attributes. For example, a significant difference in FP for a sensitive attribute like gender indicates that the system tends to assign (wrongly) the positive class for people with a specific gender type. A naive approach to solving such an issue would involve hiding all known sensitive attributes from the model. Nevertheless, such a solution ignores that proxies can infer sensitive attributes. For example, in a racially segregated city, <strong>address</strong> is a proxy for <strong>race</strong>.</p>
+<p>If we suspect a feature is a proxy for a sensitive attribute, <strong>fairness metrics</strong> can help us further inspect their relationship with the model's output. Fairness metrics are a set of measures that enable you to detect the presence of bias in your model. These metrics can be used to identify disparities in the decision-making process of an algorithm. However, quantitative fairness metrics may be ill-suited for certain types of systems (e.g., generative models). Even though one can explore statistical distributions of generated content (like we do in this tutorial <a href="https://github.com/Nkluge-correa/teeny-tiny_castle/blob/master/ML%20Fairness/nlp_fairness_distilgpt2.ipynb" target="_blank">[👉notebook]</a>), the exploration of biases in generative models usually follows a more qualitative and exploratory approach, where analysts try to uncover hidden (and sometimes not so hidden) tendencies and functionalities of such systems.</p>
+<p>For applications with a <strong>low</strong> impact, a more straightforward fairness score (<strong>Disparate Impact Score</strong>) can suffice.</p>
+<p>To apply the <strong>Disparate Impact Score</strong> (DIS), first, define the sensitive attribute or demographic group to evaluate. Once identified, calculate the proportion of positively impacted individuals in each group. For example, estimate the proportion of loan applications approved for each group in a credit scoring model. Next, calculate the <strong>Disparate Impact Score</strong> using the following formula:</p>
+<p><code>DIS = (the proportion of positively impacted individuals in group A) / (the proportion of positively impacted individuals in group B)</code></p>
+<p>Group A is the protected demographic group, and Group B is the non-protected demographic group. With this result in hand, we can start thinking about mitigation.</p>
+<h4><strong>Bias Mitigation</strong></h4>
+<p><strong>Bias mitigation techniques</strong> are used to reduce or eliminate the impact of bias in machine learning models. These techniques ensure that the model's predictions are equitable for individuals, regardless of their demographic characteristics. For an application of <strong>low impact</strong>, we can use such tools to help us restore our DIS score.</p>
+<p>A DIS score of less than 1 indicates that the model has a disparate impact on the protected group compared to the non-protected group. If the score is 1, it suggests that the model is entirely equitable. The industry standard is a <a href="https://dictionary.apa.org/four-fifths-rule" target="_blank">four-fifths rule</a>: if the unprivileged group receives a positive outcome of less than 80% of their proportion of the privileged group, this is a disparate impact violation.</p>
+<p>When the DIS score is unsatisfactory, there are techniques to modify a dataset to attain a DIS score closer to acceptable ranges. For example, <a href="https://arxiv.org/abs/1810.01943" target="_blank">Disparate Impact Remover</a> is a tool currently implemented in the <a href="https://www.ibm.com/opensource/open/projects/ai-fairness-360/" target="_blank">AI Fairness 360</a> that can address this subject straightforwardly. The following tutorial focuses on how to implement this tool <a href="https://github.com/Nkluge-correa/teeny-tiny_castle/blob/master/ML%20Fairness/disparate_impact_remove_Hogwarts.ipynb" target="_blank">[👉notebook]</a>.</p>

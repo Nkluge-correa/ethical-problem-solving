@@ -1,0 +1,14 @@
+question: "Is there any way of moderating content according to age group?"
+multiple: false
+options: 
+  - "Yes"
+  - "No"
+  - "Does not apply" 
+scores:
+  - 0.0
+  - 1.0
+  - 0.0
+privacy: false
+beneficence: true
+accountability: true
+information: null

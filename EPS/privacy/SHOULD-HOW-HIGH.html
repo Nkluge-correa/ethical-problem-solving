@@ -1,0 +1,171 @@
+<h1>High</h1>
+<p>EPS uses an evaluation matrix to calculate impacts associated with an application. The three categories in this matrix are <strong>Low</strong>, <strong>Intermediate</strong>, and <strong>High</strong>. From low to high, each category has a set of suggestions.</p>
+<p>EPS measures the privacy level of an application by how much personal and sensitive data is required. An application with a <strong>high level of impact</strong> uses (collects or stores) personal and sensitive data intentionally.</p>
+<p>The following intended uses are representative of the <strong>High</strong> level of impact:</p>
+<ul>
+<li>
+<p><strong>Healthcare diagnosis:</strong> AI algorithms used to assist in medical diagnosis.</p>
+</li>
+<li>
+<p><strong>National Security:</strong> AI algorithms utilized to detect and prevent threats and enhance intelligence gathering and analysis.</p>
+</li>
+<li>
+<p><strong>Social credit systems:</strong> AI-powered social credit systems are used to rate citizens based on their behavior and activities.</p>
+</li>
+<li>
+<p><strong>Personal assistants:</strong> Text- or voice-activated personal assistants used to respond to user commands.</p>
+</li>
+</ul>
+<p>The following recommendations are for an application evaluated as having a <strong>High</strong> impact level regarding the principle of <strong>privacy</strong>.</p>
+<h2>Recommendations</h2>
+<p>An application with a <strong>High level of impact</strong> should implement the following measures:</p>
+<ul>
+<li>
+<p><strong>Encryption techniques:</strong> <strong>Symmetric</strong> or <strong>Asymmetric</strong> encryption techniques, secure communication through safe protocols (<strong>HTTPS</strong> and <strong>TLS</strong>), and regularly updating security software (<strong>firewalls</strong> and <strong>antivirus</strong>) can help protect data against unauthorized access. Another layer of protection can be provided by a two-factor or multi-factor authentication to manage sensitive data access.</p>
+</li>
+<li>
+<p><strong>Privacy by Design:</strong> Data minimization techniques, such as <strong>data augmentation</strong> and sampling, can help minimize the amount of data collected. <strong>Anonymization</strong> helps the developer deal with personal or sensitive data. De-identification techniques, such as <strong>data masking</strong>, remove identifying characteristics from data to ensure another level of data protection. Enhanced privacy techniques can include adding noise to protect sensitive data.</p>
+</li>
+<li>
+<p><strong>Data Governance:</strong> Governance platforms and <strong>data mapping tools</strong> can help developers and responsible stakeholders track and monitor data collection and use practices.</p>
+</li>
+<li>
+<p><strong>Privacy Policies:</strong> Privacy policies should be used to clearly explain how data will be - <em>or not</em> - collected, used, and shared. In situations where personal data will be collected, <strong>consent forms</strong> should be used to obtain permission from individuals. For more information, follow the recommendations of your local <a href="https://www.gov.br/cidadania/pt-br/acesso-a-informacao/lgpd" target="_blank">GDPR</a>.</p>
+</li>
+<li>
+<p><strong>Third-Party Audits:</strong> In <strong>High</strong> impact applications, it is recommended to use third-party reviewers (<em>independent of the customer-supplier relationship and free of any conflict of interest</em>) to conduct an independent review of the system's impacts on data privacy.</p>
+</li>
+<li>
+<p><strong>Data Protection Impact Assessment:</strong> According to many regulations related to data privacy and data protection (e.g., <a href="https://www.gov.br/cidadania/pt-br/acesso-a-informacao/lgpd" target="_blank">Brazilian General Data Protection Law</a>), systems used in <strong>High</strong> impact scenarios where personal or sensitive data is involved should be accompanied by a <strong>DPIA</strong>.</p>
+</li>
+</ul>
+<h2>How to increase Privacy?</h2>
+<h3><strong>Encryption</strong>, <strong>DMZ</strong>, <strong>2FA</strong>, <strong>MFA</strong></h3>
+<p>There are many encryption techniques used to safeguard data. The two great families of encryption algorithms are known as <strong>symmetric</strong> and <strong>asymmetric</strong>.</p>
+<p>Symmetric encryption can be used for safely storing data, securely transmitting data, and encrypting session data for secure communication in real-time applications. Some of the most standard symmetric encryption algorithms are AES (<strong>Advanced Encryption Standard</strong>), DES (<strong>Data Encryption Standard</strong>), and 3DES (<strong>Triple Data Encryption Standard</strong>). Current transfer protocols (like <strong>HTTPS</strong>, empowered by <strong>TLS</strong>) use these types of encryption to ensure safe networking.</p>
+<p>Asymmetric encryption can be used mainly for verification purposes, like certifying the authenticity and integrity of data and securing network traffic. Some of the most standard asymmetric encryption algorithms are RSA (<strong>Rivest-Shamir-Adleman</strong>), ECC (<strong>Elliptic Curve Cryptography</strong>), and ECDH (<strong>Elliptic-curve Diffie–Hellman</strong>).</p>
+<p>Developers who need to gain expertise in cyber security should avoid building their encryption methods and rely on the trusted services of platforms that provide secure back-end infrastructure. <strong>Choosing a reliable PaaS for data protection is beyond the scope of EPS.</strong></p>
+<p>Applications with a <strong>High</strong> level of impact, i.e., collecting or storing personal and sensitive data intentionally, should add extra layers of encryption inside their private network to reinforce in-house security. For example, organizations that allow collaborators to access their internal network remotely should use encryption techniques (like <strong>VPN</strong> - <em>Virtual Private Network</em>) to secure network trafficking. Examples of tools that can be used for this include:</p>
+<ul>
+<li><a href="https://www.hotspotshield.com/" target="_blank">Hotspot Shield</a>.</li>
+<li><a href="https://privadovpn.com/" target="_blank">PrivadoVPN</a>.</li>
+<li><a href="https://atlasvpn.com/" target="_blank">atlasVPN</a>.</li>
+</ul>
+<p>A <strong>DMZ</strong> (Demilitarized Zone) is a network segment isolated from the internal network and only accessible through specific protocols and ports. This technique can ensure an additional layer of data security. Sensitive areas and networks of an organization can be shielded from unauthorized traffic using a <strong>DMZ</strong>. Available tools for creating a <strong>DMZ</strong> include, for example:</p>
+<ul>
+<li>
+<p><strong>Three-Pronged Firewall:</strong> A firewall with three network connections, one for the private network, one for the public network, and one for the <strong>DMZ</strong>. A <strong>three-pronged firewall</strong> provides additional protection by isolating a specific internal network from the public internet.</p>
+</li>
+<li>
+<p><strong>Multiple Firewall DMZ:</strong> Multiple firewalls can be used to control communications. For example, an organization could establish multiple <strong>DMZ</strong> areas to isolate servers/networks further by placing each server inside a separate <strong>DMZ</strong>. With this architecture, administrators can have more effective security and control.</p>
+</li>
+</ul>
+<p>In <strong>high-impact</strong> scenarios, enhanced data protection could involve implementing advanced security measures to protect sensitive data, such as two-factor/multi-factor authentication for users or administrators with privileged access:</p>
+<ul>
+<li>
+<p><strong>Two-factor authentication (2FA)and Multi-factor authentication (MFA):</strong> <strong>2FA</strong> is a security process that requires a user to provide two different forms of identification before accessing a privileged network. Meanwhile, <strong>MFA</strong> requires more than two factors, providing an even higher level of security. In addition to something the user knows (password) or has (token), <strong>MFA</strong> can include biometrics or a geolocation check. Here are some available solutions to implement <strong>2FA</strong> and <strong>MFA</strong>in your application:</p>
+<ul>
+<li><a href="https://auth0.com/" target="_blank">Auth0</a></li>
+<li><a href="https://authy.com/" target="_blank">Authy</a>.</li>
+<li><a href="https://firebase.google.com/docs/auth" target="_blank">Firebase Authentication API</a>.</li>
+<li><a href="https://www.passportjs.org/" target="_blank">PassportJS</a>.</li>
+<li><a href="https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2&amp;hl=en" target="_blank">Google Authenticator</a>.</li>
+<li><a href="https://www.microsoft.com/pt-br/security/mobile-authenticator-app" target="_blank">Microsoft Authenticator</a>.</li>
+<li><a href="https://gluu.org/docs/casa/4.3/" target="_blank">Gluu Casa</a>.</li>
+<li><a href="https://www.ory.sh/" target="_blank">Ory</a>.</li>
+<li><a href="https://www.forgerock.com/" target="_blank">ForgeRock</a>.</li>
+<li><a href="https://www.yubico.com/products/yubico-authenticator/" target="_blank">Yubico</a>.</li>
+</ul>
+</li>
+</ul>
+<p>As external sources of knowledge, forums like <a href="https://security.stackexchange.com/" target="_blank">security.stackexchange</a> can help developers with doubts about security issues (<em>the help of professionals/experts should always be welcomed and prioritized over AI-assisted input</em>).</p>
+<h3>Privacy by Design (<strong>Data minimization</strong>, <strong>Data anonymization</strong>)</h3>
+<p>Data minimization is a process that entails solely collecting, storing, and processing the data needed for a particular purpose. Data minimization intends to lessen the danger of data breaches while protecting people's privacy.</p>
+<p>There are many strategies developers can use to minimize data storage and collection. For example:</p>
+<ul>
+<li>
+<p>Developers should restrict data collection processes to only what is necessary and sufficient. Meanwhile, data that has no use for the intended purposes of the application should be deleted or not collected in the first place.</p>
+</li>
+<li>
+<p>After all data types considered essential to the application are defined, the collection should be dutifully informed (and consented) to the data subjects.</p>
+</li>
+<li>
+<p>Data sampling can give analysts insight into the whole distribution. For example, a surveyor may collect data from a sample of 1000 people to represent the opinion of a city's population.</p>
+</li>
+<li>
+<p>Another way to minimize the data needed is to use data augmentation techniques to mimic true data. For example, Fake data can be used to test in production software. Libraries like <a href="https://github.com/faker-js/faker" target="_blank">Faker</a> can help you with this task. One can even find <a href="https://www.tonic.ai/" target="_blank">companies</a> that provide data augmentation and mimicking services.</p>
+</li>
+<li>
+<p>As an organizational policy, data that has lived past its usefulness should be disposed of. Also, data hoarding should be discouraged. Policies like this can help organizations minimize their data storage costs.</p>
+</li>
+</ul>
+<p>In regards to data anonymization, here are some methods developers can use to improve their practices:</p>
+<ul>
+<li>
+<p><a href="https://arxiv.org/abs/1907.09693" target="_blank"><strong>Federated learning</strong></a> is a machine learning technique that trains models on decentralized data, such as data stored on a user's device. It can be useful for organizations that want to train AI models without centralizing user data.</p>
+</li>
+<li>
+<p><a href="https://link.springer.com/chapter/10.1007/978-3-540-79228-4_1" target="_blank"><strong>Differential privacy</strong></a> is a method of publicly sharing information about a dataset while keeping information about individuals in the dataset private. It does this by adding noise to the data before analysis.</p>
+</li>
+</ul>
+<p>There are several tools available to implement <strong>federated learning</strong> and <strong>differential privacy:</strong></p>
+<ul>
+<li>
+<p><a href="https://www.tensorflow.org/federated" target="_blank"><strong>TensorFlow Federated</strong></a> (<strong>TFF</strong>) is an open-source framework developed by Google for implementing federated learning. It allows developers to train machine learning models on decentralized data using <strong>TensorFlow</strong>. <strong>TFF</strong> supports several types of federated learning, including horizontal and vertical federated learning.</p>
+</li>
+<li>
+<p><a href="https://openmined.github.io/PySyft/index.html" target="_blank"><strong>PySyft</strong></a> is an open-source library built on top of <strong>PyTorch</strong> that allows for secure and privacy Policy-preserving machine learning. It implements federated learning, differential privacy, and multi-party computation. <strong>PySyft</strong> also provides tools for encrypting and decrypting data and performing secure computation on encrypted data.</p>
+</li>
+<li>
+<p><a href="https://github.com/google/fedjax" target="_blank"><strong>Federated learning simulation with JAX</strong></a> (<strong>FedJAX</strong>) is a JAX-based open-source library for Federated Learning simulations that emphasizes ease-of-use in research.</p>
+</li>
+</ul>
+<p>Other techniques of data anonymization are data masking and data de-identification. Data masking hides sensitive information by replacing it with other characters or values. Meanwhile, data de-identification extracts identifiers, such as name, address, and social security number, from data. Data anonymization also hides personal identifiers and sensitive attributes from data through modification techniques such as <strong>character shuffling</strong>, <strong>encryption</strong>, and <strong>word or character substitution</strong>. Here are some tools to perform these anonymization techniques:</p>
+<ul>
+<li><a href="https://www.informatica.com/in/#fbid=9vZBZqgVrvi" target="_blank">Informatica's Data Masking</a>.</li>
+<li><a href="https://www.ibm.com/docs/en/iotdm" target="_blank">IBM's Optim Data Masking</a>.</li>
+<li><a href="https://arx.deidentifier.org/" target="_blank">ARX Data Anonymization</a>.</li>
+<li><a href="https://amnesia.openaire.eu/" target="_blank">Amnesia</a>.</li>
+<li><a href="https://realrolfje.github.io/anonimatron/" target="_blank">Anonimatron</a>.</li>
+</ul>
+<h3>Data Governance (<strong>Data Mapping</strong>)</h3>
+<p>Insufficient insight into massive data pools can lead to data hoarding and poorly managed data storage. Administrators may face a challenge when databases are too big: "<em>how to visualize what is happening in my database efficiently</em>." Data governance platforms or mapping tools can help administrators track and monitor data collection and efficiently use practices.</p>
+<p>Data governance platforms are software tools that help organizations manage and govern their data. They allow organizations to establish policies and procedures for data management, including data collection, storage, and use. They also provide mechanisms to monitor compliance with these policies, such as data lineage and quality monitoring. Some examples of data governance platforms include:</p>
+<ul>
+<li><a href="https://www.amundsen.io/" target="_blank">Amundsen</a>.</li>
+<li><a href="https://datahub.io/" target="_blank">DataHub</a></li>
+<li><a href="https://atlas.apache.org/#/" target="_blank">Apache Atlas</a>.</li>
+</ul>
+<p>Data mapping tools visually represent the relationships between different data elements and their use across an organization. They map the data flow, identify data owners and stewards, and help create an understanding of the impact of data governance policies on data usage. Some examples of data mapping tools include:</p>
+<ul>
+<li><a href="https://carto.com/" target="_blank">Carto</a>.</li>
+<li><a href="https://www.talend.com/products/talend-open-studio/" target="_blank">Talend Open Studio</a>.</li>
+<li><a href="https://usc-isi-i2.github.io/karma/" target="_blank">Karma</a>.</li>
+</ul>
+<p>These tools track and monitor data collection and use practices and help organizations to ensure compliance with local regulations. Organizations can also build their data mapping tools. Languages like Python have a long list of data visualization libraries that can assist in the creation of informational dashboards, such as:</p>
+<ul>
+<li><a href="https://dash.plotly.com/" target="_blank">Dash</a>.</li>
+<li><a href="https://plotly.com/python/" target="_blank">Plotly</a>.</li>
+<li><a href="https://seaborn.pydata.org/" target="_blank">Seaborn</a>.</li>
+<li><a href="https://matplotlib.org/" target="_blank">Matplotlib</a>.</li>
+<li><a href="https://pandas.pydata.org/" target="_blank">Pandas</a>.</li>
+</ul>
+<h3>Third-Party Audits</h3>
+<p>Third-party audits are a type of independent assessment conducted by an external party with the necessary expertise and qualifications to evaluate an organization's compliance with relevant privacy and data protection regulations. In high-impact data privacy scenarios, third-party audits can ensure that data is protected and secure.</p>
+<p>Given the contextual peculiarities of local GDPR, it is recommended to search for companies (usually in the field of Law) that can help diagnose (in an unbiased form) the status of your application/service.</p>
+<p>Below, you can find a list of international standards for accessing the security of your organization:</p>
+<ul>
+<li><a href="https://www.iso.org/isoiec-27001-information-security.html" target="_blank">ISO 27001</a> (<em>international standard to manage information security</em>).</li>
+<li><a href="https://www.iso.org/standard/43757.html" target="_blank">ISO 27017</a> (<em>security standard developed for cloud service providers and users</em>).</li>
+<li><a href="https://www.iso.org/standard/76559.html" target="_blank">ISO 27018</a> (<em>code of practice that focuses on the protection of personal data in the cloud</em>).</li>
+</ul>
+<h3>Data Protection Impact Assessment</h3>
+<p>A <strong>DPIA</strong> identifies, assesses, and aims to mitigate privacy risks when processing personal data. Under various data protection laws, including the <a href="https://www.consilium.europa.eu/en/policies/data-protection/data-protection-regulation/" target="_blank">European Union's General Data Protection Regulation</a> and the <a href="https://www.gov.br/cidadania/pt-br/acesso-a-informacao/lgpd" target="_blank">Brazilian General Data Protection Law</a>, organizations are required to conduct a <strong>DPIA</strong> before undertaking any processing of personal data that is likely to result in a <strong>High</strong> impact on the privacy rights of data subjects</p>
+<p>A <strong>DPIA</strong> typically involves assessing the potential risks and impacts of data processing activities on the rights of individuals and reviewing the measures that can minimize those risks. The <strong>DPIA</strong> can be perceived as the culmination of all methods and strategies described so far. Here are some external resources that can help organizations create their own <strong>DPIA:</strong></p>
+<ul>
+<li><a href="https://www.pdpc.gov.sg/help-and-resources/2017/11/guide-to-data-protection-impact-assessments" target="_blank">Guide to Data Protection Impact Assessments</a> (<a href="https://www.pdpc.gov.sg/-/media/Files/PDPC/PDF-Files/Other-Guides/DPIA/Guide-to-Data-Protection-Impact-Assessments-14-Sep-2021.pdf" target="_blank">PDF here</a>).</li>
+<li><a href="https://www.gov.br/governodigital/pt-br/seguranca-e-protecao-de-dados/templates-e-ferramentas/estudo_template_preenchido_ripd.pdf/@@download/file" target="_blank">Brazil's Data Protection Impact Assessment Template</a> (Downloadable URL).</li>
+</ul>
+<h3>Privacy Policies</h3>
+<p>Privacy policies are a way to communicate to users how their data will be collected and used. Best practice privacy policies are available to all users and clearly specify the information being monitored (e.g., name, address, etc). You can use an online privacy policy generator to generate a privacy policy <a href="https://www.privacypolicies.com/privacy-policy-generator/" target="_blank">here</a>.</p>
+<p>In the case that data is collected, consent forms should be used. For more information, follow the recommendations of your local <a href="https://www.gov.br/cidadania/pt-br/acesso-a-informacao/lgpd" target="_blank">GDPR</a>.</p>

@@ -1,0 +1,14 @@
+question: "Does the application process personal data?"
+multiple: false
+options: 
+  - "Yes"
+  - "No"
+  - "Does not apply"
+scores:
+  - 1.0 
+  - 0.0
+  - 0.0
+privacy: true
+transparency: false
+accountability: true
+information: "'Processing' includes the collection, recording, organisation, structuring, storage, adaptation or alteration, retrieval, consultation, use, disclosure by transmission, dissemination or otherwise making available, alignment or combination, restriction, erasure or destruction of personal data."

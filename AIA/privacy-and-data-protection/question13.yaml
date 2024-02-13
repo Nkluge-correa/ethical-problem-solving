@@ -1,0 +1,18 @@
+question: "What security measures have been adopted to protect user data during the development of the application?"
+multiple: true
+options: 
+  - "Employees involved in data processing have received training and are aware of the precautions needed to protect the personal data of users"
+  - "Only authorized people with logins of different privilege levels and restrictions can access user data, and access is managed with periodic reviews"
+  - "All access to our databases are recorded and can be monitored"
+  - "The company/application is insured against cyber-attacks"
+  - "None of the above measures have been adopted"
+scores:
+  - -0.25
+  - -0.25
+  - -0.25
+  - -0.25
+  - 1.0
+privacy: true
+transparency: false
+accountability: true
+information: null

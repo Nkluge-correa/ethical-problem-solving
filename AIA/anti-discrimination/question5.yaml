@@ -1,0 +1,18 @@
+question: "In the case of applications that use machine learning, was the data labeling done in a way that does not reinforce biases, prejudices, and stereotypes harmful to vulnerable groups?"
+multiple: true
+options: 
+  - "Yes, the labeling was done by the organization, based on defined criteria, made to ensure accuracy and impartiality"
+  - "An unknown source performed data labeling"
+  - "A contractor did the labeling"
+  - "A combination of the above"
+  - "Does not apply"
+scores:
+  - 0.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 0.0
+trustworthiness: true
+fairness: true
+accountability: true
+information: "Data labeling is the process of assigning one or more labels to a piece of data."

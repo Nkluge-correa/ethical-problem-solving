@@ -1,0 +1,14 @@
+question: "Is there an assessment of common characteristics concerning user information, like categorizing them into different classes or groups?"
+multiple: false
+options: 
+  - "Yes"
+  - "No"
+  - "Does not apply"
+scores:
+  - 1.0 
+  - 0.0
+  - 0.0
+privacy: true
+transparency: false
+accountability: true
+information: "User information is any information that can be used to identify a user or to create clusters of users."

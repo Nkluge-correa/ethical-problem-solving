@@ -1,0 +1,12 @@
+question: "Does the application or service have warnings and guidelines for users, parents, and legal guardians about the possibility of children and adolescents being subjected to embarrassment, exposure, vexation, blackmail, scams, and even incitement to suicide or crimes by other users?"
+multiple: true
+options: 
+  - "Yes"
+  - "No"
+scores:
+  - 0.0
+  - 1.0
+privacy: false
+beneficence: true
+accountability: true
+information: null

@@ -1,0 +1,14 @@
+question: "Does the organization have a policy for compensating users for damages caused by its products and services?"
+multiple: false
+options: 
+  - "In situations where the damage was caused by negligence or recklessness on the part of the organization, we have compensation policies in place"
+  - "In situations where the application has caused harm to the user, we have compensation policies in place, except in cases where the user is solely at fault"
+  - "The organization has not yet established a policy for compensating damaged users"
+scores:
+  - 0.0
+  - 0.0
+  - 1.0
+accountability: true
+transparency: false
+truthfulness: false
+information: null

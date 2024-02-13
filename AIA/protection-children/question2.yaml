@@ -1,0 +1,16 @@
+question: "Does the application have parental control mechanisms?"
+multiple: false
+options: 
+  - "Yes, the application allows parents or legal guardians to control the content available to the underage user. The user is informed of such control" 
+  - "Yes, the application allows parents or legal guardians to control the content available to the underage user. However, the user is not informed of such control" 
+  - "No. However, the application recommends other services that allow this type of control" 
+  - "No, the application does not have or recommend parental control mechanisms" 
+scores:
+  - 0.0
+  - 0.25
+  - 0.50
+  - 1.0
+privacy: true
+beneficence: true
+accountability: false
+information: null

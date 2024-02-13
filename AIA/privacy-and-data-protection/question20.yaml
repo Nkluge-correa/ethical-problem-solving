@@ -1,0 +1,30 @@
+question: "What standards, frameworks, and information security measures were used during the development of your application?"
+multiple: true
+options: 
+  - "E-ping - Electronic Government Interoperability Standards"
+  - "ABNT NBR ISO/IEC 27001:2013. Information security management systems"
+  - "ABNT NBR ISO/IEC 27002: 2013. Code of practice for information security controls"
+  - "ABNT NBR ISO/IEC 27005:2019. Information security risk management"
+  - "ABNT NBR ISO/IEC 31000:2018. Risk management - Guidelines"
+  - "ABNT NBR ISO/IEC 27701:2019. Security techniques - Extension of ABNT NBR ISO/IEC 27001 and ABNT NBR ISO/IEC 27002 to information privacy management - Requirements and guidelines"
+  - "Regulations of the Office of Institutional Security of the Presidency of the Republic (GSI/PR)"
+  - "CONARQ Resolutions"
+  - "Resolution No. 25, of April 27, 2007"
+  - "Resolution No. 39, of April 29, 2014"
+  - "None of the above"
+scores:
+  - -0.10 
+  - -0.10
+  - -0.10 
+  - -0.10 
+  - -0.10
+  - -0.10
+  - -0.10 
+  - -0.10
+  - -0.10 
+  - -0.10 
+  - 1.0
+privacy: true
+transparency: true
+accountability: true
+information: null

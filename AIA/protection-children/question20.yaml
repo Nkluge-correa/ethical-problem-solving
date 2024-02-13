@@ -1,0 +1,16 @@
+question: "How does the organization deal with information related to the geolocation of its users?"
+multiple: true
+options: 
+  - "The application allows the collection of geolocation-related information"
+  - "The application allows the sale of geolocation-related information" 
+  - "The application allows the sharing of geolocation-related information"
+  - "The application does not collect geolocation information"
+scores:
+  - 0.25
+  - 0.50
+  - 0.25
+  - 0.0
+privacy: true
+beneficence: true
+accountability: true
+information: null

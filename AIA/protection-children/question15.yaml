@@ -1,0 +1,12 @@
+question: "Does the application or service have a limit or control on how much time each user can use it?"
+multiple: false
+options: 
+  - "Yes"
+  - "No"
+scores:
+  - 0.0
+  - 1.0
+privacy: false
+beneficence: true
+accountability: false
+information: null

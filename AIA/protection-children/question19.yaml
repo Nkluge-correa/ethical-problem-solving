@@ -1,0 +1,14 @@
+question: "Was the application or service developed to provide accessibility for all users (disabled, illiterate, among other vulnerabilities)?"
+multiple: false
+options: 
+  - "Yes, different groups were covered during the development of this application" 
+  - "The groups for which the application was developed were covered during the development of this application" 
+  - "No, the application lacks an accessible interface for all intended user groups"
+scores:
+  - 0.0
+  - 0.0
+  - 1.0
+privacy: false
+beneficence: true
+accountability: false
+information: null

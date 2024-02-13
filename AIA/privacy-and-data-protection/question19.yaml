@@ -1,0 +1,16 @@
+question: "If the application shares data with third parties, have the data subjects been informed of such practice?"
+multiple: true
+options: 
+  - "There is a clause in the Terms of Use informing about the need to share with other controllers/operators, indicating who they are and the specific purpose of each sharing"
+  - "The organization provides a contact channel for data subjects to request the correction and revocation of their data with third parties"
+  - "None of the above measures have been adopted"
+  - "Does not apply"
+scores:
+  - -0.50 
+  - -0.50
+  - 1.0
+  - 0.0
+privacy: true
+transparency: true
+accountability: true
+information: null

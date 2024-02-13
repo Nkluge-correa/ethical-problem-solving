@@ -1,0 +1,18 @@
+question: "How did the organization optimize its application to be fair and equitable?"
+multiple: true
+options: 
+  - "Fairness metrics were defined to evaluate the application's fairness"
+  - "Counterfactual analysis was carried out to evaluate the application's fairness"
+  - "The dataset used to train the algorithm was analyzed to ensure that it is a fair representation of the different user groups of the application" 
+  - "Human moderation is used to ensure that the application's results are fair and equitable"
+  - "None of the above"
+scores:
+  - -0.25
+  - -0.25
+  - -0.25
+  - -0.25
+  - 1.0
+trustworthiness: true
+fairness: true
+accountability: true
+information: null

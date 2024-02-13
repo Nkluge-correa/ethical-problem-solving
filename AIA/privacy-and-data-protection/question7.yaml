@@ -1,0 +1,28 @@
+question: "The personal data collected is used for which of the following purposes?"
+multiple: true
+options: 
+  - "Carried out by an individual for exclusively private and non-economic purposes"
+  - "Carried out exclusively for journalistic and artistic purposes"
+  - "Carried out for exclusively academic purposes"
+  - "Carried out exclusively for public security purposes"
+  - "Carried out exclusively for national defense purposes"
+  - "Carried out exclusively for state security purposes"
+  - "Carried out exclusively to investigate and prosecute criminal offenses"
+  - "Carried out exclusively for purposes originating outside national territory and which are not the subject of communication, shared use of data with Brazilian processing agents, or the subject of international data transfer with a country other than the country of origin, provided that the country of origin provides a level of protection of personal data adequate to that provided for in this Law"
+  - "None of the above"
+  - "Does not apply"
+scores:
+  - 0.0 
+  - 0.0
+  - 0.0 
+  - 0.0
+  - 0.0 
+  - 0.0
+  - 0.0 
+  - 0.0
+  - 1.0
+  - 0.0
+privacy: true
+transparency: false
+accountability: true
+information: "Personal data refers to any information that can be used to identify an individual."

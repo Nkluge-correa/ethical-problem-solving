@@ -1,0 +1,35 @@
+<h1>Low</h1>
+<p>EPS uses an evaluation matrix to calculate impacts associated with an application. The three categories in this matrix are <strong>Low</strong>, <strong>Intermediate</strong>, and <strong>High</strong>. From low to high, each category has a set of suggestions to guide future implementations.</p>
+<p>EPS measures the impact level of an application regarding transparency through a correlation between the algorithmic complexity and how critical the system decision is considering the scope of use.</p>
+<p>The following intended uses are representative of the Low-impact level:</p>
+<ul>
+<li>
+<p><strong>Industrial automation:</strong> AI systems used to automate industrial processes, like quality control.</p>
+</li>
+<li>
+<p><strong>Spam filters:</strong> Machine learning algorithms used to filter out spam emails from your inbox.</p>
+</li>
+<li>
+<p><strong>Entertainment:</strong> AI-powered systems used for games and other recreational activities.</p>
+</li>
+</ul>
+<p>The following recommendations are for an application evaluated as having a <strong>Low</strong> impact level regarding the principle of <strong>transparency</strong>.</p>
+<h2>Recommendations</h2>
+<p>An application with a <strong>low level of impact</strong> should implement the following measures:</p>
+<ul>
+<li>
+<p>Details about the model and dataset must be provided in a <strong>model card</strong>. <a href="https://arxiv.org/abs/1810.03993" target="_blank">Model cards</a> provide an easy way to ensure <em>transparency</em> and <em>accountability</em>. In a <strong>Low-impact</strong> application, the following information should be disclosed:</p>
+<ul>
+<li>General information about the responsible developers (e.g., development team leader).</li>
+<li>General information about the nature of the model (e.g., what type of model?).</li>
+<li>A performance report.</li>
+<li>The origins of the data used, data collection, pre-processing, and possible sources of bias that may influence future statistical models.</li>
+<li>Adequate operational domain and out-of-scope applications.</li>
+</ul>
+</li>
+</ul>
+<p>Also, white-box models should always be preferred when it comes to transparency. However, Black-box models have more leeway when dealing with low-impact situations due to the inexpressibility of possible errors. As a result, <strong>Low</strong>-impact situations are those in which opaque models are acceptable or even appropriate, depending on the application (e.g., digit recognition).</p>
+<h2>How to increase transparency?</h2>
+<h3>Model Cards for Model Reporting</h3>
+<p><a href="https://arxiv.org/abs/1810.03993" target="_blank"><strong>Model cards</strong></a> are short documents accompanying machine learning models. Such cards provide details and performance characteristics of a model in question, helping to visualize transparency and accountability behaviors in developing autonomous systems.</p>
+<p>Platforms like Hugging Face incentivize the display of model cards and dataset cards for all objects hosted in the Hub. <a href="https://huggingface.co/docs/hub/model-cards" target="_blank">Here</a> and <a href="https://huggingface.co/docs/hub/datasets-cards" target="_blank">here</a>, you can find examples of how to develop your own model and dataset cards, while <a href="https://huggingface.co/spaces/huggingface/Model_Cards_Writing_Tool" target="_blank">here</a> you can find and application to help you fill this document. We also provide a tutorial on generating this kind of report [<a href="(https://github.com/Nkluge-correa/teeny-tiny_castle/blob/master/ML%20Accountability/Model%20Cards/model_card_generator.ipynb)" target="_blank">👉 notebook</a>].</p>

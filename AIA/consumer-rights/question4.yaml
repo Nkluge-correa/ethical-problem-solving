@@ -1,0 +1,14 @@
+question: "Is the consumer or user protected against abusive commercial practices?"
+multiple: false
+options: 
+  - "Yes, the application has a policy against abusive commercial practices"
+  - "Yes, the application has a policy against abusive commercial practices and our legal team provides support to users"
+  - "None of the above"
+scores:
+  - 0.0
+  - 0.0
+  - 1.0
+accountability: true
+transparency: true
+truthfulness: true
+information: null

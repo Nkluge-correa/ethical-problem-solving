@@ -1,0 +1,34 @@
+question: "If your application processes sensitive data, what are the types of features being processed?"
+multiple: true
+options: 
+  - "Racial origin"
+  - "Ethnic origin"
+  - "Religious conviction or membership of a religious organization"
+  - "Political opinion"
+  - "Trade union membership"
+  - "Membership of philosophical or political organization"
+  - "Health data"
+  - "Sex life or sexual orientation"
+  - "Genetic data"
+  - "Biometric data"
+  - "Financial, address or other data that could attract any kind of prejudice"
+  - "Data related to criminal convictions or criminal offenses"
+  - "Does not apply"
+scores:
+  - 0.20
+  - 0.20
+  - 0.20
+  - 0.20
+  - 0.20
+  - 0.20
+  - 0.20
+  - 0.20
+  - 0.20
+  - 0.20
+  - 0.20
+  - 0.20
+  - 0.0 
+privacy: true
+transparency: false
+accountability: true
+information: null

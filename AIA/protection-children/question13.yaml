@@ -1,0 +1,14 @@
+question: "Does the application or service have measures to prevent children and teenagers from gambling online?"
+multiple: false
+options: 
+  - "Yes, the application's terms of use prohibit bets from being placed"
+  - "No"
+  - "Does not apply"
+scores:
+  - 0.0
+  - 1.0
+  - 0.0
+privacy: false
+beneficence: true
+accountability: true
+information: null

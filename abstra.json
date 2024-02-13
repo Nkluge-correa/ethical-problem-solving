@@ -1,0 +1,387 @@
+{
+  "workspace": {
+    "id": null,
+    "name": "AIRES",
+    "theme": "#ffffff",
+    "logo_url": "./img/logo-icon.ico",
+    "brand_name": "Ethical Problem Solving",
+    "main_color": null,
+    "font_color": null,
+    "font_family": "Arial",
+    "sidebar": [
+      {
+        "id": "Home",
+        "name": "Home",
+        "path": "Home",
+        "type": "form",
+        "visible": true
+      },
+      {
+        "id": "AIA-pre-survey",
+        "name": "AIA - Pre Survey",
+        "path": "AIA-pre-survey",
+        "type": "form",
+        "visible": true
+      },
+      {
+        "id": "AIA-privacy-and-data-protection",
+        "name": "AIA - Privacy & Data Protection",
+        "path": "AIA-privacy-and-data-protection",
+        "type": "form",
+        "visible": true
+      },
+      {
+        "id": "AIA-consumer-rights",
+        "name": "AIA - Consumer Rights",
+        "path": "AIA-consumer-rights",
+        "type": "form",
+        "visible": true
+      },
+      {
+        "id": "AIA-anti-discrimination",
+        "name": "AIA - Anti-discrimination & Trustworthiness",
+        "path": "AIA-anti-discrimination",
+        "type": "form",
+        "visible": true
+      },
+      {
+        "id": "AIA-protection-children",
+        "name": "AIA - Protection & Safety of Children and Adolescents",
+        "path": "AIA-protection-children",
+        "type": "form",
+        "visible": true
+      },
+      {
+        "id": "Ethical-troubleshoot",
+        "name": "Ethical Troubleshoot",
+        "path": "Ethical-troubleshoot",
+        "type": "form",
+        "visible": true
+      },
+      {
+        "id": "EPS-transparency",
+        "name": "Transparency",
+        "path": "EPS-transparency",
+        "type": "form",
+        "visible": true
+      },
+      {
+        "id": "EPS-fairness",
+        "name": "Fairness",
+        "path": "EPS-fairness",
+        "type": "form",
+        "visible": true
+      },
+      {
+        "id": "EPS-privacy",
+        "name": "Privacy",
+        "path": "EPS-privacy",
+        "type": "form",
+        "visible": true
+      },
+      {
+        "id": "EPS-reliability",
+        "name": "Reliability",
+        "path": "EPS-reliability",
+        "type": "form",
+        "visible": true
+      },
+      {
+        "id": "EPS-sustainability",
+        "name": "Sustainability",
+        "path": "EPS-sustainability",
+        "type": "form",
+        "visible": true
+      },
+      {
+        "id": "EPS-truthfulness",
+        "name": "Truthfulness",
+        "path": "EPS-truthfulness",
+        "type": "form",
+        "visible": true
+      }
+    ]
+  },
+  "visualization": [],
+  "jobs": [],
+  "hooks": [],
+  "forms": [
+    {
+      "id": "AIA-pre-survey",
+      "path": "AIA-pre-survey",
+      "title": "AIA - Pre Survey",
+      "is_initial": true,
+      "auto_start": true,
+      "allow_restart": true,
+      "end_message": "Thank you for performing the Pre survey of our Algorithmic Impact Assessment tools! \ud83e\udd17",
+      "start_message": "This preliminary survey aims to indicate which Algorithmic Impact Assessments (AIAs) the user/organization should conduct.",
+      "error_message": "Sorry ... An error has occurred \u2620\ufe0f ",
+      "welcome_title": "AIA - Pre Survey",
+      "timeout_message": null,
+      "start_button_text": "Start",
+      "restart_button_text": "Go Back to the Beginning",
+      "file": "AIA-pre-survey.py",
+      "workflow_position": [
+        0,
+        0
+      ],
+      "transitions": []
+    },
+    {
+      "id": "AIA-privacy-and-data-protection",
+      "path": "AIA-privacy-and-data-protection",
+      "title": "AIA - Privacy & Data Protection",
+      "is_initial": true,
+      "auto_start": true,
+      "allow_restart": true,
+      "end_message": "Thank you for performing the Algorithmic Impact Assessment - Privacy & Data Protection! \ud83e\udd17",
+      "start_message": "We design the following Algorithmic Impact Assessment (AIA) tool to gauge the potential societal influence of an AI application on the rights of Privacy and the ethical principles of Transparency and Accountability.",
+      "error_message": "Sorry ... An error has occurred \u2620\ufe0f ",
+      "welcome_title": "Algorithmic Impact Assessment - Privacy & Data Protection",
+      "timeout_message": null,
+      "start_button_text": "Start",
+      "restart_button_text": "Go Back to the Beginning",
+      "file": "AIA-privacy-and-data-protection.py",
+      "workflow_position": [
+        -962.6942852602635,
+        -443.47449662293354
+      ],
+      "transitions": []
+    },
+    {
+      "id": "AIA-consumer-rights",
+      "path": "AIA-consumer-rights",
+      "title": "AIA - Consumer Rights",
+      "is_initial": true,
+      "auto_start": true,
+      "allow_restart": true,
+      "end_message": "Thank you for performing the Algorithmic Impact Assessment - Consumer Rights! \ud83e\udd17",
+      "start_message": "We design the following Algorithmic Impact Assessment (AIA) tool to gauge the potential societal influence of an AI application on the rights of consumers and the ethical principles of Accountability, Transparency, and Truthfulness.",
+      "error_message": "Sorry ... An error has occurred \u2620\ufe0f ",
+      "welcome_title": "Algorithmic Impact Assessment - Consumer Rights",
+      "timeout_message": null,
+      "start_button_text": "Start",
+      "restart_button_text": "Go Back to the Beginning",
+      "file": "AIA-consumer-rights.py",
+      "workflow_position": [
+        0,
+        0
+      ],
+      "transitions": []
+    },
+    {
+      "id": "AIA-anti-discrimination",
+      "path": "AIA-anti-discrimination",
+      "title": "AIA - Anti-discrimination & Trustworthiness",
+      "is_initial": true,
+      "auto_start": true,
+      "allow_restart": true,
+      "end_message": "Thank you for performing the Algorithmic Impact Assessment - Anti-discrimination & Trustworthiness! \ud83e\udd17",
+      "start_message": "We design the following Algorithmic Impact Assessment (AIA) tool to gauge the potential societal influence of an AI application in regards to fair treatment and the principles of Trustworthiness, Fairness, and Accountability.",
+      "error_message": "Sorry ... An error has occurred \u2620\ufe0f ",
+      "welcome_title": "Algorithmic Impact Assessment - Anti-discrimination & Trustworthiness",
+      "timeout_message": null,
+      "start_button_text": "Start",
+      "restart_button_text": "Go Back to the Beginning",
+      "file": "AIA-anti-discrimination.py",
+      "workflow_position": [
+        0,
+        0
+      ],
+      "transitions": []
+    },
+    {
+      "id": "AIA-protection-children",
+      "path": "AIA-protection-children",
+      "title": "AIA - Protection & Safety of Children and Adolescents",
+      "is_initial": true,
+      "auto_start": true,
+      "allow_restart": true,
+      "end_message": "Thank you for performing the Algorithmic Impact Assessment - Protection & Safety of Children and Adolescents! \ud83e\udd17",
+      "start_message": "We design the following Algorithmic Impact Assessment (AIA) tool to gauge the potential societal influence of an AI application in regards to the rights of children and adolescents.",
+      "error_message": "Sorry ... An error has occurred \u2620\ufe0f ",
+      "welcome_title": "Algorithmic Impact Assessment - Protection & Safety of Children and Adolescents",
+      "timeout_message": null,
+      "start_button_text": "Start",
+      "restart_button_text": "Go Back to the Beginning",
+      "file": "AIA-protection-children.py",
+      "workflow_position": [
+        0,
+        0
+      ],
+      "transitions": []
+    },
+    {
+      "id": "Ethical-troubleshoot",
+      "path": "Ethical-troubleshoot",
+      "title": "Ethical Troubleshoot",
+      "is_initial": true,
+      "auto_start": true,
+      "allow_restart": true,
+      "end_message": "Thank you for completing the Ethical Troubleshoot! \ud83e\udd17",
+      "start_message": "The Ethical Troubleshoot aims to further evaluate the ethical impact of AI applications, especially regarding points that fall outside the scope of our previous Algorithmic Impact Assessment surveys.",
+      "error_message": "Sorry ... An error has occurred \u2620\ufe0f ",
+      "welcome_title": "Ethical Troubleshoot",
+      "timeout_message": null,
+      "start_button_text": "Start",
+      "restart_button_text": "Go Back to the Beginning",
+      "file": "Ethical-troubleshoot.py",
+      "workflow_position": [
+        0,
+        0
+      ],
+      "transitions": []
+    },
+    {
+      "id": "EPS-transparency",
+      "path": "EPS-transparency",
+      "title": "Transparency",
+      "is_initial": true,
+      "auto_start": true,
+      "allow_restart": true,
+      "end_message": "Thank you for reading the Transparency session of our EPS tool! \ud83e\udd17",
+      "start_message": "This section is intended to assist developers in understanding if they have taken value-sensitive design considerations regarding transparency during the development of their applications.",
+      "error_message": "Sorry ... An error has occurred \u2620\ufe0f ",
+      "welcome_title": "Transparency",
+      "timeout_message": null,
+      "start_button_text": "Learn more about Transparency",
+      "restart_button_text": "Go Back to the Beginning",
+      "file": "EPS-transparency.py",
+      "workflow_position": [
+        0,
+        0
+      ],
+      "transitions": []
+    },
+    {
+      "id": "EPS-fairness",
+      "path": "EPS-fairness",
+      "title": "Fairness",
+      "is_initial": true,
+      "auto_start": true,
+      "allow_restart": true,
+      "end_message": "Thank you for reading the Fairness session of our EPS tool! \ud83e\udd17",
+      "start_message": "This section is intended to assist developers in understanding if they have taken value-sensitive design considerations regarding fairness during the development of their applications.",
+      "error_message": "Sorry ... An error has occurred \u2620\ufe0f ",
+      "welcome_title": "Fairness",
+      "timeout_message": null,
+      "start_button_text": "Learn more about Fairness",
+      "restart_button_text": "Go Back to the Beginning",
+      "file": "EPS-fairness.py",
+      "workflow_position": [
+        0,
+        0
+      ],
+      "transitions": []
+    },
+    {
+      "id": "EPS-privacy",
+      "path": "EPS-privacy",
+      "title": "Privacy",
+      "is_initial": true,
+      "auto_start": true,
+      "allow_restart": true,
+      "end_message": "Thank you for reading the Privacy session of our EPS tool! \ud83e\udd17",
+      "start_message": "This section is intended to assist developers in understanding if they have taken value-sensitive design considerations regarding privacy during the development of their applications.",
+      "error_message": "Sorry ... An error has occurred \u2620\ufe0f ",
+      "welcome_title": "Privacy",
+      "timeout_message": null,
+      "start_button_text": "Learn more about Privacy",
+      "restart_button_text": "Go Back to the Beginning",
+      "file": "EPS-privacy.py",
+      "workflow_position": [
+        0,
+        0
+      ],
+      "transitions": []
+    },
+    {
+      "id": "EPS-reliability",
+      "path": "EPS-reliability",
+      "title": "Reliability",
+      "is_initial": true,
+      "auto_start": true,
+      "allow_restart": true,
+      "end_message": "Thank you for reading the Reliability session of our EPS tool! \ud83e\udd17",
+      "start_message": "This section is intended to assist developers in understanding if they have taken value-sensitive design considerations regarding reliability during the development of their applications.",
+      "error_message": "Sorry ... An error has occurred \u2620\ufe0f ",
+      "welcome_title": "Reliability",
+      "timeout_message": null,
+      "start_button_text": "Learn more about Reliability",
+      "restart_button_text": "Go Back to the Beginning",
+      "file": "EPS-reliability.py",
+      "workflow_position": [
+        0,
+        0
+      ],
+      "transitions": []
+    },
+    {
+      "id": "EPS-sustainability",
+      "path": "EPS-sustainability",
+      "title": "Sustainability",
+      "is_initial": true,
+      "auto_start": true,
+      "allow_restart": true,
+      "end_message": "Thank you for reading the Sustainability session of our EPS tool! \ud83e\udd17",
+      "start_message": "This section is intended to assist developers in understanding if they have taken value-sensitive design considerations regarding sustainability during the development of their applications.",
+      "error_message": "Sorry ... An error has occurred \u2620\ufe0f ",
+      "welcome_title": "Sustainability",
+      "timeout_message": null,
+      "start_button_text": "Learn more about Sustainability",
+      "restart_button_text": "Go Back to the Beginning",
+      "file": "EPS-sustainability.py",
+      "workflow_position": [
+        0,
+        0
+      ],
+      "transitions": []
+    },
+    {
+      "id": "EPS-truthfulness",
+      "path": "EPS-truthfulness",
+      "title": "Truthfulness",
+      "is_initial": true,
+      "auto_start": true,
+      "allow_restart": true,
+      "end_message": "Thank you for reading the Truthfulness session of our EPS tool! \ud83e\udd17",
+      "start_message": "This section is intended to assist developers in understanding if they have taken value-sensitive design considerations regarding truthfulness during the development of their applications.",
+      "error_message": "Sorry ... An error has occurred \u2620\ufe0f ",
+      "welcome_title": "Truthfulness",
+      "timeout_message": null,
+      "start_button_text": "Learn more about Truthfulness",
+      "restart_button_text": "Go Back to the Beginning",
+      "file": "EPS-truthfulness.py",
+      "workflow_position": [
+        0,
+        0
+      ],
+      "transitions": []
+    },
+    {
+      "id": "Home",
+      "path": "Home",
+      "title": "Home",
+      "is_initial": true,
+      "auto_start": true,
+      "allow_restart": true,
+      "end_message": null,
+      "start_message": null,
+      "error_message": "Sorry ... An error has occurred \u2620\ufe0f ",
+      "welcome_title": "Welcome to Ethical Problem Solving!",
+      "timeout_message": null,
+      "start_button_text": null,
+      "restart_button_text": null,
+      "file": "Home.py",
+      "workflow_position": [
+        0,
+        0
+      ],
+      "transitions": []
+    }
+  ],
+  "scripts": [],
+  "iterators": [],
+  "conditions": [],
+  "version": "3.0"
+}

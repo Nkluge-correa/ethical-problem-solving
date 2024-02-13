@@ -1,0 +1,12 @@
+question: "Does the organization have a content moderation policy?"
+multiple: false
+options: 
+  - "Yes, the organization has a content moderation policy"
+  - "No, the organization does not have a content moderation policy"
+scores:
+  - 0.0
+  - 1.0
+accountability: true
+transparency: true
+truthfulness: true
+information: "Content moderation is the process of monitoring and applying a set of rules and guidelines to user-generated submissions to determine best practices for each platform."

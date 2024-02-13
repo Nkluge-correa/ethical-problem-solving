@@ -1,0 +1,18 @@
+question: "Has there been or will there be a study of historical biases and prejudices that may be reflected in the data used to develop the application?"
+multiple: false
+options: 
+  - "Yes, studies have been carried out to assess whether historical biases and prejudices could be reflected in the application results, and all characteristics that could reinforce prejudices or stereotypes have been removed from the data used to develop the application"
+  - "Yes, studies were carried out to assess whether historical biases and prejudices could be reflected in the results of the application, and for this reason, different weights were assigned in decision-making when involving different groups, to compensate for social inequalities"
+  - "Yes, studies have been carried out to assess whether historical biases and prejudices could be reflected in the results of the application, and all of them will be informed to users as a warning before using the tool"
+  - "None of the above"
+  - "Does not apply"
+scores:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  - 0.0
+trustworthiness: true
+fairness: true
+accountability: true
+information: null

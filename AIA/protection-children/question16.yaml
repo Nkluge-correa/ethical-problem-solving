@@ -1,0 +1,12 @@
+question: "Does the application have engagement mechanisms to keep users active on the platform for longer?"
+multiple: false
+options: 
+  - "Yes"
+  - "No"
+scores:
+  - 1.0
+  - 0.0
+privacy: false
+beneficence: true
+accountability: false
+information: null

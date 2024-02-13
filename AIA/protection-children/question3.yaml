@@ -1,0 +1,12 @@
+question: "Is it possible for a parent or legal guardian to supervise or mirror the use of the application or system?"
+multiple: false
+options: 
+  - "Yes"
+  - "No" 
+scores:
+  - 0.0
+  - 1.0
+privacy: false
+beneficence: true
+accountability: false
+information: null

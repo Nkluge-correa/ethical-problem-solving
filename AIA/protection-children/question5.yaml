@@ -1,0 +1,12 @@
+question: "Does the application or service can be used to expose, simulate, use, or perpetuate any form of violence (fights, firearms, wars, etc.)?"
+multiple: false
+options: 
+  - "Yes"
+  - "No" 
+scores:
+  - 0.0
+  - 1.0
+privacy: false
+beneficence: true
+accountability: false
+information: null

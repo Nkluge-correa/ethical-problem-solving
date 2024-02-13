@@ -1,0 +1,14 @@
+question: "Does the organization make clear to users how to use its products and services?"
+multiple: false
+options: 
+  - "The organization has clear documentation for its products and services"
+  - "Our products and services are intuitive and do not require documentation"
+  - "None of the above"
+scores:
+  - 0.0
+  - 1.0
+  - 1.0
+accountability: true
+transparency: true
+truthfulness: true
+information: null

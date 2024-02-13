@@ -1,0 +1,16 @@
+question: "Does the application have a designated Data Protection Officer (DPO)?"
+multiple: false
+options: 
+  - "Yes, the application has an appointed Data Protection Officer"
+  - "This task has been assigned to another employee who is not the Data Protection Officer"
+  - "No, the application does not have a Data Protection Officer"
+  - "Does not apply"
+scores:
+  - 0.0 
+  - 0.75 
+  - 1.0
+  - 0.0
+privacy: false
+transparency: false
+accountability: true
+information: "The Data Protection Officer is responsible for ensuring that the application complies with the General Data Protection Regulation (GDPR)."

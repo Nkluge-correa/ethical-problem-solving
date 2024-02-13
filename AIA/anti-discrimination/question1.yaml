@@ -1,0 +1,14 @@
+question: "Is the team responsible for developing the application diverse?"
+multiple: false
+options: 
+  - "Yes, the team responsible for developing the application is diverse"
+  - "No, the team responsible for developing the application is not diverse"
+  - "We do not know if the team responsible for developing the application is diverse"
+scores:
+  - 0.0
+  - 1.0
+  - 0.5
+trustworthiness: false
+fairness: true
+accountability: true
+information: "Diversity refers to the presence of members from different backgrounds and groups, such as gender, ethnicity, sexual orientation, age, and other characteristics." 

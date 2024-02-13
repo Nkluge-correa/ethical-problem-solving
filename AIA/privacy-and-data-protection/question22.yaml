@@ -1,0 +1,12 @@
+question: "The application can be or is subject to specialized external audits?"
+multiple: false
+options: 
+  - "Yes"
+  - "No"
+scores:
+  - 0.0 
+  - 1.0
+privacy: false
+transparency: true
+accountability: false
+information: null

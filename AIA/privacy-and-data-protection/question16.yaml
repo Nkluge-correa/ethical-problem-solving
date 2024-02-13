@@ -1,0 +1,14 @@
+question: "Do data subjects have a channel or contact to request the correction or deletion of their data?"
+multiple: false
+options: 
+  - "Yes"
+  - "No"
+  - "Does not apply"
+scores:
+  - 0.0 
+  - 1.0
+  - 0.0
+privacy: true
+transparency: true
+accountability: false
+information: "Data subjects are the individuals whose personal data is being processed."

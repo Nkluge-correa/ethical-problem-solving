@@ -1,0 +1,14 @@
+question: "Is the data used to develop the algorithm a fair representation of different user groups the application will serve?"
+multiple: false
+options: 
+  - "Not known, since the data used was obtained from a third party and the organization does not know the origin of the data"
+  - "Yes, an evaluation of the data was carried out to ensure that it is a fair representation of different user groups the application will serve"
+  - "Does not apply"
+scores:
+  - 1.0
+  - 0.0
+  - 0.0
+trustworthiness: true
+fairness: true
+accountability: true
+information: null 

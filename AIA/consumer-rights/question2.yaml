@@ -1,0 +1,14 @@
+question: "Are alternative methods of conflict resolution and user support provided by the organization?"
+multiple: false
+options: 
+  - "Yes, the application has an online conflict resolution platform"
+  - "Yes, the application uses mediators to help resolve conflicts"
+  - "None of the above"
+scores:
+  - 0.0
+  - 0.0
+  - 1.0
+accountability: true
+transparency: false
+truthfulness: false
+information: null

@@ -1,0 +1,14 @@
+question: "Is the algorithm available to be audited by third parties?"
+multiple: false
+options: 
+  - "Our organization does not perform audits on algorithms" 
+  - "Our organization performs audits on algorithms, but the algorithms are not auditable by third parties"
+  - "Our organization performs audits on algorithms, and the algorithms are auditable by third parties"
+scores:
+  - 1.0
+  - 0.5
+  - 0.0
+trustworthiness: true
+fairness: false
+accountability: true
+information: "An audit is a review of an algorithm to ensure that it works as intended."

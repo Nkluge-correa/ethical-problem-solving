@@ -1,0 +1,79 @@
+<h1>Intermediate</h1>
+<p>EPS uses an evaluation matrix to calculate impacts associated with an application. The three categories in this matrix are <strong>Low</strong>, <strong>Intermediate</strong>, and <strong>High</strong>. From low to high, each category has a set of suggestions to guide future implementations.</p>
+<p>EPS measures the impact level of an application regarding transparency through a correlation between the algorithmic complexity and how critical the system decision is considering the scope of use.</p>
+<p>The following intended uses are representative of the Intermediate-impact level:</p>
+<ul>
+<li>
+<p><strong>Target ads:</strong> Recommender systems used to deliver targeted ads to individuals or groups.</p>
+</li>
+<li>
+<p><strong>Image or video generation:</strong> AI-powered systems used to create synthetic images or videos.</p>
+</li>
+<li>
+<p><strong>Text generation:</strong> AI algorithms used to generate text, like writing assistants and code autocompletion tools.</p>
+</li>
+<li>
+<p><strong>Weather forecast:</strong> AI-powered models used to predict the weather.</p>
+</li>
+</ul>
+<p>The following recommendations are for an application evaluated to an <strong>Intermediate</strong> impact level regarding the principle of <strong>transparency</strong>.</p>
+<h2>Recommendations</h2>
+<p>An application with an <strong>Intermediate level of impact</strong> should implement the following measures:</p>
+<ul>
+<li>
+<p>Details about the model and dataset must be provided in a <strong>model card</strong>. <a href="https://arxiv.org/abs/1810.03993" target="_blank">Model cards</a> offer an easy way to ensure <em>transparency</em> and <em>accountability</em>. In an <strong>Intermediate-impact</strong> application, the following information should be disclosed:</p>
+<ul>
+<li>General information about the responsible developers (e.g., development team leader).</li>
+<li>General information about the nature of the model (e.g., what type of model?).</li>
+<li>A performance report.</li>
+<li>The origins of the data used in data collection, pre-processing, and possible sources of bias that may influence future statistical models.</li>
+<li>Adequate operational domain and out-of-scope applications.</li>
+<li>Model's performance against fairness metrics and a Fairness Statement.</li>
+<li>(When possible) Make the training dataset available for audits.
+<ul>
+<li>(If making the training data available is impossible) Provide a transparency report on the used dataset (e.g., a statistical analysis on used features and potential biases).</li>
+</ul>
+</li>
+<li>A recommendation for human oversight when utilizing the application.</li>
+</ul>
+</li>
+</ul>
+<p>White-box models should always be preferred when it comes to transparency. However, Black-box models have more leeway when dealing with low-impact situations due to the inexpressibility of possible errors. Black-box models should be used in <strong>Intermediate</strong> impact applications only if the general behavior of the algorithm is interpretable. Simultaneously, shallow models (<em>to the greatest extent possible</em>) should be prioritized when using Machine Learning since they are easier to interpret.</p>
+<h2>How to increase transparency?</h2>
+<h3>Model Cards for Model Reporting</h3>
+<p><a href="https://arxiv.org/abs/1810.03993" target="_blank"><strong>Model cards</strong></a> are short documents accompanying machine learning models. Such cards provide details and performance characteristics of a model in question, helping to visualize transparency and accountability behaviors in developing autonomous systems.</p>
+<p>Platforms like Hugging Face incentivize the display of model cards and dataset cards for all objects hosted in the Hub. <a href="https://huggingface.co/docs/hub/model-cards" target="_blank">Here</a> and <a href="https://huggingface.co/docs/hub/datasets-cards" target="_blank">here</a>, you can find examples of how to develop your own model and dataset cards, while <a href="https://huggingface.co/spaces/huggingface/Model_Cards_Writing_Tool" target="_blank">here</a> you can find and application to help you fill this document. We also provide a tutorial on generating this kind of report [<a href="(https://github.com/Nkluge-correa/teeny-tiny_castle/blob/master/ML%20Accountability/Model%20Cards/model_card_generator.ipynb)" target="_blank">👉 notebook</a>].</p>
+<h3>Computer Vision Applications</h3>
+<p>One of the main ideas behind XAI is that "<em>complex systems (like neural networks) need to be interpretable to humans.</em>" In response to the concerns raised against model opacity, the field of interpretability (specifically in CV applications) has formed two standard approaches: <strong>feature visualization</strong> and <strong>saliency mapping</strong>.</p>
+<p>The ensuing tutorial presents an interpretability analysis of the inner workings of a CNN using <strong>feature visualization techniques</strong> [<a href="https://github.com/Nkluge-correa/teeny-tiny_castle/blob/master/ML%20Explainability/CV%20Interpreter/CNN_feature_visualization.ipynb" target="_blank">👉notebook</a>]. Meanwhile, the following tutorial focuses on saliency mapping techniques. Saliency maps provide an interpretable technique to investigate hidden layers in CNNs [<a href="https://github.com/Nkluge-correa/teeny-tiny_castle/blob/master/ML%20Explainability/CV%20Interpreter/CNN_attribution_maps_with_LIME.ipynb" target="_blank">👉notebook</a>].</p>
+<ul>
+<li><strong>Note:</strong> We also recommend the study of the "<em><a href="https://distill.pub/2020/circuits/" target="_blank">Circuits</a></em>" series, which thoroughly explains how features and activation maps can be interpreted. Also, for a comprehensive explanation of the limitations and difficulties related to saliency mapping techniques, we recommend "<em><a href="https://arxiv.org/abs/2002.00772" target="_blank">Evaluating Saliency Map Explanations for Convolutional Neural Networks: A User Study</a></em>".</li>
+</ul>
+<p>The idea of building saliency maps is based on a technique called <strong>Integrated Gradients</strong>. Proposed in "<em><a href="https://arxiv.org/abs/1703.01365" target="_blank">Axiomatic Attribution for Deep Networks</a></em>", this methodology uses the gradient of a model to determine what <em>influences</em> the individual inputs (<em>like words in a sentence or pixels in an image</em>) have on the output of a model. This methodology can be used in multi-modal models that combine CV with, for example, NLP. This tutorial shows how to interpret diffusion models in this fashion [<a href="https://github.com/Nkluge-correa/teeny-tiny_castle/blob/master/ML%20Explainability/CV%20Interpreter/diffusion_interpreter.ipynb" target="_blank">👉notebook</a>]. Meanwhile, the subsequent tutorial explains the <strong>LIME</strong> methodology (<em>Local Interpretable Model-agnostic Explanations</em>), which also employs gradient integration techniques in the explanation of CV models [<a href="https://github.com/Nkluge-correa/teeny-tiny_castle/blob/master/ML%20Explainability/CV%20Interpreter/CNN_attribution_maps_with_LIME.ipynb" target="_blank">👉notebook</a>].</p>
+<p>Also, the following libraries can help you further push the interpretability of CV models:</p>
+<ul>
+<li><a href="https://captum.ai/" target="_blank">Captum</a>.</li>
+<li><a href="https://github.com/JoaoLages/diffusers-interpret" target="_blank">Diffusers-Interpret</a>.</li>
+<li><a href="https://github.com/SeldonIO/alibi" target="_blank">Alibi</a>.</li>
+<li><a href="https://github.com/marcotcr/lime" target="_blank">Lime</a>.</li>
+</ul>
+<h3>Natural Language Processing Applications</h3>
+<p>Local Interpretable Model-agnostic Explanations can also be employed in NLP models, producing a saliency mapping on tokens instead of pixels. The following tutorials present demonstrations of how to apply gradient integration techniques to different types of models used in language processing [<a href="https://github.com/Nkluge-correa/teeny-tiny_castle/blob/master/ML%20Explainability/NLP%20Interpreter/lime_for_NLP.ipynb" target="_blank">👉notebook</a>] [<a href="https://github.com/Nkluge-correa/teeny-tiny_castle/blob/master/ML%20Explainability/NLP%20Interpreter/integrated_gradients_in%20_keras_nlp.ipynb" target="_blank">👉notebook</a>] [<a href="https://github.com/Nkluge-correa/teeny-tiny_castle/blob/master/ML%20Explainability/NLP%20Interpreter/gradient_explanations_BERT.ipynb" target="_blank">👉notebook</a>].</p>
+<p>Another way to explore language and ML models, in general, is by investigating the data they were trained on. Suppose we have text datasets of manageable size. In that case, one can also use <strong>text mining</strong> techniques to examine the distribution of patterns (e.g., sentiment, word recurrence, toxicity, etc.) in a text corpus. In this tutorial, we demonstrate how to use introductory text mining techniques [<a href="https://github.com/Nkluge-correa/teeny-tiny_castle/blob/master/ML%20Explainability/NLP%20Interpreter/text_mining.ipynb" target="_blank">👉notebook</a>].</p>
+<p>Finally, another way to interpret language models, at least those representing language as dense vectors, is by analyzing word/token embeddings. Embeddings are dense vector representations of words (or sub-words) that capture semantic and syntactic information about the tokens they represent. In the following tutorials, you can learn how to create and interpret a word2vector model and the embedding layer of a pre-trained language model [<a href="https://github.com/Nkluge-correa/teeny-tiny_castle/blob/master/ML%20Explainability/NLP%20Interpreter/word2vec.ipynb" target="_blank">👉notebook</a>] [<a href="https://github.com/Nkluge-correa/teeny-tiny_castle/blob/master/ML%20Explainability/NLP%20Interpreter/investigating_word_embeddings.ipynb" target="_blank">👉notebook</a>].</p>
+<p>Also, the following libraries can help you further push the interpretability of NLP models:</p>
+<ul>
+<li><a href="https://github.com/interpretml/interpret-text" target="_blank">Interpret-Text</a>.</li>
+<li><a href="https://captum.ai/" target="_blank">Captum</a>.</li>
+<li><a href="https://github.com/SeldonIO/alibi" target="_blank">Alibi</a>.</li>
+<li><a href="https://github.com/marcotcr/lime" target="_blank">Lime</a>.</li>
+</ul>
+<h3>Classification/Forecasting Applications</h3>
+<p>Many commercial ML applications train classification or regression models with <strong>tabular data</strong>. The following notebook elaborates on how to interpret the classifications provided by the outputs of these types of models using techniques such as statistical database analysis, <strong>Breakdown plots</strong>, <strong>Interactive Breakdown plots</strong>, <strong>Shapley Additive Explanations</strong>, and <strong>LIME</strong> [<a href="https://github.com/Nkluge-correa/teeny-tiny_castle/blob/master/ML%20Explainability/Tabular%20Interpreter/interpreter_for_tabular.ipynb" target="_blank">👉notebook</a>].</p>
+<p>Also, the following libraries can help you further push the interpretability of ML models in general:</p>
+<ul>
+<li><a href="https://github.com/interpretml/interpret" target="_blank">InterpretML</a>.</li>
+<li><a href="https://github.com/ModelOriented/DALEX" target="_blank">DALEX</a>.</li>
+<li><a href="https://github.com/SeldonIO/alibi" target="_blank">Alibi</a>.</li>
+<li><a href="https://github.com/marcotcr/lime" target="_blank">Lime</a>.</li>
+</ul>

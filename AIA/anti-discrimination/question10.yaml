@@ -1,0 +1,16 @@
+question: "Are users informed about the biases, prejudices, and stereotypes the application may reinforce?"
+multiple: false
+options: 
+  - "Yes, in terms of use, there are warnings, along with other instructions"
+  - "Yes, there are prominent warnings in plain language about the limitations and possible biases of the tool"
+  - "This information is not available to users"
+  - "There is no information for users, but there is a channel for them to report possible problems if they encounter them"
+scores:
+  - -0.5
+  - -1.
+  - 1.0
+  - 1.0
+trustworthiness: true
+fairness: true
+accountability: true
+information: "Bias refers to the presence of prejudice or stereotypes that favor or harm a particular group." 

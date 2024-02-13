@@ -1,0 +1,12 @@
+question: "Does the application or service allow users to interact with each other and share content (photos, videos, etc.)?"
+multiple: false
+options: 
+  - "Yes"
+  - "No" 
+scores:
+  - 1.0
+  - 0.0
+privacy: true
+beneficence: false
+accountability: true
+information: null

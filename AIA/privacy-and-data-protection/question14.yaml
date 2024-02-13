@@ -1,0 +1,18 @@
+question: "In cases where the application requires personal data to operate, what is the source of such data?"
+multiple: true
+options: 
+  - "Open or public database(s)"
+  - "Proprietary data"
+  - "Data provided by third parties"
+  - "Data provided by the users"
+  - "Does not apply"
+scores:
+  - 0.0 
+  - 0.25
+  - 0.25 
+  - 0.50
+  - 0.0
+privacy: true
+transparency: false
+accountability: true
+information: "Personal data refers to any information that can be used to identify an individual."

@@ -1,0 +1,12 @@
+question: "Does the application or service present advertisements or promotions that are not suitable for minors, such as alcohol, tobacco, drugs, or gambling?"
+multiple: false
+options: 
+  - "Yes"
+  - "No" 
+scores:
+  - 1.0
+  - 0.0
+privacy: false
+beneficence: true
+accountability: true
+information: null

@@ -1,0 +1,14 @@
+question: "Does the application use proxies to replace sensitive features that have direct causal influence in the system's outputs?"
+multiple: false
+options: 
+  - "Yes, the application uses proxies for sensitive features"
+  - "No, the application does not use proxies for sensitive features"
+  - "We do not know the relationship between overall features and sensitive features"
+scores:
+  - 1.0
+  - 0.0
+  - 1.0
+trustworthiness: true
+fairness: true
+accountability: true
+information: "Proxy here refers to a feature that can be used as an indicator or substitute for another feature (e.g., name -> gender)."

@@ -1,0 +1,12 @@
+question: "Does the application have a policy for deleting personal data from its users after the period provided in its Terms of Use and Privacy Policy has expired?"
+multiple: false
+options: 
+  - "Yes"
+  - "No"
+scores:
+  - 0.0 
+  - 1.0
+privacy: true
+transparency: true
+accountability: true
+information: "Terms of Use deliminate the rights and responsibilities of the user and the application. The Privacy Policy describes how the application processes the personal data of its users."
