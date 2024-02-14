@@ -23,7 +23,7 @@ homepage = (
 <p>This repository contains a simple demo of our framework, \
     <strong>and it should not be considered a working EaaS platform. The full implementation of our \
       method as an EaaS is currently under development.</strong></p>
-<p>Read more about our framework in our <a href="https://arxiv.org/abs/2106.11300" target="_blank">paper</a></p> \
+<p>Read more about our framework in our <a href="https://github.com/Nkluge-correa/ethical-problem-solving" target="_blank">paper</a></p> \
 <p>The source code for this demo is available on <a href="https://github.com/Nkluge-correa/ethical-problem-solving" \
   target="_blank">GitHub</a>.</p>
 """)
@@ -151,14 +151,14 @@ homepage = (
 
 <h2>Recommendation stage (WHY-SHOULD-HOW)</h2>
 <p>The WHY-SHOULD-HOW methodology is the format in which the evaluation outcome is presented.</p>
-<p>The "Why" step is structured to demonstrate the relevancy of each principle, providing the conceptualization \
+<p>The WHY step is structured to demonstrate the relevancy of each principle, providing the conceptualization \
   and highlighting paradigmatic cases of deficit implementation in a structure that answers the questions \
-    "<em>What is said principle?</em>" and "<em>Why should you care about it?</em>". The "Should" and "How" \
+    "<em>What is said principle?</em>" and "<em>Why should you care about it?</em>". The SHOULD and HOW \
       are attached to streamline the normative guidance and the practical tools to address it.</p>
-<p>The "Should" provides the metric utilized to gauge the level of recommendation regarding the corresponding \
+<p>The SHOULD provides the metric utilized to gauge the level of recommendation regarding the corresponding \
   principle, the level of recommendations indicated for the specific case, and the set of recommendations in a \
-    summarized form. Finally, the "How" component offers the practical tools and strategies required to \
-      implement the recommendations made in the "Should" stage.</p>
+    summarized form. Finally, the HOW component offers the practical tools and strategies required to \
+      implement the recommendations made in the SHOULD stage.</p>
 """)
 .display_image(
     "img/eps-why-should-how.png",
@@ -175,8 +175,8 @@ homepage = (
 </style>
 
 <h2>Tools</h2>
-<p>The "How" step of the WHY-SHOULD-HOW methodology pragmatizes the normative recommendations of our method. \
-  Hence, throughout the "How" stage, in every principle evaluated, the developer is presented with ready-to-use \
+<p>The HOW step of the WHY-SHOULD-HOW methodology pragmatizes the normative recommendations of our method. \
+  Hence, throughout the HOW stage, in every principle evaluated, the developer is presented with ready-to-use \
     tools paired with demonstrations in the form of an <a href="https://github.com/Nkluge-correa/teeny-tiny_castle" \
       target="_blank">open repository of tutorials</a>. The repository has many examples of tools and techniques \
         developed to deal with the potential issues of an AI application (e.g., algorithmic discrimination, model \

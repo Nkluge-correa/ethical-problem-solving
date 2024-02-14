@@ -66,9 +66,9 @@ Hence, each principle has three distinct possible recommendations tailored to sp
 
 The WHY-SHOULD-HOW methodology is the format in which the evaluation outcome is presented.
 
-The "Why" step is structured to demonstrate the relevancy of each principle, providing the conceptualization and highlighting paradigmatic cases of deficit implementation in a structure that answers the questions "_What is said principle?_" and "_Why should you care about it?_". The "Should" and "How" are attached to streamline the normative guidance and the practical tools to address it.
+The WHY step is structured to demonstrate the relevancy of each principle, providing the conceptualization and highlighting paradigmatic cases of deficit implementation in a structure that answers the questions "_What is said principle?_" and "_Why should you care about it?_". The SHOULD and HOW are attached to streamline the normative guidance and the practical tools to address it.
 
-The "Should" provides the metric utilized to gauge the level of recommendation regarding the corresponding principle, the level of recommendations indicated for the specific case, and the set of recommendations in a summarized form. Finally, the "How" component offers the practical tools and strategies required to implement the recommendations made in the "Should" stage.
+The SHOULD provides the metric utilized to gauge the level of recommendation regarding the corresponding principle, the level of recommendations indicated for the specific case, and the set of recommendations in a summarized form. Finally, the HOW component offers the practical tools and strategies required to implement the recommendations made in the SHOULD stage.
 
 <p align="center">
     <img src="img/eps-why-should-how.png" alt="A diagram illustrating the relationship between AI and privacy, with a focus on transparency and fairness levels. The image shows a progression from low to high levels of transparency, privacy, and fairness, leading to AI’s role in privacy. Questions about the importance of privacy and methods to protect it are highlighted." width="600px">
@@ -76,7 +76,7 @@ The "Should" provides the metric utilized to gauge the level of recommendation r
 
 ## Tools
 
-The "How" step of the WHY-SHOULD-HOW methodology pragmatizes the normative recommendations of our method. Hence, throughout the "How" stage, in every principle evaluated, the developer is presented with ready-to-use tools paired with demonstrations in the form of an [open repository of tutorials](https://github.com/Nkluge-correa/teeny-tiny_castle). The repository has many examples of tools and techniques developed to deal with the potential issues of an AI application (e.g., algorithmic discrimination, model opacity, brittleness, etc.), all being worked through with some of the most common contemporary AI applications (e.g., computer vision, natural language processing, forecasting, etc.)
+The HOW step of the WHY-SHOULD-HOW methodology pragmatizes the normative recommendations of our method. Hence, throughout the HOW stage, in every principle evaluated, the developer is presented with ready-to-use tools paired with demonstrations in the form of an [open repository of tutorials](https://github.com/Nkluge-correa/teeny-tiny_castle). The repository has many examples of tools and techniques developed to deal with the potential issues of an AI application (e.g., algorithmic discrimination, model opacity, brittleness, etc.), all being worked through with some of the most common contemporary AI applications (e.g., computer vision, natural language processing, forecasting, etc.)
 
 <p align="center">
     <img src="img/eps-tools.png" alt="A graphical representation of metrics related to sustainability, fairness, and transparency in machine learning or similar technological contexts. The image consists of three sections, each labeled with a different attribute: SUSTAINABILITY, FAIRNESS, and TRANSPARENCY. Each section has an associated icon and is connected to a specific tool or metric. The color scheme varies for each section: blue for SUSTAINABILITY, purple for FAIRNESS, and yellow for TRANSPARENCY." width="600px">
