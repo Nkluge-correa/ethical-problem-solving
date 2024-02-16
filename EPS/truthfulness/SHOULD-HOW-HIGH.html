@@ -78,6 +78,10 @@
 <li><a href="https://github.com/Stability-AI/invisible-watermark-gpu" target="_blank">Invisible-watermark</a>.</li>
 </ul>
 <p>The followng tutorial show analysis of LMM watermarking [<a href="https://github.com/jwkirchenbauer/lm-watermarking/blob/main/experiments/watermarking_analysis.ipynb" target="_blank">👉notebook</a>] [<a href="https://github.com/jwkirchenbauer/lm-watermarking/blob/main/experiments/watermarking_example_finding.ipynb" target="_blank">👉notebook</a>].</p>
+<p>We also recommend the addition of C2PA-style metadata to generated content, in addition to watermarks. <a href="https://c2pa.org/" target="_blank">C2PA</a> is an open technical standard that allows organizations to embed metadata in media to verify its origin. Such implementation will enable users and auditing bodies to use tools like <a href="https://contentcredentials.org/verify" target="_blank">Content Credentials Verify</a> and <a href="https://truepic.com/" target="_blank">Truepic</a> to verify the provenance of a given piece of content, like an image.</p>
+<blockquote>
+<p><strong>Note:</strong> C2PA-style metadata can be removed accidentally or intentionally. Hence, adding identifiable metadata should not be considered a robust solution for creating accountable data provenance.</p>
+</blockquote>
 <h3>Moderation</h3>
 <p>Moderation for generative models that mimic human activities is challenging. However, in high-impact applications, we recommend human in-the-loop assessment as a necessary condition for deployment. In terms of truthfulness, moderation for high-impact applications involves monitoring the use of a system to ensure its use does not support activities that actively seek to deceive people (e.g., generating photo-realistic images of public figures).</p>
 <p>Hence, besides all the tools already mentioned in section <strong>Retrieval-Augmented Generation</strong> for automated fact-checking, high-impact applications require organizations to incorporate a team of human moderators to review and monitor the systems use, much in line with the read teaming (<a href="https://arxiv.org/abs/2209.07858" target="_blank">source</a>).</p>
