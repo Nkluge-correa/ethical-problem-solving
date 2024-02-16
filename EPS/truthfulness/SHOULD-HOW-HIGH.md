@@ -87,6 +87,10 @@ Watermarking can also help protect organizations against unauthorized modificati
 
 The followng tutorial show analysis of LMM watermarking [[👉notebook](https://github.com/jwkirchenbauer/lm-watermarking/blob/main/experiments/watermarking_analysis.ipynb)] [[👉notebook](https://github.com/jwkirchenbauer/lm-watermarking/blob/main/experiments/watermarking_example_finding.ipynb)].
 
+We also recommend the addition of C2PA-style metadata to generated content, in addition to watermarks. [C2PA](https://c2pa.org/) is an open technical standard that allows organizations to embed metadata in media to verify its origin. Such implementation will enable users and auditing bodies to use tools like [Content Credentials Verify](https://contentcredentials.org/verify) and [Truepic](https://truepic.com/) to verify the provenance of a given piece of content, like an image.
+
+> **Note:** C2PA-style metadata can be removed accidentally or intentionally. Hence, adding identifiable metadata should not be considered a robust solution for creating accountable data provenance.
+
 ### Moderation
 
 Moderation for generative models that mimic human activities is challenging. However, in high-impact applications, we recommend human in-the-loop assessment as a necessary condition for deployment. In terms of truthfulness, moderation for high-impact applications involves monitoring the use of a system to ensure its use does not support activities that actively seek to deceive people (e.g., generating photo-realistic images of public figures).

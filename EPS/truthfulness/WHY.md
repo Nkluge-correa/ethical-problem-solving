@@ -44,7 +44,7 @@ Truthfulness plays a critical role in image generation systems. Advanced text-to
 
 Concerning truthfulness, at the moment, many systems are available to anyone wishing to produce photo-realistic images using nothing more than text prompts. For example, the photo series of Pope Francis in a puffer jacket ([source](https://www.cbsnews.com/news/pope-francis-puffer-jacket-fake-photos-deepfake-power-peril-of-ai/)) is a prime example of the potential risks and implications of these image generation systems, given that when such images were released, a significant audience unfamiliar with the concept of GenAI was caught by surprise.
 
-Ensuring that the generated outputs of such systems are not tailored to spread misinformation is crucial. Currently, the Coalition for Content Provenance and Authenticity (C2PA), a joint project of several tech companies, seeks to address the critical issue that is the provenance of digital media, given the seriousness that fake media sharing may scale up in the future.
+Ensuring that the generated outputs of such systems are not tailored to spread misinformation is crucial. Currently, the Coalition for Content Provenance and Authenticity ([C2PA](https://c2pa.org/)), a joint project of several tech companies, seeks to address the critical issue that is the provenance of digital media, given the seriousness that fake media sharing may scale up in the future.
 
 ## Final Remarks
 
