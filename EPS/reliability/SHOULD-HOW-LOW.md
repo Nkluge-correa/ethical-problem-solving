@@ -40,7 +40,7 @@ To achieve a low error rate, developers must invest in robust training methods, 
 
 - **Training Improvements** are techniques that allow ML models to perform better during training. Given the significant amount of heuristic knowledge used in designing successful ML experiments, following the hypersettings stipulated by similar projects or celebrated studies is a good practice. However, if you cannot access those, hyperparameter searching can be a valuable ally in optimizing any training run.
 
-  - In AI development, **Hyperparameter tuning** is the problem of choosing a set of optimal hyperparameters for a learning algorithm. Algorithms that can search and find optimal solutions in this space can help you improve the performance of your models. Utilities like the Keras Tuner [[👉notebook](https://github.com/Nkluge-correa/teeny-tiny_castle/blob/master/ML%20Intro%20Course/10_hyperparameter_tuning.ipynb)], or [Ray Tune](https://pytorch.org/tutorials/beginner/hyperparameter_tuning_tutorial.html), can help you in this process.
+  - In AI development, **Hyperparameter tuning** is the problem of choosing a set of optimal hyperparameters for a learning algorithm. Algorithms that can search and find optimal solutions in this space can help you improve the performance of your models. Utilities like the Keras Tuner [[👉notebook](https://github.com/Nkluge-correa/TeenyTinyCastle/blob/master/ML-Intro-Course/10_hyperparameter_tuning.ipynb)], or [Ray Tune](https://pytorch.org/tutorials/beginner/hyperparameter_tuning_tutorial.html), can help you in this process.
 
 ### Rigorous Testing
 
@@ -50,7 +50,7 @@ To achieve a low error rate, developers must invest in robust training methods, 
 
 Here are some tools that can be used to benchmark different types of ML systems:
 
-- [SecML](https://github.com/pralab/secml) is an open-source Python library for the security evaluation of Machine Learning algorithms that can be used to evaluate many ML models. We offer a basic tutorial on its use on the following link [[👉notebook](https://github.com/Nkluge-correa/teeny-tiny_castle/blob/master/ML%20Adversarial/evasion_attacks.ipynb)].
+- [SecML](https://github.com/pralab/secml) is an open-source Python library for the security evaluation of Machine Learning algorithms that can be used to evaluate many ML models. We offer a basic tutorial on its use on the following link [[👉notebook](https://github.com/Nkluge-correa/TeenyTinyCastle/blob/master/ML-Adversarial/evasion_attacks.ipynb)].
 - The [Language Model Evaluation Harness](https://github.com/EleutherAI/lm-evaluation-harness) is a framework for few-shot evaluation of language models with hundreds of benchmarks ready for evaluation, being the backbone for famous [LLM leaderboards](https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard). Other types of evaluation harnesses are also available [here](https://decodingtrust.github.io/) (with a focus on Trustworthiness) and [here](https://github.com/embeddings-benchmark/) (with a focus on the evaluation of text embeddings).
 - [FACET](https://facet.metademolab.com/) is a benchmark evaluating the fairness of vision models across classification, detection, instance segmentation, and visual grounding tasks that involve people.
 - While benchmarks like [COCO](https://github.com/cocodataset/cocoapi) can help you evaluate the object detection skills of computer vision models, benchmarks like [Q-Bench](https://q-future.github.io/Q-Bench/) and [HRS-Bench](https://github.com/hrsbench/HRS_Bench) can help you assess multi-modal models.

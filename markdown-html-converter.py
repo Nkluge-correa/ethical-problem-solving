@@ -53,5 +53,7 @@ if __name__ == "__main__":
     args = parser.parse_args()
     main(args)
 
+    print("Done!")
+
 # How to use:
-# python markdown-html-converter.py -p ./EPS/truthfulness
+# python markdown-html-converter.py -p ./EPS/fairness

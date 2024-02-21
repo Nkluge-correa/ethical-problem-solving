@@ -44,7 +44,7 @@ To achieve a low error rate, developers must invest in robust training methods, 
 
 - **Training Improvements** are techniques that allow ML models to perform better during training. Given the significant amount of heuristic knowledge used in designing successful ML experiments, following the hypersettings stipulated by similar projects or celebrated studies is a good practice. However, if you cannot access those, hyperparameter searching can be a valuable ally in optimizing any training run.
 
-  - In AI development, **Hyperparameter tuning** is the problem of choosing a set of optimal hyperparameters for a learning algorithm. Algorithms that can search and find optimal solutions in this space can help you improve the performance of your models. Utilities like the Keras Tuner [[👉notebook](https://github.com/Nkluge-correa/teeny-tiny_castle/blob/master/ML%20Adversarial/adversarial_training_cv.ipynb)], or [Ray Tune](https://pytorch.org/tutorials/beginner/hyperparameter_tuning_tutorial.html), can help you in this process.
+  - In AI development, **Hyperparameter tuning** is the problem of choosing a set of optimal hyperparameters for a learning algorithm. Algorithms that can search and find optimal solutions in this space can help you improve the performance of your models. Utilities like the Keras Tuner [[👉notebook](https://github.com/Nkluge-correa/TeenyTinyCastle/blob/master/ML-Adversarial/adversarial_training_cv.ipynb)], or [Ray Tune](https://pytorch.org/tutorials/beginner/hyperparameter_tuning_tutorial.html), can help you in this process.
 
 ### Rigorous Testing
 
@@ -54,7 +54,7 @@ To achieve a low error rate, developers must invest in robust training methods, 
 
 Here are some tools that can be used to benchmark different types of ML systems:
 
-- [SecML](https://github.com/pralab/secml) is an open-source Python library for the security evaluation of Machine Learning algorithms that can be used to evaluate many ML models. We offer a basic tutorial on its use on the following link [[👉notebook](https://github.com/Nkluge-correa/teeny-tiny_castle/blob/master/ML%20Adversarial/evasion_attacks.ipynb)].
+- [SecML](https://github.com/pralab/secml) is an open-source Python library for the security evaluation of Machine Learning algorithms that can be used to evaluate many ML models. We offer a basic tutorial on its use on the following link [[👉notebook](https://github.com/Nkluge-correa/TeenyTinyCastle/blob/master/ML-Adversarial/evasion_attacks.ipynb)].
 - The [Language Model Evaluation Harness](https://github.com/EleutherAI/lm-evaluation-harness) is a framework for few-shot evaluation of language models with hundreds of benchmarks ready for evaluation, being the backbone for famous [LLM leaderboards](https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard). Other types of evaluation harnesses are also available [here](https://decodingtrust.github.io/) (with a focus on Trustworthiness) and [here](https://github.com/embeddings-benchmark/) (with a focus on the evaluation of text embeddings).
 - [FACET](https://facet.metademolab.com/) is a benchmark evaluating the fairness of vision models across classification, detection, instance segmentation, and visual grounding tasks that involve people.
 - While benchmarks like [COCO](https://github.com/cocodataset/cocoapi) can help you evaluate the object detection skills of computer vision models, benchmarks like [Q-Bench](https://q-future.github.io/Q-Bench/) and [HRS-Bench](https://github.com/hrsbench/HRS_Bench) can help you assess multi-modal models.
@@ -74,6 +74,8 @@ You can learn more on the matter with the following guides:
 
 > **Note: It is essential to critically assess when ML models should be taken out of production (sunset).**
 
+Safety guardrails are another crucial step in the monitoring and governance of artificial intelligence technologies. Guardrails, in this context, refer to technical constraints aimed at mitigating risks ([source](https://arxiv.org/abs/2402.01822)). Two valuable repositories that can aid in implementing safety guardrails for AI systems (specifically LLMs) are [NeMo-Guardrails](https://github.com/NVIDIA/NeMo-Guardrails) developed by NVIDIA, and [Guardrails](https://github.com/guardrails-ai/guardrails) by guardrails-ai.
+
 ### Adversarial machine learning
 
 **Adversarial machine learning (AML)** is a subfield of machine learning that focuses on developing algorithms and techniques that can withstand and respond to adversarial attacks. **Adversarial attacks** are a type of threat where an attacker deliberately manipulates the
@@ -81,7 +83,7 @@ inputs of ML models, intending to cause them to produce incorrect outputs.
 
 Security engineers can use **AML** to improve the robustness of ML models by identifying vulnerabilities and developing countermeasures to mitigate the impact of adversarial attacks. A range of techniques has been developed for **AML**, including **adversarial training** (_training models on adversarial examples_) and **defensive distillation** (_creating a distilled version of a model resistant to adversarial attacks_).
 
-In **adversarial training**, we generate adversarial examples and use them as samples for training (or fine-tuning) the original model, making it more robust. The following tutorial focuses on how to create an adversarial dataset to train and test the reliability of a **CNN** model utilizing the [**Fast Gradient Sign Method**](https://arxiv.org/abs/1412.6572)[[👉notebook](https://github.com/Nkluge-correa/teeny-tiny_castle/blob/master/ML%20Adversarial/adversarial_training_cv.ipynb)]. Meanwhile, this tutorial focuses on how to create an adversarial dataset to train and test the robustness of **NLP** models utilizing the [**TextAttack**](https://github.com/QData/TextAttack)[[👉notebook](https://github.com/Nkluge-correa/teeny-tiny_castle/blob/master/ML%20Adversarial/adversarial_training_nlp.ipynb)].
+In **adversarial training**, we generate adversarial examples and use them as samples for training (or fine-tuning) the original model, making it more robust. The following tutorial focuses on how to create an adversarial dataset to train and test the reliability of a **CNN** model utilizing the [**Fast Gradient Sign Method**](https://arxiv.org/abs/1412.6572)[[👉notebook](https://github.com/Nkluge-correa/TeenyTinyCastle/blob/master/ML-Adversarial/adversarial_training_cv.ipynb)]. Meanwhile, this tutorial focuses on how to create an adversarial dataset to train and test the robustness of **NLP** models utilizing the [**TextAttack**](https://github.com/QData/TextAttack)[[👉notebook](https://github.com/Nkluge-correa/TeenyTinyCastle/blob/master/ML-Adversarial/adversarial_training_nlp.ipynb)].
 
 In **high-impact** scenarios, using automated forms of adversarial training and testing may be insufficient to promote a reliable deployment. To address this issue, human-generated adversarial attacks, or **red teaming**, may help you enhance the safety of your system. When employing red teams, organizations use security professionals who assume the role of an adversary to evaluate the vulnerabilities of a machine learning model.
 
@@ -99,7 +101,7 @@ The process of **defensive distillation** involves the following steps:
 
 4. **Use the expert model to retrain the apprentice:** The expert model can be used for inference in an assisted training regime, where its outputs are used to help the apprentice model become more resilient against adversaries.
 
-The following tutorials focus on how to create adversarial examples against **CNNs**[[👉notebook](https://github.com/Nkluge-correa/teeny-tiny_castle/blob/master/ML%20Adversarial/evasion_attacks_FGSM.ipynb)] and **language models** [[👉notebook](https://github.com/Nkluge-correa/teeny-tiny_castle/blob/master/ML%20Adversarial/adversarial_text_attack.ipynb)_].
+The following tutorials focus on how to create adversarial examples against **CNNs**[[👉notebook](https://github.com/Nkluge-correa/TeenyTinyCastle/blob/master/ML-Adversarial/evasion_attacks_FGSM.ipynb)] and **language models** [[👉notebook](https://github.com/Nkluge-correa/TeenyTinyCastle/blob/master/ML-Adversarial/adversarial_text_attack.ipynb)_].
 
 **Note: It is worth noting that while adversarial training improves the model's robustness against adversaries, such regimes usually deteriorate the model's performance due to model collapse. Preventing model collapse is a nontrivial challenge during model fine-tuning and extended training.**
 
@@ -114,4 +116,4 @@ In **high-impact** scenarios, other types of adversarial attacks should be consi
 
 > **Note: Attacker might clone models to learn vulnerabilities on the original model. Suppose you base your technology on an open-source model like Llama or Resnet. In that case, if they know the type of model you are using, attackers can use the open-sourced versions to search for exploits, and your technology might be vulnerable.**
 
-The following tutorial emulates a **model extraction** attack [[👉notebook](https://github.com/Nkluge-correa/teeny-tiny_castle/blob/master/ML%20Adversarial/model_extraction_nlp.ipynb)]. Meanwhile, this tutorial exemplifies **Label-flipping** and **Backdoor** attacks [[👉notebook](https://github.com/Nkluge-correa/teeny-tiny_castle/blob/master/ML%20Adversarial/data_poisoning_attacks.ipynb)].
+The following tutorial emulates a **model extraction** attack [[👉notebook](https://github.com/Nkluge-correa/TeenyTinyCastle/blob/master/ML-Adversarial/model_extraction_nlp.ipynb)]. Meanwhile, this tutorial exemplifies **Label-flipping** and **Backdoor** attacks [[👉notebook](https://github.com/Nkluge-correa/TeenyTinyCastle/blob/master/ML-Adversarial/data_poisoning_attacks.ipynb)].

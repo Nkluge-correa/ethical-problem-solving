@@ -36,7 +36,7 @@ An application with a **high level of impact** should implement the following me
 
 [**Model cards**](https://arxiv.org/abs/1810.03993) are short documents accompanying machine learning models. Such cards provide details and performance characteristics of a model in question and can help publicize potential biases of a dataset or model.
 
-Platforms like Hugging Face incentivize the display of model cards and dataset cards for all objects hosted in the Hub. [Here](https://huggingface.co/docs/hub/model-cards) and [here](https://huggingface.co/docs/hub/datasets-cards), you can find examples of how to develop your own model and dataset cards. We also provide a tutorial on generating this kind of report [[👉 notebook]((https://github.com/Nkluge-correa/teeny-tiny_castle/blob/master/ML%20Accountability/Model%20Cards/model_card_generator.ipynb))].
+Platforms like Hugging Face incentivize the display of model cards and dataset cards for all objects hosted in the Hub. [Here](https://huggingface.co/docs/hub/model-cards) and [here](https://huggingface.co/docs/hub/datasets-cards), you can find examples of how to develop your own model and dataset cards. We also provide a tutorial on generating this kind of report [[👉 notebook]((https://github.com/Nkluge-correa/TeenyTinyCastle/blob/master/ML-Accountability/Model-Reporting/model_card_generator.ipynb))].
 
 ### Fairness Statement (**fairness metrics**, **bias mitigation techniques**)
 
@@ -56,7 +56,7 @@ To provide quantitative measures for the fairness evaluation of a machine learni
 
 These ratios should be similar when comparing groups possessing different sensitive attributes. For example, a significant difference in FP for a sensitive attribute like gender indicates that the system tends to assign (wrongly) the positive class for people with a specific gender type. A naive approach to solving such an issue would involve hiding all known sensitive attributes from the model. Nevertheless, such a solution ignores that proxies can infer sensitive attributes. For example, in a racially segregated city, **address** is a proxy for **race**.
 
-If we suspect a feature is a proxy for a sensitive attribute, **fairness metrics** can help us further inspect their relationship with the model's output. Fairness metrics are a set of measures that enable you to detect the presence of bias in your model. These metrics can be used to identify disparities in the decision-making process of an algorithm. However, quantitative fairness metrics may be ill-suited for certain types of systems (e.g., generative models). Even though one can explore statistical distributions of generated content (like we do in this tutorial [[👉notebook]](https://github.com/Nkluge-correa/teeny-tiny_castle/blob/master/ML%20Fairness/nlp_fairness_distilgpt2.ipynb)), the exploration of biases in generative models usually follows a more qualitative and exploratory approach, where analysts try to uncover hidden (and sometimes not so hidden) tendencies and functionalities of such systems.
+If we suspect a feature is a proxy for a sensitive attribute, **fairness metrics** can help us further inspect their relationship with the model's output. Fairness metrics are a set of measures that enable you to detect the presence of bias in your model. These metrics can be used to identify disparities in the decision-making process of an algorithm. However, quantitative fairness metrics may be ill-suited for certain types of systems (e.g., generative models). Even though one can explore statistical distributions of generated content (like we do in this tutorial [[👉notebook]](https://github.com/Nkluge-correa/TeenyTinyCastle/blob/master/ML-Fairness/nlp_fairness_distilgpt2.ipynb)), the exploration of biases in generative models usually follows a more qualitative and exploratory approach, where analysts try to uncover hidden (and sometimes not so hidden) tendencies and functionalities of such systems.
 
 In regards to fairness metrics, here are some of the most used methods in the field:
 
@@ -90,7 +90,7 @@ A CP profile is nothing more than a profile of how the classification of a model
 
 Counterfactual Fairness has an intuitive and straightforward definition of fairness. An algorithm is said to be counterfactually fair if, _and only if_, the probability that the individual **X**, member of a group **a**, would be unchanged, even if we lived in a world where individual **X** was of the group **b**.
 
-In summary, these methods involve modeling the relationships between the sensitive attribute, the decision-making process, and the outcome by simulating counterfactual scenarios and evaluating counterfactual outcomes in these scenarios. We recommend using such techniques in applications with a **high level of impact**. The following tutorials are focused on how to apply **Counterfactual Fairness** [[👉notebook](https://github.com/Nkluge-correa/teeny-tiny_castle/blob/master/ML%20Fairness/ceteris_paribus_profiles.ipynb)] and [[👉notebook](https://github.com/Nkluge-correa/teeny-tiny_castle/blob/master/ML%20Explainability/Tabular%20Interpreter/fairness_xai_COMPAS.ipynb)].
+In summary, these methods involve modeling the relationships between the sensitive attribute, the decision-making process, and the outcome by simulating counterfactual scenarios and evaluating counterfactual outcomes in these scenarios. We recommend using such techniques in applications with a **high level of impact**. The following tutorials are focused on how to apply **Counterfactual Fairness** [[👉notebook](https://github.com/Nkluge-correa/TeenyTinyCastle/blob/master/ML-Fairness/ceteris_paribus_profiles.ipynb)] and [[👉notebook](https://github.com/Nkluge-correa/TeenyTinyCastle/blob/master/ML-Explainability/Tabular/fairness_xai_COMPAS.ipynb)].
 
 #### **Bias Mitigation**
 
@@ -111,9 +111,9 @@ The following libraries can help you further push for bias-reduction in your mod
 - [Fairlearn](https://fairlearn.org/v0.8/auto_examples/index.html).
 - [Others](https://github.com/topics/fairness-ml).
 
-Also, the following tutorials focus on the application of fairness metrics in different contexts and more [[👉notebook](https://github.com/Nkluge-correa/teeny-tiny_castle/blob/master/ML%20Fairness/fair_metrics_Credit_card_approval.ipynb),
-[👉notebook](https://github.com/Nkluge-correa/teeny-tiny_castle/blob/master/ML%20Fairness/fair_metrics_celeba.ipynb),
-[👉notebook](https://github.com/Nkluge-correa/teeny-tiny_castle/blob/master/ML%20Fairness/nlp_fairness_distilgpt2.ipynb)].
+Also, the following tutorials focus on the application of fairness metrics in different contexts and more [[👉notebook](https://github.com/Nkluge-correa/TeenyTinyCastle/blob/master/ML-Fairness/fair_metrics_Credit_card_approval.ipynb),
+[👉notebook](https://github.com/Nkluge-correa/TeenyTinyCastle/blob/master/ML-Fairness/fair_metrics_celeba.ipynb),
+[👉notebook](https://github.com/Nkluge-correa/TeenyTinyCastle/blob/master/ML-Fairness/nlp_fairness_distilgpt2.ipynb)].
 
 ### Monitoring and Explaining
 
@@ -133,4 +133,4 @@ These are a few steps to elevate the monitoring of a model:
 
 Explaining an ML model's operation can also illustrate how sensitive attributes influence this algorithmic process. In some industries, such as finance or healthcare, there may even be legal or regulatory requirements for explaining the impact of sensitive attributes in AI models.
 
-Compliance with these regulations is essential for avoiding legal and reputational risks. Here, **Fairness** and **Transparency** intersect. The following tutorials are focused on **Explainable** and **Interpretable** AI [[👉notebook](https://github.com/Nkluge-correa/teeny-tiny_castle/blob/master/ML%20Explainability/Tabular%20Interpreter/fairness_xai_COMPAS.ipynb), [👉notebook](https://github.com/Nkluge-correa/teeny-tiny_castle/blob/master/ML%20Explainability/Tabular%20Interpreter/interpreter_for_tabular.ipynb)]. Also, we recommend the "_[Explanatory Model Analysis](https://ema.drwhy.ai/)_" guidebook to address the intersection of **Fairness** and **Transparency**."
+Compliance with these regulations is essential for avoiding legal and reputational risks. Here, **Fairness** and **Transparency** intersect. The following tutorials are focused on **Explainable** and **Interpretable** AI [[👉notebook](https://github.com/Nkluge-correa/TeenyTinyCastle/blob/master/ML-Explainability/Tabular/fairness_xai_COMPAS.ipynb), [👉notebook](https://github.com/Nkluge-correa/TeenyTinyCastle/blob/master/ML-Explainability/Tabular/interpreter_for_tabular.ipynb)]. Also, we recommend the "_[Explanatory Model Analysis](https://ema.drwhy.ai/)_" guidebook to address the intersection of **Fairness** and **Transparency**."

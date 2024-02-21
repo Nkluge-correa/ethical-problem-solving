@@ -177,7 +177,7 @@ homepage = (
 <h2>Tools</h2>
 <p>The HOW step of the WHY-SHOULD-HOW methodology pragmatizes the normative recommendations of our method. \
   Hence, throughout the HOW stage, in every principle evaluated, the developer is presented with ready-to-use \
-    tools paired with demonstrations in the form of an <a href="https://github.com/Nkluge-correa/teeny-tiny_castle" \
+    tools paired with demonstrations in the form of an <a href="https://github.com/Nkluge-correa/TeenyTinyCastle" \
       target="_blank">open repository of tutorials</a>. The repository has many examples of tools and techniques \
         developed to deal with the potential issues of an AI application (e.g., algorithmic discrimination, model \
           opacity, brittleness, etc.), all being worked through with some of the most common contemporary AI \
