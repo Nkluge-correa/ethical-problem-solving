@@ -65,6 +65,10 @@ After implementing your chosen RAG approach, a few benchmarks should help attest
 
 - [ArtiFact](https://github.com/awsaf49/artifact) is a large-scale dataset to aid in the development of generalizable and robust synthetic image detectors.
 
+- [DeepfakeBench](https://github.com/SCLBD/DeepfakeBench) presents several standardized evaluation metrics and protocols to enhance the evaluation of generative models.
+
+- [DEEP-VOICE](https://www.kaggle.com/datasets/birdy654/deep-voice-deepfake-voice-recognition) can be used to evaluate and develop spech models tackling the detection of AI-generated speech.
+
 Besides, the following tools can be used to monitor and evaluate the factuality of a model's output during inference:
 
 - [LangCheck](https://github.com/citadel-ai/langcheck).
