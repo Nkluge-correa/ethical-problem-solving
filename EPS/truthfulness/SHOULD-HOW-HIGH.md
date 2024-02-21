@@ -99,6 +99,6 @@ We also recommend the addition of C2PA-style metadata to generated content, in a
 
 Moderation for generative models that mimic human activities is challenging. However, in high-impact applications, we recommend human in-the-loop assessment as a necessary condition for deployment. In terms of truthfulness, moderation for high-impact applications involves monitoring the use of a system to ensure its use does not support activities that actively seek to deceive people (e.g., generating photo-realistic images of public figures).
 
-Hence, besides all the tools already mentioned in section **Retrieval-Augmented Generation** for automated fact-checking, high-impact applications require organizations to incorporate a team of human moderators to review and monitor the systems use, much in line with the read teaming ([source](https://arxiv.org/abs/2209.07858)).
+Hence, besides all the tools already mentioned in section **Retrieval-Augmented Generation** for automated fact-checking, high-impact applications require organizations to incorporate a team of human moderators to review and monitor the systems use, much in line with the read teaming ([source](https://arxiv.org/abs/2209.07858)). Practices like this can be aided by tools like [Google's Fact Check](https://toolbox.google.com/factcheck/explorer).
 
 If all guardrails fail to prevent falsehood generation (disclosure, RAG, watermarking, and moderation), responsible sunsetting (model termination) should be considered the only viable solution.
