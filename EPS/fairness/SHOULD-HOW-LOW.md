@@ -71,3 +71,10 @@ Group A is the protected demographic group, and Group B is the non-protected dem
 A DIS score of less than 1 indicates that the model has a disparate impact on the protected group compared to the non-protected group. If the score is 1, it suggests that the model is entirely equitable. The industry standard is a [four-fifths rule](https://dictionary.apa.org/four-fifths-rule): if the unprivileged group receives a positive outcome of less than 80% of their proportion of the privileged group, this is a disparate impact violation.
 
 When the DIS score is unsatisfactory, there are techniques to modify a dataset to attain a DIS score closer to acceptable ranges. For example, [Disparate Impact Remover](https://arxiv.org/abs/1810.01943) is a tool currently implemented in the [AI Fairness 360](https://www.ibm.com/opensource/open/projects/ai-fairness-360/) that can address this subject straightforwardly. The following tutorial focuses on how to implement this tool [[👉notebook]](https://github.com/Nkluge-correa/TeenyTinyCastle/blob/master/ML-Fairness/disparate_impact_remove_Hogwarts.ipynb).
+
+Here are some other tools you can use to assess and improve fairness of machine learning models:
+
+- [Dalex](https://dalex.drwhy.ai/python/api/fairness/index.html).
+- [AI Fairness 360](https://www.ibm.com/opensource/open/projects/ai-fairness-360/).
+- [Fairlearn](https://fairlearn.org/v0.8/auto_examples/index.html).
+- [Others](https://github.com/topics/fairness-ml).
