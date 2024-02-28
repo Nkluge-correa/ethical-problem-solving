@@ -89,6 +89,7 @@ The following libraries can help you further push for bias-reduction in your mod
 - [Dalex](https://dalex.drwhy.ai/python/api/fairness/index.html).
 - [AI Fairness 360](https://www.ibm.com/opensource/open/projects/ai-fairness-360/).
 - [Fairlearn](https://fairlearn.org/v0.8/auto_examples/index.html).
+- [REVISE](https://github.com/princetonvisualai/revise-tool).
 - [Others](https://github.com/topics/fairness-ml).
 
 Also, the following tutorials focus on the application of fairness metrics in different contexts and more [[👉notebook](https://github.com/Nkluge-correa/TeenyTinyCastle/blob/master/ML-Fairness/fair_metrics_Credit_card_approval.ipynb),

@@ -77,4 +77,5 @@ Here are some other tools you can use to assess and improve fairness of machine 
 - [Dalex](https://dalex.drwhy.ai/python/api/fairness/index.html).
 - [AI Fairness 360](https://www.ibm.com/opensource/open/projects/ai-fairness-360/).
 - [Fairlearn](https://fairlearn.org/v0.8/auto_examples/index.html).
+- [REVISE](https://github.com/princetonvisualai/revise-tool).
 - [Others](https://github.com/topics/fairness-ml).
