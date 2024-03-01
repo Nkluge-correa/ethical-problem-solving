@@ -76,7 +76,9 @@ You can learn more on the matter with the following guides:
 
 > **Note: It is essential to critically assess when ML models should be taken out of production (sunset).**
 
-Safety guardrails are another crucial step in the monitoring and governance of artificial intelligence technologies. Guardrails, in this context, refer to technical constraints aimed at mitigating risks ([source](https://arxiv.org/abs/2402.01822)). Two valuable repositories that can aid in implementing safety guardrails for AI systems (specifically LLMs) are [NeMo-Guardrails](https://github.com/NVIDIA/NeMo-Guardrails) developed by NVIDIA, and [Guardrails](https://github.com/guardrails-ai/guardrails) by guardrails-ai.
+Safety guardrails are another crucial step in the monitoring and governance of artificial intelligence technologies. Guardrails, in this context, refer to technical constraints aimed at mitigating risks ([source](https://arxiv.org/abs/2402.01822)). Two valuable repositories that can aid in implementing safety guardrails for AI systems (specifically LLMs) are [NeMo-Guardrails](https://github.com/NVIDIA/NeMo-Guardrails) developed by NVIDIA, and [Guardrails](https://github.com/guardrails-ai/guardrails) by guardrails-ai. Other similar tools are listed below:
+
+- [LLM Guard](https://github.com/protectai/llm-guard).​
 
 ### Adversarial Machine Learning
 
