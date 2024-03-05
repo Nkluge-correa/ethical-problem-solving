@@ -56,4 +56,4 @@ if __name__ == "__main__":
     print("Done!")
 
 # How to use:
-# python markdown-html-converter.py -p ./EPS/fairness
+# python markdown-html-converter.py -p ./EPS/reliability

@@ -1,12 +1,12 @@
 # Ethical Framing and the WHY-SHOULD-HOW method
 
-This folder contains all principles available for ethical framing (_fairness, privacy, reliability, sustainability, transparency, and truthfulness_). After the evaluation stage, the EPS framework requires that human evaluators classify the system under consideration in an impact matrix. The matrix comprises three recommendation levels tailored to each impact level - **high**, **intermediate**, and **low**.
+This folder contains all principles available for ethical framing ([fairness](./fairness), [privacy](./privacy), [reliability](./reliability), [sustainability](./sustainability), [transparency](./transparency), [truthfulness](./truthfulness)). After the evaluation stage, the EPS framework requires that human evaluators classify the system under consideration in an impact matrix. The matrix comprises three recommendation levels tailored to each impact level - **high**, **intermediate**, and **low**.
 
 <p align="center">
     <img src="../img/eps-ethical-framing.png" alt="A graphical representation of an Algorithmic Impact Assessment and Ethical Framing in AI, focusing on human-centered design. The image consists of two main sections with pie charts and a grid layout, indicating levels of privacy, consumer rights, antidiscrimination, transparency, and fairness. A grey silhouette icon represents a human-centered approach. The legend explains the meaning of the colors." width="600px">
 </p>
 
-Hence, each principle has three distinct possible recommendations tailored to specific impact levels, e.g., Sustainability-low, Sustainability-intermediate, and Sustainability-high.
+Hence, each principle has three distinct possible recommendations tailored to specific impact levels, e.g., [Sustainability-low](./sustainability/SHOULD-HOW-LOW.md), [Sustainability-intermediate](./sustainability/SHOULD-HOW-INTERMEDIATE.md), and [Sustainability-high](./sustainability/SHOULD-HOW-HIGH.md).
 
 <p align="center">
     <img src="../img/eps-ethical-framing-2.png" alt="An infographic illustrating the criteria for Human-Centered Evaluation, with icons and text representing Fairness, Privacy, Reliability, Transparency, Truthfulness, and Sustainability. Each criterion is rated on a scale from low to high. The legend explains the meaning of the colors." width="600px">

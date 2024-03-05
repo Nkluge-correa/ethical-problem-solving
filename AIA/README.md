@@ -12,23 +12,23 @@ $$\text{Impact Score}\_{\text{ privacy}} = \frac{\text{Score}}{\text{Max Score}}
 
 $$\text{AIA Score} = \frac{\text{Impact Score}\_{\text{ privacy}} + \text{Impact Score}\_{\text{ transparency}} + \text{Impact Score}\_{\text{ accountability}}}{\text{Nº  of evaluated principles}}$$
 
-In the following folders (`anti-discrimination`, `consumer-rights`, `privacy-and-data-protection`, and `protection-children`), you will find all questions for each AIA, presented as `.yaml` files, as shown in the figure above. These specification files are structured as shown below:
+In the following folders ([anti-discrimination](./anti-discrimination), [consumer-rights](./consumer-rights), [privacy-and-data-protection](./privacy-and-data-protection), and [protection-children](./protection-children)), you will find all questions for each AIA, presented as YAML files, as shown in the figure above. These specification files are structured as shown below:
 
 ```yaml
 question: "The question you wish to implement."
-multiple: false # if is not multiple choice, else, `true``
+multiple: false # If is not multiple choice, else, `true`.
 options: 
   - Option 1
   - Option 2
   - Option 3
-scores: # the number of options and respective scores should match, and be in the same order
+scores: # The number of options and respective scores should match, and be in the same order.
   - 1.0
   - 2.0
   - 3.0
-principle1: true # if this question evaluates this principle, else, `false`
+principle1: true # If this question evaluates this principle, else, `false`.
 principle2: true
 principle3: true
-information: "An informative that may help the user in understanding the question." # if no information is to be given, set the value to `null` 
+information: "An informative that may help the user understand the question." # If no information is to be given, set the value to `null`.
 ```
 
-You can create as many questions as you want. Only remember that this demo will display them in ascending order, using their number as a sorting key.
+You can create as many questions as you want. Remember that this demo will display them in ascending order, using their number as a sorting key.
