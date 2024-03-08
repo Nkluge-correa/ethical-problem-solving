@@ -21,6 +21,10 @@ def main(args):
     # Loop for each Markdown file
     for path in markdown_files:
 
+        # Ignore the README.md file
+        if "README" in path:
+            continue
+
         # Read the Markdown file
         with open(path, "r") as file:
             markdown_text = file.read()
@@ -56,4 +60,4 @@ if __name__ == "__main__":
     print("Done!")
 
 # How to use:
-# python markdown-html-converter.py -p ./EPS/reliability
+# python markdown-html-converter.py -p ./EPS/sustainability
