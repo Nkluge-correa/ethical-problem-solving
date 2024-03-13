@@ -1,3 +1,4 @@
 abstra==2.3.6
 pandas==1.5.2
 PyYAML==6.0
+plotly==5.11.0
