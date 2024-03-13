@@ -122,10 +122,14 @@
       "restart_button_text": "Go Back to the Beginning",
       "file": "AIA-pre-survey.py",
       "workflow_position": [
-        0,
-        0
+        0.0,
+        0.0
       ],
-      "transitions": []
+      "transitions": [],
+      "notification_trigger": {
+        "variable_name": "assignee_emails",
+        "enabled": false
+      }
     },
     {
       "id": "AIA-privacy-and-data-protection",
@@ -146,7 +150,11 @@
         -962.6942852602635,
         -443.47449662293354
       ],
-      "transitions": []
+      "transitions": [],
+      "notification_trigger": {
+        "variable_name": "assignee_emails",
+        "enabled": false
+      }
     },
     {
       "id": "AIA-consumer-rights",
@@ -164,10 +172,14 @@
       "restart_button_text": "Go Back to the Beginning",
       "file": "AIA-consumer-rights.py",
       "workflow_position": [
-        0,
-        0
+        0.0,
+        0.0
       ],
-      "transitions": []
+      "transitions": [],
+      "notification_trigger": {
+        "variable_name": "assignee_emails",
+        "enabled": false
+      }
     },
     {
       "id": "AIA-anti-discrimination",
@@ -185,10 +197,14 @@
       "restart_button_text": "Go Back to the Beginning",
       "file": "AIA-anti-discrimination.py",
       "workflow_position": [
-        0,
-        0
+        0.0,
+        0.0
       ],
-      "transitions": []
+      "transitions": [],
+      "notification_trigger": {
+        "variable_name": "assignee_emails",
+        "enabled": false
+      }
     },
     {
       "id": "AIA-protection-children",
@@ -206,10 +222,14 @@
       "restart_button_text": "Go Back to the Beginning",
       "file": "AIA-protection-children.py",
       "workflow_position": [
-        0,
-        0
+        0.0,
+        0.0
       ],
-      "transitions": []
+      "transitions": [],
+      "notification_trigger": {
+        "variable_name": "assignee_emails",
+        "enabled": false
+      }
     },
     {
       "id": "Ethical-troubleshoot",
@@ -227,10 +247,14 @@
       "restart_button_text": "Go Back to the Beginning",
       "file": "Ethical-troubleshoot.py",
       "workflow_position": [
-        0,
-        0
+        0.0,
+        0.0
       ],
-      "transitions": []
+      "transitions": [],
+      "notification_trigger": {
+        "variable_name": "assignee_emails",
+        "enabled": false
+      }
     },
     {
       "id": "EPS-transparency",
@@ -248,10 +272,14 @@
       "restart_button_text": "Go Back to the Beginning",
       "file": "EPS-transparency.py",
       "workflow_position": [
-        0,
-        0
+        0.0,
+        0.0
       ],
-      "transitions": []
+      "transitions": [],
+      "notification_trigger": {
+        "variable_name": "assignee_emails",
+        "enabled": false
+      }
     },
     {
       "id": "EPS-fairness",
@@ -269,10 +297,14 @@
       "restart_button_text": "Go Back to the Beginning",
       "file": "EPS-fairness.py",
       "workflow_position": [
-        0,
-        0
+        0.0,
+        0.0
       ],
-      "transitions": []
+      "transitions": [],
+      "notification_trigger": {
+        "variable_name": "assignee_emails",
+        "enabled": false
+      }
     },
     {
       "id": "EPS-privacy",
@@ -290,10 +322,14 @@
       "restart_button_text": "Go Back to the Beginning",
       "file": "EPS-privacy.py",
       "workflow_position": [
-        0,
-        0
+        0.0,
+        0.0
       ],
-      "transitions": []
+      "transitions": [],
+      "notification_trigger": {
+        "variable_name": "assignee_emails",
+        "enabled": false
+      }
     },
     {
       "id": "EPS-reliability",
@@ -311,10 +347,14 @@
       "restart_button_text": "Go Back to the Beginning",
       "file": "EPS-reliability.py",
       "workflow_position": [
-        0,
-        0
+        0.0,
+        0.0
       ],
-      "transitions": []
+      "transitions": [],
+      "notification_trigger": {
+        "variable_name": "assignee_emails",
+        "enabled": false
+      }
     },
     {
       "id": "EPS-sustainability",
@@ -332,10 +372,14 @@
       "restart_button_text": "Go Back to the Beginning",
       "file": "EPS-sustainability.py",
       "workflow_position": [
-        0,
-        0
+        0.0,
+        0.0
       ],
-      "transitions": []
+      "transitions": [],
+      "notification_trigger": {
+        "variable_name": "assignee_emails",
+        "enabled": false
+      }
     },
     {
       "id": "EPS-truthfulness",
@@ -353,10 +397,14 @@
       "restart_button_text": "Go Back to the Beginning",
       "file": "EPS-truthfulness.py",
       "workflow_position": [
-        0,
-        0
+        0.0,
+        0.0
       ],
-      "transitions": []
+      "transitions": [],
+      "notification_trigger": {
+        "variable_name": "assignee_emails",
+        "enabled": false
+      }
     },
     {
       "id": "Home",
@@ -374,14 +422,18 @@
       "restart_button_text": null,
       "file": "Home.py",
       "workflow_position": [
-        0,
-        0
+        0.0,
+        0.0
       ],
-      "transitions": []
+      "transitions": [],
+      "notification_trigger": {
+        "variable_name": "assignee_emails",
+        "enabled": false
+      }
     }
   ],
   "scripts": [],
   "iterators": [],
   "conditions": [],
-  "version": "3.0"
+  "version": "4.0"
 }

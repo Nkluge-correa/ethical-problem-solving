@@ -86,7 +86,7 @@ intro = (
       the impacts caused by their technologies</em>."</li><br>
 </ul>
 
-<p>To access more definitions, visit <a href="https://doi.org/10.1016/j.patter.2023.100857" \
+<p>To access more definitions, visit <a href="https://nkluge-correa.github.io/worldwide_AI-ethics/" \
   target="_blank">Worldwide AI Ethics</a>.</p>"""
 ).run("Next")
 )

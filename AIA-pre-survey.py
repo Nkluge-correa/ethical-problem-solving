@@ -29,7 +29,7 @@ intro = (
   <em>Responsibility</em>, <em>Autonomy</em>, <em>Beneficence</em>, <em>Reliability</em>, and \
     <em>Equity</em>, in addition to the legislation in force in Brazil. \
       To learn more about ethical principles, visit \
-        <a href="https://www.airespucrs.org/worldwide-ai-ethics" target="_blank">Worldwide AI Ethics</a>.</p>"""
+        <a href="https://nkluge-correa.github.io/worldwide_AI-ethics/" target="_blank">Worldwide AI Ethics</a>.</p>"""
 ).run("Start Pre-AIA survey")
 )
 

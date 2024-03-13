@@ -87,7 +87,7 @@ intro = (
        with AI systems</em>."</li><br>
 </ul>
 
-<p>To access more definitions, visit <a href="https://www.airespucrs.org/worldwide-ai-ethics" \
+<p>To access more definitions, visit <a href="https://nkluge-correa.github.io/worldwide_AI-ethics/" \
   target="_blank">Worldwide AI Ethics</a>.</p>"""
 ).run("Next")
 )
