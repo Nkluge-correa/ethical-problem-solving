@@ -48,6 +48,14 @@ To achieve a low error rate, developers must invest in robust training methods, 
 
   - In AI development, **Hyperparameter tuning** is the problem of choosing a set of optimal hyperparameters for a learning algorithm. Algorithms that can search and find optimal solutions in this space can help you improve the performance of your models. Utilities like the Keras Tuner [[👉notebook](https://github.com/Nkluge-correa/TeenyTinyCastle/blob/master/ML-Adversarial/adversarial_training_cv.ipynb)], or [Ray Tune](https://pytorch.org/tutorials/beginner/hyperparameter_tuning_tutorial.html), can help you in this process.
 
+Developing performant ML models also requires avoiding the common pitfalls that might lead us to think we have a good model when we don't. Many things can go wrong when training an ML model, from using bad-quality data to leaking testing samples/information to your training signal. To avoid these mistakes, there are already checklists for helping ML engineers avoid common but usually forgettable pitfalls. These checklists serve as a self-assessment tool that enables developers to catch common mistakes while documenting the construction of their ML pipelines. For example:
+
+- [CLAIM](https://pubs.rsna.org/page/ai/claim) is a well-established checklist for artificial intelligence in medical imaging. It is a formal document that takes you through the critical pain points in the machine-learning pipeline and helps you identify potential issues.
+
+- [REFORMS](https://reforms.cs.princeton.edu/) is a field-agnostic checklist with 32 items that help researchers review possible pitfalls and best practices in adopting ML methods. The checklist is also accompanied by a set of guidelines for each item in the checklist.
+
+> **Note: To learn more about the common pitfalls of ML development and how to avoid them, we recommend "[Why Doesn't My Model Work?](https://thegradient.pub/why-doesnt-my-model-work/)".**
+
 ### Rigorous Testing
 
 **Rigorous testing** regarding **reliability** involves evaluating the system's ability to perform its intended functions accurately, efficiently, and consistently over a range of scenarios with unseen data. The standard ML workflow, where we separate training samples for further testing, may not be enough of an evaluation. Because of this, it is a common and highly recommended practice to evaluate your model's performance on standard benchmarks.
