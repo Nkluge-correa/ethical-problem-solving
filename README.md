@@ -1,8 +1,8 @@
 <div align="center">
 
-# Crossing the Principle-Practice Gap in AI Ethics with Ethical Problem-Solving
+# Crossing the principle–practice gap in AI ethics with ethical problem-solving
 
-[Demo](https://eps-demo.abstra.app/Home) | [Paper](https://github.com/Nkluge-correa/ethical-problem-solving)
+[Demo](https://eps-demo.abstra.app/Home) | [Paper](https://link.springer.com/article/10.1007/s43681-024-00469-8)
 
 </div>
 
@@ -138,13 +138,13 @@ The main folder in this repo contains the following:
 
 ```latex
 @article{correa2024eps,
-  doi = {upcoming},
-  url = {https://nkluge-correa.github.io/ethical-problem-solving/},
+  doi = {10.1007/s43681-024-00469-8},
+  url = {https://link.springer.com/article/10.1007/s43681-024-00469-8},
   author={Corr{\^e}a, Nicholas Kluge and Santos, James William and Galv{\~a}o, Camila and Pasetti, Marcelo and Schiavon, Dieine and Naqvi, Faizah and Hossain, Robayet and De Oliveira, Nythamar},
-  title = {Crossing the Principle-Practice Gap in AI Ethics with Ethical Problem Solving},
+  title = {Crossing the principle–practice gap in AI ethics with ethical problem-solving},
   year = {2024},
-  publisher = {upcoming},
-  journal = {upcoming},
+  publisher = {Springer},
+  journal = {AI and Ethics},
 }
 ```
 

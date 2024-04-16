@@ -1,9 +1,9 @@
-<h2 style="text-align:center"> Crossing the Principle-Practice Gap in AI Ethics with Ethical Problem-Solving </h2>
+<h2 style="text-align:center"> Crossing the principle–practice gap in AI ethics with ethical problem-solving </h2>
 
 The past years have presented a surge in artificial intelligence (AI) development, fueled by breakthroughs in deep learning, increased computational power, and substantial investments in the field. Given the generative capabilities of more recent AI systems, the era of large-scale AI models has transformed various domains that intersect our daily lives. However, this progress raises concerns about the balance between technological advancement, ethical considerations, safety measures, and financial interests. Moreover, using such systems in sensitive areas amplifies our general ethical awareness, prompting a re-emergence of debates on governance, regulation, and human values. However, amidst this landscape, how to bridge the principle-practice gap separating ethical discourse from the technical side of AI development remains an open problem. In response to this challenge, the present work proposes a framework to help shorten this gap: _Ethical Problem-Solving_ (EPS). EPS is a methodology promoting responsible, human-centric, and value-oriented AI development. The framework's core resides in translating principles into practical implementations using impact assessment surveys and a differential recommendation methodology. We utilize EPS as a blueprint to propose the implementation of an _Ethics as a Service Platform_, currently available as a simple demonstration. We released all framework components openly and with a permissive license, hoping the community would adopt and extend our efforts into other contexts.
 
 <p style="text-align: center;">
-<a href="https://github.com/Nkluge-correa/ethical-problem-solving" target="_blank">Full article here.</a>
+<a href="https://link.springer.com/article/10.1007/s43681-024-00469-8" target="_blank">Full article here.</a>
 </p>
 
 <h3 style="text-align: center;">Website License</h3>

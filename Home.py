@@ -23,7 +23,7 @@ homepage = (
 <p>This repository contains a simple demo of our framework, \
     <strong>and it should not be considered a working EaaS platform. The full implementation of our \
       method as an EaaS is currently under development.</strong></p>
-<p>Read more about our framework in our <a href="https://github.com/Nkluge-correa/ethical-problem-solving" target="_blank">paper</a></p> \
+<p>Read more about our framework in our <a href="https://link.springer.com/article/10.1007/s43681-024-00469-8" target="_blank">paper</a></p> \
 <p>The source code for this demo is available on <a href="https://github.com/Nkluge-correa/ethical-problem-solving" \
   target="_blank">GitHub</a>.</p>
 """)
