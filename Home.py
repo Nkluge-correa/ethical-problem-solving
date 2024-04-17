@@ -12,8 +12,8 @@ homepage = (
     }
 </style>
 
-<h1>Ethical Problem Solving 🤔</h1>
-<p>Ethical Problem Solving (EPS) is a framework to promote the development of safe and ethical artificial \
+<h1>Ethical Problem-Solving 🤔</h1>
+<p>Ethical Problem-Solving (EPS) is a framework to promote the development of safe and ethical artificial \
   intelligence. EPS is divided into an evaluation stage (performed via <strong>Algorithmic Impact Assessment\
     </strong> tools) and a recommendation stage (the <strong>WHY-SHOULD-HOW</strong> method). Both these stages\
        represent distinct steps in a human-centered <em>EaaS</em> (<strong>Ethics as a Service</strong>) \
@@ -236,7 +236,7 @@ homepage = (
 <p>This methodology is part of the RAIES initiative, a project supported by FAPERGS - \
   (<a href="https://fapergs.rs.gov.br/inicial" target="_blank">Fundação de Amparo à \
     Pesquisa do Estado do Rio Grande do Sul</a>), Brazil.</p>
-<p>Ethical Problem Solving © 2024 by Nicholas Kluge Corrêa, James William Santos, Camila Galvão, Marcelo Pasetti, \
+<p>Ethical Problem-Solving © 2024 by Nicholas Kluge Corrêa, James William Santos, Camila Galvão, Marcelo Pasetti, \
   Dieine Schiavon, Faizah Naqvi, Robayet Hossain, and Nythamar de Oliveira is licensed under \
     <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a>.</p>
 """)

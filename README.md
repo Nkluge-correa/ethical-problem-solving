@@ -6,7 +6,7 @@
 
 </div>
 
-Ethical Problem Solving (EPS) is a framework to promote the development of safe and ethical artificial intelligence. EPS is divided into an evaluation stage (performed via **Algorithmic Impact Assessment** tools) and a recommendation stage (the **WHY-SHOULD-HOW** method). Both these stages represent distinct steps in a human-centered _EaaS_ (**Ethics as a Service**) framework developed by _Nicholas Kluge Corrêa_, _James William Santos_, _Camila Galvão_, _Marcelo Pasetti_, _Dieine Schiavon_, _Faizah Naqvi_, _Robayet Hossain_, and _Nythamar de Oliveira_.
+Ethical Problem-Solving (EPS) is a framework to promote the development of safe and ethical artificial intelligence. EPS is divided into an evaluation stage (performed via **Algorithmic Impact Assessment** tools) and a recommendation stage (the **WHY-SHOULD-HOW** method). Both these stages represent distinct steps in a human-centered _EaaS_ (**Ethics as a Service**) framework developed by _Nicholas Kluge Corrêa_, _James William Santos_, _Camila Galvão_, _Marcelo Pasetti_, _Dieine Schiavon_, _Faizah Naqvi_, _Robayet Hossain_, and _Nythamar de Oliveira_.
 
 This repository contains a simple demo of our framework, **and it should not be considered a working EaaS platform. The full implementation of our method as an EaaS is currently under development.**
 
@@ -160,4 +160,4 @@ This research was funded by RAIES ([Rede de Inteligência Artificial Ética e Se
 
 ## License
 
-Ethical Problem Solving © 2024 by Nicholas Kluge Corrêa, James William Santos, Camila Galvão, Marcelo Pasetti, Dieine Schiavon, Faizah Naqvi, Robayet Hossain, and Nythamar de Oliveira is licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Ethical Problem-Solving © 2024 by Nicholas Kluge Corrêa, James William Santos, Camila Galvão, Marcelo Pasetti, Dieine Schiavon, Faizah Naqvi, Robayet Hossain, and Nythamar de Oliveira is licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
