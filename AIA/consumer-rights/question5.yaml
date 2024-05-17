@@ -6,9 +6,9 @@ options:
   - "The organization partners with cybersecurity experts or security companies to provide additional resources to users"
   - "None of the above"
 scores:
-  - -0.25
-  - -0.25
-  - -0.25
+  - -0.33
+  - -0.33
+  - -0.33
   - 1.0
 accountability: true
 transparency: true
